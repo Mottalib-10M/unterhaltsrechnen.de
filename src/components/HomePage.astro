@@ -1,7 +1,8 @@
 ---
 /**
- * Startseite (Säule, RECETTE §5), eigene Trame: zuerst die Düsseldorfer Tabelle selbst, zum Anklicken;
- * dann der zitierbare Absatz, der volle Kindesunterhaltsrechner, die Selbstbehalte 2026 als Übersicht,
+ * Startseite (Säule, RECETTE §5), eigene Trame: zuerst der volle Kindesunterhaltsrechner, ohne zu scrollen
+ * sichtbar (Regel vom 2026-10-11); gleich darunter die Düsseldorfer Tabelle selbst, zum Anklicken; dann der
+ * zitierbare Absatz, die Selbstbehalte 2026 als Übersicht,
  * das Mangelfallbeispiel der Tabelle vom Motor nachgerechnet, die fünf Rechengebiete der Seite und der Text.
  */
 import PageLayout from '../layouts/PageLayout.astro';
@@ -65,25 +66,25 @@ const gebiete: Array<{ g: Group; text: string }> = de ? [
 const ersteSeite = (g: Group) => PAGES.find((p) => p.group === g);
 ---
 <PageLayout title={x.title} description={x.description} lang={lang} jsonLd={jsonLd} faqs={faqs} sources={sources}>
-  <header class="mb-6">
+  <header class="mb-4">
     <p class="text-sm font-semibold uppercase tracking-wide text-accent-700">{de ? 'Stand 1. Januar 2026 · Oberlandesgericht Düsseldorf' : 'As of 1 January 2026 · Düsseldorf Higher Regional Court'}</p>
     <h1 class="mt-1 text-3xl font-bold text-navy-900 md:text-[2.6rem] md:leading-tight">{x.h1}</h1>
     <p class="mt-3 text-lg text-navy-700">{x.intro}</p>
-    <p class="mt-3 text-sm text-navy-700">
+    <p class="mt-2 text-sm text-navy-700">
       {de ? 'Werte geprüft am' : 'Figures checked on'} <time datetime={LAST_UPDATED}>{displayDate(LAST_UPDATED, LANG_TAGS[lang])}</time> · <a class="underline" href={route('method', lang)}>{label('method', lang)}</a> · <a class="underline" href={route('about', lang)}>{label('about', lang)}</a>
     </p>
   </header>
-  <section aria-labelledby="tabelle" data-outil>
+  <section id="rechner" data-outil aria-labelledby="rechner-h">
+    <h2 id="rechner-h" class="mb-3 text-2xl font-bold text-navy-900">{de ? 'Kindesunterhalt für Ihre Familie rechnen' : 'Work out child support for your family'}</h2>
+    <KindesunterhaltRechner client:load lang={lang} methodHref={route('method', lang)} />
+  </section>
+  <section class="mt-10 border-t border-navy-200 pt-6" aria-labelledby="tabelle">
     <h2 id="tabelle" class="sr-only">{de ? 'Die Tabelle 2026' : 'The 2026 table'}</h2>
     <DtTabelle client:load lang={lang} rechnerHref="#rechner" />
   </section>
   <section class="mt-8" aria-labelledby="kurz">
     <h2 id="kurz" class="sr-only">{de ? 'Das Wichtigste in Kürze' : 'In short'}</h2>
     <Clamp text={x.resume(h)} lang={lang} id="clamp-home" sentences={2} />
-  </section>
-  <section id="rechner" class="mt-10 border-t border-navy-200 pt-6" aria-labelledby="rechner-h">
-    <h2 id="rechner-h" class="mb-4 text-2xl font-bold text-navy-900">{de ? 'Kindesunterhalt für Ihre Familie rechnen' : 'Work out child support for your family'}</h2>
-    <KindesunterhaltRechner client:load lang={lang} methodHref={route('method', lang)} />
   </section>
   <section class="mt-10 border-t border-navy-200 pt-6" aria-labelledby="sb">
     <h2 id="sb" class="text-2xl font-bold text-navy-900">{de ? 'Was dem Zahlenden 2026 mindestens bleibt' : 'What the payer keeps at least in 2026'}</h2>

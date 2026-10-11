@@ -48,7 +48,7 @@ export function PfaendungRechner({ lang = 'de', methodHref, preset = {} }: Props
             </table>
           </div>
         </form>
-        <div aria-live="polite" className={kasten}>
+        <div aria-live="polite" data-resultat className={kasten}>
           <Kopf label={tx(lang, `Pfändbarer Betrag ${perTxt}`, `Garnishable amount ${perTxt}`)} wert={f.eur2(r.pfaendbar)} unter={tx(lang, `Ihnen bleiben ${f.eur2(r.verbleibt)}`, `You keep ${f.eur2(r.verbleibt)}`)} />
           <Zeilen rows={[
             { label: tx(lang, 'Pfändungsfreibetrag', 'Exempt amount'), value: f.eur2(r.freibetrag) },
@@ -102,7 +102,7 @@ export function ScheidungRechner({ lang = 'de', methodHref }: Props) {
             <p className="mt-3 text-sm text-navy-600">{tx(lang, 'Abzug für Kinder und Zuschlag für Vermögen sind Gerichtspraxis und je Bezirk verschieden: Ihre Annahme.', 'The deduction for children and the surcharge for assets are court practice and vary by district: your assumption.')}</p>
           </details>
         </form>
-        <div aria-live="polite" className={kasten}>
+        <div aria-live="polite" data-resultat className={kasten}>
           <Kopf label={tx(lang, 'Scheidungskosten gesamt', 'Total divorce costs')} wert={f.eur2(r.gesamt)} unter={tx(lang, `Verfahrenswert ${f.eur(r.gesamtWert)}`, `Value of proceedings ${f.eur(r.gesamtWert)}`)} />
           <Zeilen rows={[
             { label: tx(lang, 'Gerichtskosten', 'Court fees'), value: f.eur2(r.gerichtskosten) },
@@ -149,7 +149,7 @@ export function PkhRechner({ lang = 'de', methodHref }: Props) {
             {kAlter.map((a, i) => <NumberField key={i} id={`pk-a${i}`} label={tx(lang, `Alter Kind ${i + 1}`, `Age of child ${i + 1}`)} value={a} onChange={(v) => setKAlter((k) => k.map((x, j) => (j === i ? Math.round(v) : x)))} unit={tx(lang, 'J.', 'yrs')} max={25} lang={lang} help={`${f.eur(kinderFreibetrag(a))}`} />)}
           </div>
         </form>
-        <div aria-live="polite" className={kasten}>
+        <div aria-live="polite" data-resultat className={kasten}>
           <Kopf label={tx(lang, 'Monatsrate Verfahrenskostenhilfe', 'Monthly legal aid instalment')} wert={r.ratenfrei ? tx(lang, 'ratenfrei', 'no instalments') : f.eur(r.rate)} unter={r.ratenfrei ? tx(lang, 'unter 10 € wird keine Rate festgesetzt', 'below €10 no instalment is set') : tx(lang, `höchstens ${r.maxRaten} Raten, zusammen ${f.eur(r.summeMax)}`, `at most ${r.maxRaten} instalments, ${f.eur(r.summeMax)} in total`)} />
           <Zeilen rows={[...r.abzuege.map(([k, v]) => ({ label: lab(k), value: `− ${f.eur(v)}`, muted: true })), { label: tx(lang, 'Einzusetzendes Einkommen', 'Income to be used'), value: f.eur2(r.einzusetzen), strong: true, sep: true }]} />
           <Rechenweg lang={lang} steps={[tx(lang, `Bis ${f.eur(P.pkh.rate_schwelle)} einzusetzendes Einkommen: Rate = Hälfte; darüber ${f.eur(P.pkh.rate_sockel)} plus alles über ${f.eur(P.pkh.rate_schwelle)}; abgerundet auf volle Euro (§ 115 Abs. 2 ZPO).`, `Up to ${f.eur(P.pkh.rate_schwelle)} of income to be used: instalment = half; above that ${f.eur(P.pkh.rate_sockel)} plus everything over ${f.eur(P.pkh.rate_schwelle)}; rounded down to full euros (section 115(2) ZPO).`)]} />
@@ -181,7 +181,7 @@ export function ZugewinnRechner({ lang = 'de', methodHref }: Props) {
           </div>
           <p className="text-xs text-navy-600">{tx(lang, 'Schulden abziehen; ein negatives Anfangsvermögen tippen Sie mit Minus. Die Hochrechnung des Anfangsvermögens mit dem Verbraucherpreisindex ist hier nicht enthalten.', 'Deduct debts; type a negative initial value with a minus sign. Indexing the initial assets for inflation is not included here.')}</p>
         </form>
-        <div aria-live="polite" className={kasten}>
+        <div aria-live="polite" data-resultat className={kasten}>
           <Kopf label={tx(lang, 'Ausgleichsforderung', 'Equalisation claim')} wert={f.eur(r.forderung)} unter={r.berechtigt ? tx(lang, `steht ${r.berechtigt} zu`, `owed to ${r.berechtigt}`) : tx(lang, 'kein Ausgleich', 'no claim')} />
           <Zeilen rows={[
             { label: tx(lang, 'Zugewinn A', 'Gain A'), value: f.eur(r.zugewinnA) },
@@ -217,7 +217,7 @@ export function VaRechner({ lang = 'de', methodHref }: Props) {
             <NumberField id="va-kb" label={tx(lang, 'Kapitalwert B', 'Capital value B')} value={kB} onChange={setKB} unit="€" max={10000000} lang={lang} />
           </div>
         </form>
-        <div aria-live="polite" className={kasten}>
+        <div aria-live="polite" data-resultat className={kasten}>
           <Kopf label={tx(lang, 'Ausgleich der Renten (Differenz)', 'Pension balance (difference)')} wert={f.eur2(r.differenzRente)} unter={r.geringRente ? tx(lang, `gering: höchstens ${f.eur2(r.grenzeRente)}, Ausgleich soll entfallen`, `minor: at most ${f.eur2(r.grenzeRente)}, should not be split`) : tx(lang, 'monatlich, zugunsten des Ehegatten mit weniger Anrechten', 'monthly, in favour of the spouse with less')} />
           <Zeilen rows={[
             { label: tx(lang, 'Ausgleichswert Rente A', 'Equalisation value pension A'), value: f.eur2(r.ausgleichRenteA) },

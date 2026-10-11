@@ -59,7 +59,7 @@ export function ErbfolgeRechner({ lang = 'de', methodHref, preset = {} }: Props 
             </div>
           )}
         </form>
-        <div aria-live="polite" className={kasten}>
+        <div aria-live="polite" data-resultat className={kasten}>
           {pt
             ? <Kopf label={tx(lang, 'Pflichtteil je Kind', 'Compulsory share per child')} wert={f.eur((kindAnteil?.pflichtteilJe ?? 0) + erg.ergaenzung)} unter={tx(lang, `Quote ${bruch(quotePt)}${erg.ergaenzung ? `, davon Ergänzung ${f.eur(erg.ergaenzung)}` : ''}`, `Share ${bruch(quotePt)}${erg.ergaenzung ? `, incl. top-up ${f.eur(erg.ergaenzung)}` : ''}`)} />
             : <Kopf label={tx(lang, 'Gesetzliche Erbfolge', 'Statutory succession')} wert={r.anteile.length ? bruch(r.anteile[0].quoteJe) : '–'} unter={r.anteile.length ? `${wer(r.anteile[0].wer, r.anteile[0].anzahl)}: ${f.eur(r.anteile[0].betragJe)}` : ''} />}
@@ -113,7 +113,7 @@ export function ErbStRechner({ lang = 'de', methodHref }: Props) {
             <NumberField id="es-q" label={tx(lang, 'Ihr Anteil am Nachlass', 'Your share of the estate')} value={quote} onChange={(v) => setQuote(Math.min(100, Math.max(0, v)))} unit="%" max={100} lang={lang} help={tx(lang, 'Alleinerbe 100 %; teilt die Kostenpauschale', 'sole heir 100%; splits the flat cost allowance')} />
           </div>}
         </form>
-        <div aria-live="polite" className={kasten}>
+        <div aria-live="polite" data-resultat className={kasten}>
           <Kopf label={tx(lang, fall === '1' ? 'Erbschaftsteuer' : 'Schenkungsteuer', fall === '1' ? 'Inheritance tax' : 'Gift tax')} wert={f.eur(r.steuer)} unter={tx(lang, `Steuerklasse ${r.klasse} · Satz ${f.pct(r.satz, 0)}`, `Tax class ${r.klasse} · rate ${f.pct(r.satz, 0)}`)} />
           <Zeilen rows={[
             { label: tx(lang, 'Freibetrag', 'Allowance'), value: f.eur(r.freibetrag) },

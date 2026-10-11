@@ -121,13 +121,22 @@ const otherLocales = LOCALES.filter((l) => l !== lang);
     </nav>
     </header>
     <main id="main-content" class="pt-[4.25rem]">
-      {breadcrumbs.length > 0 && (
-        <nav aria-label={ui.breadcrumbLabel} class="mx-auto max-w-6xl px-4 pt-4">
-          <ol class="flex flex-wrap items-center gap-1 text-sm text-navy-600">
-            <li><a href={homeHref} class="hover:text-navy-900">{ui.breadcrumbHome}</a></li>
-            {breadcrumbs.map((item) => (<li class="flex items-center gap-1"><span aria-hidden="true">/</span>{item.href ? <a href={item.href} class="hover:text-navy-900">{item.label}</a> : <span class="text-navy-700" aria-current="page">{item.label}</span>}</li>))}
-          </ol>
-        </nav>
+      {/* Fil d'Ariane et date de mise à jour sur une seule ligne : le simulateur remonte d'autant
+          dans le premier écran (RECETTE §5, règle du 2026-10-11). */}
+      {(breadcrumbs.length > 0 || Astro.slots.has('kopfzeile')) && (
+        <div class="mx-auto max-w-6xl px-4 pt-4">
+          <div class="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1 border-b border-navy-100 pb-3">
+            {breadcrumbs.length > 0 && (
+              <nav aria-label={ui.breadcrumbLabel}>
+                <ol class="flex flex-wrap items-center gap-1 text-sm text-navy-600">
+                  <li><a href={homeHref} class="hover:text-navy-900">{ui.breadcrumbHome}</a></li>
+                  {breadcrumbs.map((item) => (<li class="flex items-center gap-1"><span aria-hidden="true">/</span>{item.href ? <a href={item.href} class="hover:text-navy-900">{item.label}</a> : <span class="text-navy-700" aria-current="page">{item.label}</span>}</li>))}
+                </ol>
+              </nav>
+            )}
+            <slot name="kopfzeile" />
+          </div>
+        </div>
       )}
       <slot />
     </main>

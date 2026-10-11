@@ -1,5 +1,5 @@
 /** Gemeinsame Bausteine der Rechner: Rechenzeilen, Ergebnis-Kopf, Rechenweg, Aktionen (Kopieren, Link, Drucken). */
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { formatMoney, formatPercent, formatNumber } from '../../lib/format';
 
 export type L = 'de' | 'en';
@@ -56,13 +56,39 @@ export function Aktionen({ lang, text }: { lang: L; text: () => string }) {
   );
 }
 
-/** Ergebnis-Kopf: eine große Zahl, eine Zeile darunter. */
+/**
+ * Ergebnis-Kopf: eine große Zahl, eine Zeile darunter. Auf dem Telefon steht das Ergebnis unter den
+ * Feldern: solange der Rechner im Bild ist, das Ergebnis aber noch darunter liegt, zeigt eine Leiste
+ * am unteren Rand die Zahl (RECETTE §5, Regel vom 2026-10-11); ein Tipp darauf springt zum Ergebnis.
+ */
 export function Kopf({ label, wert, unter }: { label: string; wert: string; unter?: string }) {
+  const ref = useRef<HTMLDivElement>(null);
+  const [leiste, setLeiste] = useState(false);
+  useEffect(() => {
+    const el = ref.current; if (!el) return;
+    const box = (el.closest('[data-resultat]') as HTMLElement | null) ?? el;
+    const rechner = (el.closest('.rechner') as HTMLElement | null) ?? box;
+    const pruefen = () => {
+      const h = window.innerHeight;
+      setLeiste(window.innerWidth < 1024 && rechner.getBoundingClientRect().top < h * 0.85 && box.getBoundingClientRect().top > h - 24);
+    };
+    pruefen();
+    window.addEventListener('scroll', pruefen, { passive: true });
+    window.addEventListener('resize', pruefen);
+    return () => { window.removeEventListener('scroll', pruefen); window.removeEventListener('resize', pruefen); };
+  }, []);
   return (
-    <div>
+    <div ref={ref}>
       <p className="text-sm font-medium text-navy-700">{label}</p>
       <p className="tabular-nums mt-1 font-serif text-4xl font-bold text-navy-900">{wert}</p>
       {unter && <p className="tabular-nums mt-1 text-sm text-navy-700">{unter}</p>}
+      {leiste && (
+        <button type="button" aria-hidden="true" tabIndex={-1} onClick={() => ref.current?.scrollIntoView({ behavior: 'smooth', block: 'center' })}
+          className="no-print fixed inset-x-0 bottom-0 z-40 flex items-center justify-between gap-3 border-t border-accent-200 bg-white px-4 py-3 text-left shadow-[0_-4px_16px_rgba(0,0,0,0.08)] lg:hidden">
+          <span className="text-sm font-medium text-navy-700">{label}</span>
+          <span className="tabular-nums whitespace-nowrap font-serif text-2xl font-bold text-navy-900">{wert}</span>
+        </button>
+      )}
     </div>
   );
 }

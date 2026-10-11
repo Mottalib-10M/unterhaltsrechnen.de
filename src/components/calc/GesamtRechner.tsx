@@ -36,7 +36,7 @@ export default function GesamtRechner({ lang = 'de', methodHref }: { lang?: L; m
           </div>
           {kinder.length > 0 && <div className="grid grid-cols-2 gap-x-4 gap-y-4 sm:grid-cols-4">{kinder.map((k, i) => <NumberField key={i} id={`ge-a${i}`} label={tx(lang, `Alter Kind ${i + 1}`, `Age child ${i + 1}`)} value={k.alter} onChange={(v) => setKinder((ks) => ks.map((c, j) => (j === i ? { alter: Math.round(v) } : c)))} unit={tx(lang, 'J.', 'yrs')} max={17} lang={lang} />)}</div>}
         </form>
-        <div aria-live="polite" className={kasten}>
+        <div aria-live="polite" data-resultat className={kasten}>
           <Kopf label={tx(lang, 'Unterhalt insgesamt pro Monat', 'Total maintenance per month')} wert={f.eur2(gesamt)} unter={tx(lang, `dem Zahlenden bleiben ${f.eur2(p - gesamt)}`, `the payer keeps ${f.eur2(p - gesamt)}`)} />
           <Zeilen rows={[
             ...ku.kinder.map((k, i) => ({ label: tx(lang, `Kind ${i + 1} (${k.alter} J.)`, `Child ${i + 1} (age ${k.alter})`), value: f.eur2(k.zahlbetrag) })),

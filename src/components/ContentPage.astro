@@ -1,8 +1,8 @@
 ---
 /**
  * Rendering einer Ratgeber- oder Rechnerseite aus `src/content/`. Reihenfolge (RECETTE §9.3, §21):
- * H1 und Einleitung; Rechnerseite: Rechner, dann zitierbarer Absatz (eingeklappt); Ratgeber: zitierbarer Absatz,
- * Mini-Rechner, Text. FAQ, verwandte Seiten, Quellen und Autorenkasten kommen aus dem PageLayout (§7).
+ * H1 und Einleitung, dann sofort der Rechner, sichtbar ohne zu scrollen (§5, Regel vom 2026-10-11);
+ * Rechnerseite: Rechner, dann zitierbarer Absatz (eingeklappt); Ratgeber: Mini-Rechner, zitierbarer Absatz, Text. FAQ, verwandte Seiten, Quellen und Autorenkasten kommen aus dem PageLayout (§7).
  */
 import PageLayout from '../layouts/PageLayout.astro';
 import MiniSim from './calc/MiniSim';
@@ -42,13 +42,13 @@ const preset = (page.toolPreset ?? {}) as Record<string, never>;
     </header>
     {page.tool ? (
       <>
-        <Clamp text={x.resume} lang={lang} id={`clamp-${page.id}`} class="mb-6" />
         <div data-outil><ToolSwitch tool={page.tool} lang={lang} methodHref={methodHref} preset={preset} /></div>
+        <Clamp text={x.resume} lang={lang} id={`clamp-${page.id}`} class="mt-6" />
       </>
     ) : (
       <>
-        <p class="mb-6 text-navy-800">{x.resume}</p>
-        {page.mini && <MiniSim client:load kind={page.mini} lang={lang} href={miniHref} defaults={page.miniDefaults} />}
+        {page.mini && <MiniSim client:load kind={page.mini} lang={lang} href={miniHref} defaults={page.miniDefaults} lead />}
+        <p class="mt-6 text-navy-800">{x.resume}</p>
       </>
     )}
     <div class="prose prose-slate mt-8 max-w-none">

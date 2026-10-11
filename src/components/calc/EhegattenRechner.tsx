@@ -50,7 +50,7 @@ export default function EhegattenRechner({ lang = 'de', methodHref, preset = {} 
             </div>
           </details>
         </form>
-        <div aria-live="polite" className={kasten}>
+        <div aria-live="polite" data-resultat className={kasten}>
           <Kopf label={tx(lang, trennung ? 'Trennungsunterhalt pro Monat' : 'Ehegattenunterhalt pro Monat', trennung ? 'Separation maintenance per month' : 'Spousal maintenance per month')} wert={f.eur2(r.unterhalt)} unter={r.begrenztDurchSelbstbehalt ? tx(lang, 'durch den Selbstbehalt begrenzt', 'capped by the self-retention') : tx(lang, `Quote ${f.pct(q, 0)} der Differenz`, `${f.pct(q, 0)} of the difference`)} />
           <Zeilen rows={[
             { label: tx(lang, 'Rechnerischer Anspruch', 'Calculated claim'), value: f.eur2(r.quote) },

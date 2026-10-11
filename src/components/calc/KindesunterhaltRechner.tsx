@@ -84,7 +84,7 @@ export default function KindesunterhaltRechner({ lang = 'de', methodHref, preset
             <p className="mt-3 text-xs text-navy-600">{tx(lang, 'Zahl der Berechtigten: Die Tabelle ist auf zwei Berechtigte zugeschnitten (Anm. A I); bei mehr kann eine Gruppe tiefer, bei einem Kind höher gerechnet werden. Erweiterter Umgang: BGH, 15. April 2026, XII ZB 415/25 (Abzug typischerweise 10 %, höchstens 15 %). Beides liegt im Ermessen des Gerichts.', 'Number of dependants: the table assumes two (note A I); with more, one group lower can apply, with one child one higher. Extended contact: Federal Court of Justice, 15 April 2026, XII ZB 415/25 (typically 10%, at most 15%). Both are at the court’s discretion.')}</p>
           </details>
         </form>
-        <div aria-live="polite" className={kasten}>
+        <div aria-live="polite" data-resultat className={kasten}>
           <Kopf label={tx(lang, 'Kindesunterhalt pro Monat (Zahlbetrag)', 'Child support per month (amount payable)')} wert={f.eur2(r.summe)} unter={tx(lang, `Gruppe ${r.gruppe + 1} · ${P.dt.prozent[r.gruppe]} % des Mindestunterhalts`, `Group ${r.gruppe + 1} · ${P.dt.prozent[r.gruppe]}% of the minimum`)} />
           <Zeilen rows={[
             ...r.kinder.map((k, i) => ({ label: tx(lang, `Kind ${i + 1}, ${k.alter} Jahre`, `Child ${i + 1}, age ${k.alter}`), value: f.eur2(k.zahlbetrag) })),

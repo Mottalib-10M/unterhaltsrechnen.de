@@ -38,7 +38,7 @@ export function VolljaehrigRechner({ lang = 'de', methodHref }: Props) {
           </div>
           {haus === '0' && <div className="grid grid-cols-2 gap-x-4 gap-y-4"><Toggle id="vj-p" label={tx(lang, 'Unter 21 und Schüler?', 'Under 21 and at school?')} value={priv} onChange={setPriv} options={janein(lang)} /><div className="grid grid-rows-subgrid row-span-3" aria-hidden="true" /></div>}
         </form>
-        <div aria-live="polite" className={kasten}>
+        <div aria-live="polite" data-resultat className={kasten}>
           <Kopf label={tx(lang, 'Unterhalt für das volljährige Kind', 'Support for the adult child')} wert={f.eur2(r.anteilA + r.anteilB)} unter={tx(lang, `Restbedarf ${f.eur2(r.restbedarf)}`, `Remaining need ${f.eur2(r.restbedarf)}`)} />
           <Zeilen rows={[
             { label: tx(lang, 'Elternteil A zahlt', 'Parent A pays'), value: f.eur2(r.anteilA) },
@@ -85,7 +85,7 @@ export function WechselRechner({ lang = 'de', methodHref }: Props) {
             <div className="grid grid-rows-subgrid row-span-3" aria-hidden="true" />
           </div>
         </form>
-        <div aria-live="polite" className={kasten}>
+        <div aria-live="polite" data-resultat className={kasten}>
           <Kopf label={tx(lang, 'Ausgleichszahlung pro Monat', 'Balancing payment per month')} wert={f.eur2(r.ausgleich)} unter={r.ausgleichZahlt ? tx(lang, `zahlt Elternteil ${r.ausgleichZahlt}`, `paid by parent ${r.ausgleichZahlt}`) : tx(lang, 'kein Ausgleich', 'no payment')} />
           <Zeilen rows={[
             { label: tx(lang, 'Unterhaltsspitze (halbe Differenz)', 'Support peak (half the difference)'), value: f.eur2(r.spitze) },
@@ -125,7 +125,7 @@ export function ElternRechner({ lang = 'de', methodHref }: Props) {
             <div className="grid grid-rows-subgrid row-span-3" aria-hidden="true" />
           </div>
         </form>
-        <div aria-live="polite" className={kasten}>
+        <div aria-live="polite" data-resultat className={kasten}>
           <Kopf label={tx(lang, 'Elternunterhalt pro Monat', 'Parental maintenance per month')} wert={f.eur2(r.unterhalt)} unter={r.rueckgriffMoeglich ? tx(lang, 'Rückgriff des Sozialamts möglich', 'welfare office may claim') : tx(lang, `unter der ${f.eur(r.grenze)}-Grenze: kein Rückgriff`, `under the ${f.eur(r.grenze)} limit: no claim`)} />
           <Zeilen rows={[
             { label: tx(lang, 'Selbstbehalt', 'Self-retention'), value: f.eur2(r.selbstbehalt) },
@@ -167,7 +167,7 @@ export function UvgRechner({ lang = 'de', methodHref }: Props) {
               : <div className="grid grid-rows-subgrid row-span-3" aria-hidden="true" />}
           </div>
         </form>
-        <div aria-live="polite" className={kasten}>
+        <div aria-live="polite" data-resultat className={kasten}>
           <Kopf label={tx(lang, 'Unterhaltsvorschuss pro Monat', 'Maintenance advance per month')} wert={f.eur2(r.leistung)} unter={r.grund === 'alter' ? tx(lang, 'ab 18 Jahren kein Anspruch', 'no entitlement from age 18') : r.grund === 'ab12' ? tx(lang, 'ab 12 nur mit den Voraussetzungen des § 1 Abs. 1a UVG', 'from 12 only under section 1(1a) UVG') : tx(lang, 'beim Jugendamt zu beantragen', 'apply at the youth welfare office')} />
           <Zeilen rows={[0, 1, 2].map((s) => ({ label: [tx(lang, '0 bis 5 Jahre', 'age 0 to 5'), tx(lang, '6 bis 11 Jahre', 'age 6 to 11'), tx(lang, '12 bis 17 Jahre', 'age 12 to 17')][s], value: f.eur(P.mindestunterhalt.stufen[s] - P.kindergeld.monat), muted: r.stufe !== s }))} caption={tx(lang, 'Volle Leistung 2026', 'Full amount 2026')} />
           <Rechenweg lang={lang} steps={steps} />
