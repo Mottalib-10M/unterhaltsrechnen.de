@@ -88,7 +88,9 @@ export function kindesunterhalt(netto: number, kinder: Kind[], opt: KuOptionen =
   const abzug = Math.min(0.15, Math.max(0, opt.umgangAbzug ?? 0));
   const stufen = kinder.map((k) => stufeVonAlter(k.alter));
   const rang = (k: Kind, s: Stufe): 1 | 4 => (s < 3 || (k.privilegiert && k.alter < 21) ? 1 : 4);
-  const zahlIn = (g: number, s: Stufe) => r2(bedarf(g, s) * (1 - abzug) - kgAnteil(s));
+  // Leitlinien NRW Nummer 12 Absatz 5: Kürzungen wegen Umgangs nur, soweit der Mindestunterhalt gewahrt bleibt.
+  const bedIn = (g: number, s: Stufe) => (abzug > 0 && s < 3 ? Math.max(bedarf(0, s), bedarf(g, s) * (1 - abzug)) : bedarf(g, s) * (1 - abzug));
+  const zahlIn = (g: number, s: Stufe) => r2(bedIn(g, s) - kgAnteil(s));
   const summeIn = (g: number) => stufen.reduce((sum, s) => sum + Math.max(0, zahlIn(g, s)), 0);
   let g = g1;
   if (opt.bkb ?? true) while (g > 0 && n - summeIn(g) < bkb(g, erw)) g--;
@@ -96,7 +98,7 @@ export function kindesunterhalt(netto: number, kinder: Kind[], opt: KuOptionen =
   const kids: KindErgebnis[] = kinder.map((k, i) => {
     const s = stufen[i];
     const z = Math.max(0, zahlIn(g, s));
-    return { alter: k.alter, stufe: s, bedarf: r2(bedarf(g, s) * (1 - abzug)), kindergeld: kgAnteil(s), tabellenZahlbetrag: z, zahlbetrag: z, rang: rang(k, s) };
+    return { alter: k.alter, stufe: s, bedarf: r2(bedIn(g, s)), kindergeld: kgAnteil(s), tabellenZahlbetrag: z, zahlbetrag: z, rang: rang(k, s) };
   });
   // Rang 1: Mangelfall nach Anm. C.
   const r1 = kids.filter((k) => k.rang === 1);

@@ -2,7 +2,7 @@
 """Erzeugt public/llms.txt aus dem Build (RECETTE §21). Aufruf: npm run build && python3 scripts/build-llms.py && npm run build"""
 import glob, html, json, os, re
 SITE = re.search(r'SITE_URL = "([^"]+)"', open('src/data/site-config.ts').read()).group(1)
-N = len(json.load(open('tests/fixtures/bmf-2026.json'))['faelle'])
+PF = len(json.load(open('tests/fixtures/pfaendung-2026-monat.json'))['zeilen'])
 rows = {'de': [], 'en': []}
 for f in sorted(glob.glob('dist/*/**/index.html', recursive=True)):
     d = open(f, encoding='utf-8').read()
@@ -13,8 +13,9 @@ for f in sorted(glob.glob('dist/*/**/index.html', recursive=True)):
     t = html.unescape(re.search(r'<title>(.*?)</title>', d, re.S).group(1))
     m = re.search(r'name="description" content="(.*?)"', d, re.S)
     rows[lang].append((path, t, html.unescape(m.group(1)) if m else ''))
-out = ['# Nettorechner', '', '> Brutto-Netto-Rechner für Österreich 2026 mit Lohnsteuer, Sozialversicherung, 13. und 14. Gehalt Monat für Monat (Jahressechstel, Kontrollrechnung), Pendlerpauschale und Pendlereuro, Familienbonus Plus, Arbeitslosengeld, Kinderbetreuungsgeld und Abfertigung. Herausgeber: Radif Partners, unabhängig von Behörden und Arbeitgebern. Alle Rechtswerte 2026 stehen datiert in einer geprüften Parameterdatei; der Lohnrechner stimmt in ' + str(N) + ' Fällen auf den Cent mit dem amtlichen BMF-Rechner überein.', '',
-       'Alle Berechnungen laufen im Browser. Ergebnisse sind Schätzungen nach den amtlichen Werten und ersetzen weder Lohnzettel noch Bescheid.', '']
+out = ['# Familienrecht in Zahlen (German Family Law in Figures)', '',
+       '> Unabhängige Seite von Radif Partners auf Deutsch und Englisch: Düsseldorfer Tabelle 2026 als anklickbare Tabelle und Rechner (mehrere Kinder, Bedarfskontrollbetrag, Mangelfall nach Anmerkung C, Wechselmodell, erweiterter Umgang nach BGH XII ZB 415/25), Ehegatten-, Trennungs-, Volljährigen- und Elternunterhalt, Unterhaltsvorschuss, Scheidungskosten nach FamGKG und RVG (Tabellen seit Juni 2025), Verfahrenskostenhilfe, Zugewinn- und Versorgungsausgleich, Pfändungstabelle ab 1. Juli 2026 (' + str(PF) + ' Zeilen der amtlichen Monatstabelle getestet), P-Konto, gesetzliche Erbfolge, Pflichtteil und Erbschaftsteuer.', '',
+       'Alle Berechnungen laufen im Browser; keine Datenerhebung, keine Vermittlung an Kanzleien. Ergebnisse sind allgemeine Berechnungen nach amtlichen Werten, keine Rechtsberatung.', '']
 for lang, titel in (('de', '## Seiten auf Deutsch'), ('en', '## Pages in English')):
     out.append(titel); out.append('')
     for p, t, d in rows[lang]: out.append(f'- [{t}]({SITE}{p}): {d}')

@@ -1,7 +1,19 @@
-# Domaines des sources primaires de de-familienrecht (lu par check-regles.py)
+# Domaines des sources primaires de de-familienrecht (lu par check-regles.py et check-seo.py)
+
+# Oberlandesgericht Düsseldorf : éditeur officiel de la Düsseldorfer Tabelle et des Leitlinien NRW
 olg-duesseldorf.nrw.de
+
+# Bundesministerium der Justiz / juris : texte consolidé officiel du BGB, FamGKG, RVG, ZPO, UVG, ErbStG, VersAusglG
 gesetze-im-internet.de
+
+# Bundesgesetzblatt en ligne : publication officielle de la Pfändungsfreigrenzenbekanntmachung 2026
 recht.bund.de
+
+# Bundesgerichtshof : décisions XII ZB 565/15 (Wechselmodell) et XII ZB 415/25 (erweiterter Umgang)
 bundesgerichtshof.de
+
+# Bundesministerium der Justiz : brochures officielles sur la Pfändung et le droit de la famille
 bmj.de
+
+# Ancien domaine du même ministère (BMJV), encore utilisé pour les brochures Pfändung
 bmjv.de

@@ -13,7 +13,7 @@ const de = lang === 'de';
 const $ = (n: number, d = 0) => formatMoney(n, d, lang);
 const pc = (x: number, d = 0) => formatPercent(x, d, lang);
 const dt = (iso: string) => displayDate(iso, LANG_TAGS[lang]);
-const title = de ? 'Berechnungsmethode 2026: Tabellen, Regeln und Grenzen' : 'Calculation Method 2026: Tables, Rules and Limits';
+const title = de ? 'Berechnungsmethode 2026: Tabellen, Regeln und Grenzen' : 'Calculation Method 2026: Tables, Rules and Their Limits';
 const description = de ? 'Berechnungsmethode 2026: wie Unterhalt, Scheidungskosten, Pfändung und Erbteile gerechnet werden, welche amtlichen Tabellen Zeile für Zeile geprüft sind.' : 'Calculation method 2026: how maintenance, divorce costs, garnishment and inheritance shares are computed, and which official tables are tested line by line.';
 const h1 = de ? 'Berechnungsmethode und Prüfung' : 'Calculation method and testing';
 const path = route('method', lang);

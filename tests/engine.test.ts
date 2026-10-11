@@ -57,6 +57,10 @@ describe('Düsseldorfer Tabelle 2026', () => {
     const r = kindesunterhalt(3000, [{ alter: 8 }], { umgangAbzug: 0.1 });
     expect(r.kinder[0].zahlbetrag).toBeCloseTo(642 * 0.9 - 129.5, 2);
   });
+  it('erweiterter Umgang: Abzug nie unter den Mindestunterhalt', () => {
+    const r = kindesunterhalt(2300, [{ alter: 8 }], { umgangAbzug: 0.15 });
+    expect(r.kinder[0].bedarf).toBe(558);
+  });
   it('nicht erwerbstätig: Selbstbehalt 1.200 €', () => {
     const r = kindesunterhalt(1500, [{ alter: 4 }], { erwerbstaetig: false });
     expect(r.selbstbehalt).toBe(1200); expect(r.summe).toBe(300); expect(r.mangelfall).toBe(true);
