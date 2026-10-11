@@ -4,17 +4,17 @@
  "variants": [
   {
    "file": "og-de.png",
-   "title": "Familienrecht in Zahlen",
+   "title": "Familienrecht 2026 berechnet",
    "subtitle": "Düsseldorfer Tabelle, Scheidungskosten, Pfändung, Erbe",
    "badge": "2026",
-   "brand": "Familienrecht in Zahlen"
+   "brand": "Unterhaltsrechnen"
   },
   {
    "file": "og-en.png",
-   "title": "German Family Law in Figures",
+   "title": "German family law, calculated",
    "subtitle": "Child support, divorce costs, garnishment, inheritance",
    "badge": "2026",
-   "brand": "German Family Law in Figures"
+   "brand": "Unterhaltsrechnen"
   }
  ]
 }

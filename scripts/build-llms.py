@@ -13,7 +13,7 @@ for f in sorted(glob.glob('dist/*/**/index.html', recursive=True)):
     t = html.unescape(re.search(r'<title>(.*?)</title>', d, re.S).group(1))
     m = re.search(r'name="description" content="(.*?)"', d, re.S)
     rows[lang].append((path, t, html.unescape(m.group(1)) if m else ''))
-out = ['# Familienrecht in Zahlen (German Family Law in Figures)', '',
+out = ['# Unterhaltsrechnen', '',
        '> Unabhängige Seite von Radif Partners auf Deutsch und Englisch: Düsseldorfer Tabelle 2026 als anklickbare Tabelle und Rechner (mehrere Kinder, Bedarfskontrollbetrag, Mangelfall nach Anmerkung C, Wechselmodell, erweiterter Umgang nach BGH XII ZB 415/25), Ehegatten-, Trennungs-, Volljährigen- und Elternunterhalt, Unterhaltsvorschuss, Scheidungskosten nach FamGKG und RVG (Tabellen seit Juni 2025), Verfahrenskostenhilfe, Zugewinn- und Versorgungsausgleich, Pfändungstabelle ab 1. Juli 2026 (' + str(PF) + ' Zeilen der amtlichen Monatstabelle getestet), P-Konto, gesetzliche Erbfolge, Pflichtteil und Erbschaftsteuer.', '',
        'Alle Berechnungen laufen im Browser; keine Datenerhebung, keine Vermittlung an Kanzleien. Ergebnisse sind allgemeine Berechnungen nach amtlichen Werten, keine Rechtsberatung.', '']
 for lang, titel in (('de', '## Seiten auf Deutsch'), ('en', '## Pages in English')):

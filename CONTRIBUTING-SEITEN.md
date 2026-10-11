@@ -1,4 +1,4 @@
-# Ajouter ou étoffer une page de de-familienrecht
+# Ajouter ou étoffer une page de Unterhaltsrechnen (unterhaltsrechnen.de)
 
 Notice pour les agents qui prolongent le site (droit de la famille allemand en chiffres, de + en).
 À lire en entier avec `~/Documents/GitHub/RECETTE-SITE.md` (§0, §3, §6, §7, §9.3, §11, §17.4, §21, §22, §26).
@@ -67,7 +67,7 @@ Pfändungstabelle, chaque valeur des Anlagen 2) et `tests/pages.test.ts` (forme 
 ## Contrôles (tous à 0)
 
 ```bash
-cd ~/Documents/GitHub/a-publier/Mottalib-10M/de-familienrecht
+cd ~/Documents/GitHub/a-publier/Mottalib-10M/unterhaltsrechnen.de
 export NODE_PATH=$(npm root -g):$PWD/node_modules
 npm run build                       # inclut typo-nbsp et check-snippets
 npx vitest run

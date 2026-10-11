@@ -1,6 +1,6 @@
 /** Configuration centrale du site (générée par new-site.py). */
-export const SITE_URL = "https://de-familienrecht.example";
-export const SITE_NAMES: Record<string, string> = {"de": "Familienrecht in Zahlen", "en": "German Family Law in Figures"};
+export const SITE_URL = "https://unterhaltsrechnen.de";
+export const SITE_NAMES: Record<string, string> = {"de": "Unterhaltsrechnen", "en": "Unterhaltsrechnen"};
 export const LANG_TAGS: Record<string, string> = {"de": "de-DE", "en": "en-DE"};
 export const OG_LOCALES: Record<string, string> = {"de": "de_DE", "en": "en_GB"};
 /** Zahlenformat je Sprache: deutsch 1.234,56 €, englisch für Expats €1,234.56. */
@@ -18,7 +18,7 @@ export const AUTHOR_DESC: Record<string, string> = {"de": "Radif Partners rechne
  *  themes reellement traites par le site, pas une liste de mots-cles : un sujet
  *  declare ici sans page qui le couvre est une declaration fausse. */
 export const KNOWS_ABOUT: Record<string, string[]> = {"de": ["Düsseldorfer Tabelle", "Kindesunterhalt", "Ehegattenunterhalt", "Scheidungskosten", "Pfändungsfreigrenzen", "Gesetzliche Erbfolge und Pflichtteil", "Erbschaftsteuer"], "en": ["Düsseldorf Table", "Child support in Germany", "Spousal support", "Divorce costs", "Wage garnishment limits", "Statutory inheritance and compulsory share", "Inheritance tax"]};
-export const CONTACT_EMAIL = "contact@de-familienrecht.example";
+export const CONTACT_EMAIL = "contact@unterhaltsrechnen.de";
 export const THEME_COLOR = '#9E1B1E';
 export const LOGO_SYMBOL = '§';
 export const BING_VERIFY_CODE = '';
