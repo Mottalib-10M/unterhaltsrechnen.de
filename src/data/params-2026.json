@@ -956,6 +956,13 @@
         "de": "Düsseldorfer Tabelle 2025 (Stand 01.01.2025), zum Vergleich",
         "en": "Düsseldorf Table 2025 (as of 1 January 2025), for comparison"
       }
+    },
+    "bgb1610": {
+      "url": "https://www.gesetze-im-internet.de/bgb/__1610.html",
+      "label": {
+        "de": "§ 1610 BGB: Maß des Unterhalts, Lebensstellung des Bedürftigen",
+        "en": "Section 1610 BGB: measure of maintenance, the claimant’s position in life"
+      }
     }
   },
   "dt2025": {

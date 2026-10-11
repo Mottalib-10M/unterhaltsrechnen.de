@@ -1,16 +1,27 @@
 ---
 import PageLayout from '../../layouts/PageLayout.astro';
-import { CONTACT_EMAIL, LAST_UPDATED, SITE_NAMES } from '../../data/site-config';
+import { CONTACT_EMAIL } from '../../data/site-config';
 import { route } from '../../i18n/routes';
 const lang = 'en';
+const updated = '2026-10-11';
 ---
-<PageLayout title={`Cookies – ${SITE_NAMES[lang]}`} description="This Austrian pay calculator sets no cookie and stores nothing about you. Site stability is checked anonymously with Microsoft Clarity in its cookie-free mode." lang={lang} noindex={true} breadcrumbs={[{ label: 'Cookies' }]} showAuthor={false}>
+<PageLayout title="Cookies: none, not even in the maintenance calculators" description="No cookies and no banner: the support, garnishment and inheritance calculators remember nothing. At most we check, anonymously, whether a page loads without errors." lang={lang} noindex={true} breadcrumbs={[{ label: 'Cookies' }]} showAuthor={false}>
   <div class="prose prose-slate max-w-none">
     <h1>Cookies</h1>
-    <p>Supplement to the <a href={route('privacy', lang)}>privacy policy</a>.</p>
-    <h2>No cookies</h2><p>The site sets no cookie on any page, and the calculators store nothing on your device: salary, children and commuting distance stay in the open page and are gone once you close it. That is also why there is no cookie banner: there is nothing to agree to.</p>
-    <h2>Anonymous stability checks</h2><p>To catch broken pages, script errors, slow loading and buttons that do nothing, the site loads Microsoft Clarity in cookie-free mode. Clarity then sets no cookie (no <code>_clck</code>, <code>_clsk</code>, <code>MUID</code> or <code>CLID</code>), gives each page view its own one-off identifier and does not link your visits. Page content and inputs are masked before anything is sent.</p>
-    <h2>Blocking it anyway</h2><p>If you would rather not be measured at all, block the clarity.ms domain or use a content blocker; the calculators work exactly the same.</p>
-    <p>Questions: <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>. Last updated: {LAST_UPDATED}.</p>
+    <p>This site <strong>sets no cookies</strong>, so it asks for no consent. More in the <a href={route('privacy', lang)}>privacy policy</a>.</p>
+    <h2>Your figures stay with you</h2>
+    <p>Whether you work out the amount payable for two children, garnishable income or a compulsory share, the values go into neither a cookie nor browser storage. Close the window and they are gone; only a link you copy yourself contains them.</p>
+    <h2>Anonymous error monitoring</h2>
+    <p>When switched on, Microsoft Clarity in <strong>cookie-free</strong> mode measures whether pages load quickly and without errors. No cookies such as <code>_clck</code>, <code>_clsk</code>, <code>MUID</code> or <code>CLID</code> are created, and inputs are masked before anything is sent.</p>
+    <ul>
+      <li>Provider: Microsoft Ireland Operations Limited, Dublin, Ireland;</li>
+      <li>Deletion: recordings after 30 days, aggregate figures after 13 months;</li>
+      <li>Legal basis: Article 6(1)(f) GDPR.</li>
+    </ul>
+    <p>No advertising cookies, no like buttons, no tracking across page views.</p>
+    <h2>Embedded calculators</h2>
+    <p>The iframe versions of the support and garnishment calculators load no monitoring and set no cookies.</p>
+    <h2>Blocking the monitoring</h2>
+    <p>Block clarity.ms in your browser or with a blocker; every calculator keeps working. Questions to <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>. Last updated: {updated}.</p>
   </div>
 </PageLayout>

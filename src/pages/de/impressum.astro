@@ -1,28 +1,27 @@
 ---
 import PageLayout from '../../layouts/PageLayout.astro';
 import LegalIdentity from '../../components/LegalIdentity.astro';
-import { AUTHOR_NAME, CONTACT_EMAIL, LAST_UPDATED, SITE_NAMES, SITE_URL } from '../../data/site-config';
+import { AUTHOR_NAME, CONTACT_EMAIL, LAST_UPDATED, SITE_URL } from '../../data/site-config';
 import { route } from '../../i18n/routes';
 const lang = 'de';
 ---
-<PageLayout title={`Impressum und Offenlegung – ${SITE_NAMES[lang]}`} description="Impressum des Brutto-Netto-Rechners für Österreich: Medieninhaber und Herausgeber, Offenlegung, Hosting, Haftung für Rechenergebnisse, Urheberrecht und Kontakt." lang={lang} noindex={true} breadcrumbs={[{ label: 'Impressum' }]} showAuthor={false}>
+<PageLayout title="Impressum: Herausgeber der Familienrecht-Rechner und Hoster" description="Impressum nach § 5 DDG und § 18 MStV: wer die Rechner zu Unterhalt, Scheidungskosten, Pfändung und Erbrecht herausgibt, wer verantwortlich ist und wer hostet." lang={lang} noindex={true} breadcrumbs={[{ label: 'Impressum' }]} showAuthor={false}>
   <div class="prose prose-slate max-w-none">
     <h1>Impressum</h1>
-    <h2>Medieninhaber und Herausgeber</h2>
+    <p>Pflichtangaben nach § 5 Digitale-Dienste-Gesetz (DDG) für {SITE_URL}.</p>
+    <h2>Herausgeber</h2>
     <LegalIdentity lang={lang} />
-    <p>Verantwortlich für den Inhalt: {AUTHOR_NAME}. E-Mail: <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>.</p>
-    <h2>Offenlegung und Blattlinie</h2>
-    <p>{SITE_URL} informiert unabhängig über Lohn, Lohnsteuer, Sozialversicherung und Sozialleistungen in Österreich und stellt dafür kostenlose Rechner bereit. Die Seite gehört keiner Partei, keiner Interessenvertretung und keinem Unternehmen der Lohnverrechnung an.</p>
+    <h2>Inhaltlich verantwortlich (§ 18 Abs. 2 MStV)</h2>
+    <p>{AUTHOR_NAME}, Anschrift wie oben, E-Mail <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>.</p>
     <h2>Hosting</h2>
     <LegalIdentity mode="hosting" lang={lang} />
-    <h2>Keine Beratung, keine Gewähr</h2>
-    <p>Die Rechner liefern <strong>Schätzungen</strong> nach den amtlichen Werten 2026, die in der <a href={route('method', lang)}>Berechnungsmethode</a> mit Quelle und Datum genannt sind. Sie ersetzen weder den Lohnzettel noch einen Bescheid von Finanzamt, ÖGK oder AMS noch eine Steuer- oder Rechtsberatung. Trotz automatischer Prüfung gegen den Rechner des Finanzministeriums übernehmen wir keine Haftung für Entscheidungen, die allein auf einem Ergebnis dieser Seite beruhen. Fehler melden Sie bitte über die <a href={route('contact', lang)}>Kontaktseite</a>.</p>
-    <h2>Rechner einbinden</h2>
-    <p>Der Brutto-Netto-Rechner kann kostenlos per iframe auf anderen Seiten eingebunden werden, mit sichtbarem Link: siehe <a href={route('widget', lang)}>Rechner einbinden</a>.</p>
-    <h2>Urheberrecht</h2>
-    <p>Texte, Grafiken und Programmcode sind urheberrechtlich geschützt. Kurze Zitate mit Link auf die Ursprungsseite sind erlaubt. Gesetzestexte und amtliche Werte sind gemeinfrei und werden mit Quelle angegeben.</p>
-    <h2>Datenschutz</h2>
-    <p>Ihre Eingaben verlassen den Browser nicht. Die Website setzt keine Cookies und speichert keine personenbezogenen Daten; die Stabilität wird anonym und ohne Cookies mit Microsoft Clarity geprüft. Details in der <a href={route('privacy', lang)}>Datenschutzerklärung</a> und unter <a href={route('cookies', lang)}>Cookies</a>.</p>
-    <p class="text-sm">Stand: {LAST_UPDATED}.</p>
+    <h2>Was die Seite ist und was nicht</h2>
+    <p>Die Seite rechnet Kindes-, Ehegatten- und Elternunterhalt nach der Düsseldorfer Tabelle, Scheidungskosten nach FamGKG und RVG, pfändbares Einkommen nach § 850c ZPO sowie Erbteile, Pflichtteil und Erbschaftsteuer. Sie ist unabhängig: Sie gehört zu keinem Oberlandesgericht, keinem Jugendamt, keiner Kanzlei und keiner Schuldnerberatung und vermittelt keine Mandate. Jedes Ergebnis ist eine allgemeine Berechnung für typische Verhältnisse, keine Rechtsdienstleistung im Sinne des Rechtsdienstleistungsgesetzes. Verbindlich sind nur Beschlüsse der Familiengerichte, Bescheide der Behörden und die Gesetze in ihrer geltenden Fassung. Die Rechenwege beschreibt die <a href={route('method', lang)}>Berechnungsmethode</a>.</p>
+    <h2>Haftung</h2>
+    <p>Wir gleichen die Werte nach jeder neuen Tabelle oder Gesetzesänderung ab und testen die Rechner vor jeder Veröffentlichung gegen die amtlichen Tabellen; für Fehlerfreiheit übernehmen wir trotzdem keine Gewähr. Für verlinkte fremde Inhalte haften deren Anbieter. Hinweise auf Fehler bitte über die <a href={route('contact', lang)}>Kontaktseite</a>.</p>
+    <h2>Einbindung</h2>
+    <p>Kindesunterhalts- und Pfändungsrechner dürfen kostenlos per iframe genutzt werden, wenn der Quellenlink sichtbar bleibt: <a href={route('widget', lang)}>Rechner einbinden</a>.</p>
+    <h2>Verbraucherschlichtung</h2>
+    <p>Zur Teilnahme an einem Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle sind wir weder bereit noch verpflichtet. Zum Datenschutz: <a href={route('privacy', lang)}>Datenschutzerklärung</a> und <a href={route('cookies', lang)}>Cookies</a>. Stand: {LAST_UPDATED}.</p>
   </div>
 </PageLayout>

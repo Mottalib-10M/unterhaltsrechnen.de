@@ -6,7 +6,7 @@
  */
 import { LEGAL, CONTACT_EMAIL } from '../data/site-config';
 interface Props { mode?: 'publisher' | 'hosting'; lang?: string }
-const { mode = 'publisher', lang = 'fr' } = Astro.props;
+const { mode = 'publisher', lang = 'de' } = Astro.props;
 const H = LEGAL.hosting;
 
 const LABELS: Record<string, { entity: string; address: string; city: string; hosting: string }> = {

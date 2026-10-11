@@ -107,6 +107,9 @@ export function kindesunterhalt(netto: number, kinder: Kind[], opt: KuOptionen =
     mangel = true;
     masse = Math.max(0, n - sb);
     for (const k of r1) k.zahlbetrag = r2((k.tabellenZahlbetrag * masse) / sum1);
+    // Rundungsrest (höchstens ein Cent je Kind) dem größten Anteil zuschlagen: verteilt wird genau die Masse.
+    const rest = r2(masse - r1.reduce((s, k) => s + k.zahlbetrag, 0));
+    if (rest !== 0) { const gr = r1.reduce((a, b) => (b.zahlbetrag > a.zahlbetrag ? b : a)); gr.zahlbetrag = r2(gr.zahlbetrag + rest); }
   }
   const bezahlt1 = r1.reduce((s, k) => s + k.zahlbetrag, 0);
   // Rang 4: nur aus dem Einkommen über dem angemessenen Selbstbehalt.

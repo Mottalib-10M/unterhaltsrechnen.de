@@ -1,27 +1,28 @@
 ---
 import PageLayout from '../../layouts/PageLayout.astro';
 import LegalIdentity from '../../components/LegalIdentity.astro';
-import { CONTACT_EMAIL, LAST_UPDATED, LEGAL, SITE_NAMES, SITE_URL } from '../../data/site-config';
+import { CONTACT_EMAIL, LEGAL, SITE_URL } from '../../data/site-config';
 import { route } from '../../i18n/routes';
 const lang = 'en';
+const updated = '2026-10-11';
 ---
-<PageLayout title={`Privacy policy – ${SITE_NAMES[lang]}`} description="What data this Austrian pay calculator processes: none of your inputs, no cookies, only server logs and anonymous stability monitoring with Microsoft Clarity. Your GDPR rights." lang={lang} noindex={true} breadcrumbs={[{ label: 'Privacy' }]} showAuthor={false}>
+<PageLayout title="Privacy policy: support and inheritance calculators, no data kept" description="Privacy under the GDPR: income, children and estate figures stay in your browser, no cookies, only the host’s server logs and anonymous error monitoring." lang={lang} noindex={true} breadcrumbs={[{ label: 'Privacy' }]} showAuthor={false}>
   <div class="prose prose-slate max-w-none">
     <h1>Privacy policy</h1>
-    <p>This policy describes the processing of personal data on {SITE_URL} under Articles 13 and 14 of the General Data Protection Regulation (GDPR).</p>
+    <p>Working out maintenance, divorce costs or an inheritance share means typing in very personal figures. This notice under Articles 12 to 14 GDPR explains what {SITE_URL} learns from them: next to nothing.</p>
     <h2>1. Controller</h2>
     <LegalIdentity lang={lang} />
-    <p>Contact: <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>. No data protection officer has been appointed because the conditions of Article 37 GDPR are not met.</p>
-    <h2>2. What the calculators do not do</h2>
-    <p>Salary, number of children, commuting distance and every other input are processed only in your browser. They are not sent to any server, not stored and not linked to any identifier. The share link carries your inputs in the address: pass it on only to people you choose.</p>
+    <p>Email: <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>. No data protection officer is appointed, as Article 37 GDPR does not require one.</p>
+    <h2>2. What happens to your inputs</h2>
+    <p>Net income, children’s ages, assets at the wedding, pension entitlements, the value of an estate: the calculators process these only inside your browser. <strong>None of it is sent to us or to anyone else.</strong> So that you can share or revisit a result, the calculator writes your inputs into the address bar; that address stays with you and is not stored by us. Sharing such a link shares the figures in it.</p>
     <h2>3. Processing</h2>
-    <h3>Server logs</h3><p>The host records IP address, time, page requested, browser and referring page. Purpose: security and troubleshooting. Legal basis: legitimate interest (Article 6(1)(f) GDPR). Retention according to the host, GitHub.</p>
-    <h3>Anonymous stability monitoring with Microsoft Clarity, without cookies</h3><p>We record no personal data about you. To keep the site working, we use Microsoft Clarity, provided by Microsoft Ireland Operations Limited, One Microsoft Place, Dublin, in cookie-free mode. For each page view it measures errors, loading times, clicks that lead nowhere and scrolling, with no cookie and without linking your visits; page content and inputs are masked. Microsoft receives the technical data of the request, including the IP address from which an approximate location is derived, and keeps recordings for 30 days and aggregated data for up to 13 months. Legal basis: legitimate interest in a working website (Article 6(1)(f) GDPR); no cookie or identifier is kept on your device. Object at any time by blocking clarity.ms or writing to us. There is no advertising.</p>
-    <h3>Email</h3><p>If you write to us, we process your address and message to reply. Legal basis: legitimate interest. Retention: three years after the last exchange.</p>
-    <h2>4. Recipients</h2><p>No disclosure, no sale. The host has access to logs, as a processor (Article 28 GDPR); Microsoft processes the technical data of the stability monitoring.</p>
-    <h2>5. Transfers outside the EU</h2><p>The host, GitHub, Inc., is based in the United States; logs may be processed there under the EU-US Data Privacy Framework and the European Commission’s standard contractual clauses. The same applies to Clarity data at Microsoft Corporation.</p>
-    <h2>6. Your rights</h2><p>Access, rectification, erasure, restriction, objection and portability (Articles 15 to 21 GDPR): write to <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>; we reply within one month. You may complain to our lead authority ({LEGAL.supervisoryAuthority}, <a href={LEGAL.supervisoryAuthorityUrl} rel="nofollow noopener" target="_blank">{LEGAL.supervisoryAuthorityUrl}</a>) or to the authority where you live, in Austria the <a href="https://www.dsb.gv.at" rel="nofollow noopener" target="_blank">Datenschutzbehörde</a> (Article 77 GDPR).</p>
-    <h2>7. No automated decisions</h2><p>A calculation is an estimate made at your request, with no legal effect, and not an automated decision under Article 22 GDPR.</p>
-    <p>See also <a href={route('cookies', lang)}>cookies</a>. Last updated: {LAST_UPDATED}.</p>
+    <h3>Host logs</h3><p>On every page request the host processes technically necessary data (IP address, time, requested address, browser string, referrer) to deliver the page and fend off attacks. Legal basis: Article 6(1)(f) GDPR; retention follows GitHub’s rules.</p>
+    <h3>No cookies, no browser storage</h3><p>The site sets no cookies and stores no inputs in your browser.</p>
+    <h3>Error monitoring with Microsoft Clarity, cookie-free</h3><p>When switched on, Microsoft Clarity in cookie-free mode records loading errors, load times, dead clicks and scrolling anonymously, so that we notice broken calculators. Neither <code>_clck</code> and <code>_clsk</code> nor <code>MUID</code> or <code>CLID</code> are set; each page view gets a fresh identifier, and form fields and page content are masked in the browser. Provider: Microsoft Ireland Operations Limited, One Microsoft Place, South County Business Park, Leopardstown, Dublin 18, Ireland. Legal basis: Article 6(1)(f) GDPR. Recordings are deleted after 30 days, aggregated figures after 13 months. You can object by blocking clarity.ms or by writing to us.</p>
+    <h2>4. Recipients</h2><p>We sell no data and pass none to law firms, debt collectors or ad networks. Only the host GitHub and, for anonymous error monitoring, Microsoft have access as processors (Article 28 GDPR).</p>
+    <h2>5. Transfers outside the EU</h2><p>GitHub, Inc. and Microsoft Corporation are based in the United States and certified under the EU-US Data Privacy Framework; the European Commission’s standard contractual clauses apply as well (<a href="https://privacy.microsoft.com/privacystatement" rel="nofollow noopener" target="_blank">Microsoft privacy statement</a>).</p>
+    <h2>6. Your rights</h2><p>You have the rights of access, rectification, erasure, restriction, objection and portability (Articles 15 to 22 GDPR). We answer requests to <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a> within one month. You may complain to the {LEGAL.supervisoryAuthority} (<a href={LEGAL.supervisoryAuthorityUrl} rel="nofollow noopener" target="_blank">{LEGAL.supervisoryAuthorityUrl}</a>) or to the data protection authority of the German state where you live.</p>
+    <h2>7. No automated decisions</h2><p>A calculation result has no legal effect and is not a decision within Article 22 GDPR. Maintenance, costs and inheritance shares are decided by courts and authorities.</p>
+    <p>See also <a href={route('cookies', lang)}>cookies</a>. Last updated: {updated}.</p>
   </div>
 </PageLayout>

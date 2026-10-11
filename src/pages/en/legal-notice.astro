@@ -1,28 +1,27 @@
 ---
 import PageLayout from '../../layouts/PageLayout.astro';
 import LegalIdentity from '../../components/LegalIdentity.astro';
-import { AUTHOR_NAME, CONTACT_EMAIL, LAST_UPDATED, SITE_NAMES, SITE_URL } from '../../data/site-config';
+import { AUTHOR_NAME, CONTACT_EMAIL, LAST_UPDATED, SITE_URL } from '../../data/site-config';
 import { route } from '../../i18n/routes';
 const lang = 'en';
 ---
-<PageLayout title={`Legal notice – ${SITE_NAMES[lang]}`} description="Legal notice of the Austrian gross-to-net calculator: publisher, editorial line, hosting, liability for calculation results, copyright and how to reach us." lang={lang} noindex={true} breadcrumbs={[{ label: 'Legal notice' }]} showAuthor={false}>
+<PageLayout title="Legal notice: publisher of the German family law calculators" description="Legal notice (Impressum) under section 5 DDG: who publishes the support, divorce cost, garnishment and inheritance calculators, who is responsible and who hosts them." lang={lang} noindex={true} breadcrumbs={[{ label: 'Legal notice' }]} showAuthor={false}>
   <div class="prose prose-slate max-w-none">
     <h1>Legal notice</h1>
+    <p>Mandatory information under section 5 of the German Digital Services Act (DDG) for {SITE_URL}.</p>
     <h2>Publisher</h2>
     <LegalIdentity lang={lang} />
-    <p>Responsible for content: {AUTHOR_NAME}. Email: <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>.</p>
-    <h2>Editorial line</h2>
-    <p>{SITE_URL} provides independent information on pay, wage tax, social insurance and benefits in Austria, with free calculators. It is not linked to any political party, interest group or payroll company.</p>
+    <h2>Responsible for content (section 18(2) MStV)</h2>
+    <p>{AUTHOR_NAME}, address as above, email <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>.</p>
     <h2>Hosting</h2>
     <LegalIdentity mode="hosting" lang={lang} />
-    <h2>No advice, no guarantee</h2>
-    <p>The calculators give <strong>estimates</strong> based on the official 2026 values listed with source and date in the <a href={route('method', lang)}>calculation method</a>. They replace neither your payslip nor a decision of the tax office, ÖGK or AMS, nor tax or legal advice. Although tested automatically against the Finance Ministry calculator, we accept no liability for decisions based solely on a result from this site. Please report errors through the <a href={route('contact', lang)}>contact page</a>.</p>
-    <h2>Embedding the calculator</h2>
-    <p>The gross-to-net calculator can be embedded free of charge in an iframe with a visible link: see <a href={route('widget', lang)}>embed the calculator</a>.</p>
-    <h2>Copyright</h2>
-    <p>Texts, graphics and code are protected by copyright. Short quotes with a link to the original page are welcome. Legal texts and official values are public and quoted with their source.</p>
-    <h2>Privacy</h2>
-    <p>What you enter never leaves your browser. The site sets no cookie and the publisher records no personal data; stability is checked anonymously, without cookies, with Microsoft Clarity. See the <a href={route('privacy', lang)}>privacy policy</a> and <a href={route('cookies', lang)}>cookies</a>.</p>
-    <p class="text-sm">Last updated: {LAST_UPDATED}.</p>
+    <h2>What this site is and is not</h2>
+    <p>The site calculates child, spousal and parental maintenance under the Düsseldorf Table, divorce costs under the court and lawyer fee acts, garnishable income under section 850c of the Code of Civil Procedure, and inheritance shares, compulsory shares and inheritance tax. It is independent: it belongs to no court, youth welfare office, law firm or debt advice service and refers no clients. Every result is a general calculation for typical circumstances, not a legal service under the German Legal Services Act. Only court orders, official decisions and the statutes in force are binding. The calculation paths are set out in the <a href={route('method', lang)}>calculation method</a>.</p>
+    <h2>Liability</h2>
+    <p>We reconcile the values after every new table or change in the law and test the calculators against the official tables before each release; we nonetheless give no guarantee that they are free of errors. Providers of linked external content are responsible for it. Please report mistakes through the <a href={route('contact', lang)}>contact page</a>.</p>
+    <h2>Embedding</h2>
+    <p>The child support and garnishment calculators may be embedded free of charge by iframe as long as the source link stays visible: <a href={route('widget', lang)}>embed a calculator</a>.</p>
+    <h2>Consumer dispute resolution</h2>
+    <p>We are neither willing nor obliged to take part in dispute resolution before a consumer arbitration board. On data protection see the <a href={route('privacy', lang)}>privacy policy</a> and <a href={route('cookies', lang)}>cookies</a>. Last updated: {LAST_UPDATED}.</p>
   </div>
 </PageLayout>

@@ -62,6 +62,10 @@ describe('Düsseldorfer Tabelle 2026', () => {
     expect(r.selbstbehalt).toBe(1200); expect(r.summe).toBe(300); expect(r.mangelfall).toBe(true);
   });
   it('Mangelfallgrenze', () => { expect(mangelfallGrenze([{ alter: 4 }])).toBe(1810); });
+  it('Mangelfall: verteilt wird genau die Verteilungsmasse, kein Rundungscent', () => {
+    const r = kindesunterhalt(1800, [{ alter: 3 }, { alter: 7 }, { alter: 12 }]);
+    expect(r.mangelfall).toBe(true); expect(r.summe).toBe(350); expect(r.verbleibt).toBe(1450);
+  });
 });
 
 describe('Ehegatten-, Volljährigen-, Eltern-, Wechselmodell-Unterhalt, UVG', () => {
