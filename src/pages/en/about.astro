@@ -1,0 +1,29 @@
+---
+import PageLayout from '../../layouts/PageLayout.astro';
+import { YEAR, LAST_UPDATED, AUTHOR_NAME, CONTACT_EMAIL, AUTHOR_ROLE, SITE_NAMES, LANG_TAGS } from '../../data/site-config';
+import { route } from '../../i18n/routes';
+import { personSchema, organizationSchema, breadcrumbSchema, profilePageSchema } from '../../lib/seo';
+import { displayDate } from '../../lib/format';
+import { PRUEFUNG } from '../../lib/pruefung';
+const lang = 'en';
+---
+<PageLayout title="Radif Partners: who publishes these family law calculators" description="Who is behind the calculators for the Düsseldorf Table, divorce costs, garnishment and inheritance in Germany, how they are tested against the official tables, and their limits." lang={lang} jsonLd={[personSchema(lang), organizationSchema(lang), profilePageSchema({ path: route('about', lang), lang }), breadcrumbSchema([{ name: 'Home', path: route('home', lang) }, { name: 'About', path: route('about', lang) }])]} breadcrumbs={[{ label: 'About' }]}>
+  <header class="mb-6"><h1 class="text-3xl font-bold text-navy-900 md:text-4xl">About {SITE_NAMES.en}</h1></header>
+  <div class="prose prose-slate max-w-none">
+    <div class="not-prose mb-6"><p class="text-lg font-semibold text-navy-900">{AUTHOR_NAME}</p><p class="text-navy-700">{AUTHOR_ROLE[lang]}</p></div>
+    <p>German Family Law in Figures is published by Radif Partners, an independent publisher of calculators. It grew out of a simple problem many people living in Germany run into after a separation: the official source for child support is a six-page PDF from a regional court, written in legal German, and the online tools next to it quietly give up as soon as there are two children, a tight income or shared care.</p>
+    <h2>What this site does differently</h2>
+    <p>The first Google result, the Düsseldorf Higher Regional Court’s page and its PDF, does not calculate anything. We turn the official 2026 tables into calculators that compute exactly and show their working: the Düsseldorf Table with the needs-control amount and the shortfall rule, the garnishment table from 1 July 2026, the court and lawyer fee tables, inheritance fractions and tax allowances. Every calculator names the note or section behind each figure, and explains the cases other tools skip: several children, lower income groups, shortfall, shared care and extended contact under the Federal Court of Justice decision of April 2026.</p>
+    <h2>How we test</h2>
+    <p>Before every release, automatic tests run against the official tables themselves: the {PRUEFUNG.dtZellen} payment amounts of the Düsseldorf Table, the shortfall example in its note C, the {PRUEFUNG.pfZeilen} lines of the garnishment table for zero to five dependants, and the court and lawyer fee tables. If a single cent is off, nothing is published. Each value is listed with its source and retrieval date in the <a href={route('method', lang)}>calculation method</a>.</p>
+    <h2>What we are not</h2>
+    <p>We are not a law firm, a court, a youth welfare office or a debt counselling service. The site offers general information and calculations; it does not review individual cases and does not provide legal services within the meaning of the German Legal Services Act (Rechtsdienstleistungsgesetz). We do not refer you to lawyers and earn nothing from your proceedings. For your own case, a specialist family or inheritance lawyer, the Jugendamt with its free support for child support claims, or a recognised debt advice centre is the right place.</p>
+    <h2>Funding and data</h2>
+    <p>The calculators are free and need no account. What you type, income, number of children or the value of an estate, never leaves your browser and is not stored anywhere. Should the site ever show advertising, it will never sit above a calculator.</p>
+    <h2>Written for people living in Germany</h2>
+    <p>Every page exists in German and English. The English pages are written for people who live in Germany and need to understand German family law: terms such as Selbstbehalt (self-retention), Zahlbetrag (amount payable) or Pflichtteil (compulsory share) are explained where they first appear, and amounts stay in euros.</p>
+    <h2>Contact</h2>
+    <p>A value is out of date, a case is missing, a result differs from a court order? Write to <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>. See also the <a href={route('editorial', lang)}>editorial policy</a> and the <a href={route('terms', lang)}>legal notice</a>.</p>
+    <p class="text-sm text-navy-600">{YEAR} figures, checked on <time datetime={LAST_UPDATED}>{displayDate(LAST_UPDATED, LANG_TAGS[lang])}</time>.</p>
+  </div>
+</PageLayout>

@@ -1,0 +1,1330 @@
+Unterhaltsrechtliche Leitlinien  
+der Familiensenate in Nordrhein-Westfalen  
+(Leitlinien NRW) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Stand: 01.01.2026 
+  
+2 
+ 
+Inhalt 
+Vorbemerkung ............................................................................................................ 5 
+Unterhaltsrechtlich maßgebendes Einkommen .......................................................... 5 
+1. Geldeinnahmen ................................................................................................... 5 
+1.1 Regelmäßiges Bruttoeinkommen einschließlich Renten und Pensionen .... 5 
+1.2 Unregelmäßiges Einkommen ...................................................................... 5 
+1.3 Überstunden................................................................................................ 6 
+1.4 Spesen und Auslösungen ........................................................................... 6 
+1.5 Einkommen aus selbständiger Tätigkeit ...................................................... 7 
+1.6 Einkommen aus Vermietung und Verpachtung sowie Kapitalvermögen ..... 7 
+1.7 Steuererstattungen ...................................................................................... 8 
+1.8 Sonstige Einnahmen ................................................................................... 8 
+2. Sozialleistungen .................................................................................................. 8 
+2.1 Arbeitslosengeld und Krankengeld.............................................................. 8 
+2.2 Leistungen nach dem SGB II ...................................................................... 9 
+2.3 Wohngeld .................................................................................................... 9 
+2.4 BAföG-Leistungen ....................................................................................... 9 
+2.5 Elterngeld .................................................................................................... 9 
+2.6 Unfall- und Versorgungsrenten ................................................................... 9 
+2.7 Leistungen aus der Pflegeversicherung u.Ä. ............................................. 10 
+2.8 Pflegegeld ................................................................................................. 10 
+2.9 Grundsicherung beim Verwandtenunterhalt .............................................. 10 
+2.10 Sozialhilfe .................................................................................................. 10 
+2.11 Unterhaltsvorschuss .................................................................................. 10 
+3. Kindergeld ......................................................................................................... 11 
+4. Geldwerte Zuwendungen des Arbeitgebers ...................................................... 11 
+5. Wohnwert .......................................................................................................... 11 
+6. Haushaltsführung .............................................................................................. 12 
+7. Einkommen aus unzumutbarer Erwerbstätigkeit ............................................... 12 
+8. Freiwillige Zuwendungen Dritter ........................................................................ 13 
+9. Erwerbsobliegenheit und Einkommensfiktion .................................................... 13 
+10. Bereinigung des Einkommens ........................................................................ 13 
+10.1 Steuern und Vorsorgeaufwendungen ........................................................ 13 
+10.1.1 Steuern/Splittingvorteil .............................................................................. 13 
+10.1.2 Vorsorgeaufwendungen ............................................................................ 14 
+10.2 Berufsbedingte Aufwendungen ................................................................. 14 
+10.2.1 Pauschale/konkrete Aufwendungen .......................................................... 14 
+10.2.2 Fahrtkosten ............................................................................................... 15 
+10.2.3 Ausbildungsaufwand ................................................................................. 15 
+10.3 Kinderbetreuung........................................................................................ 15 
+10.4 Schulden ................................................................................................... 15 
+10.5 Unterhaltsleistungen ................................................................................. 16 
+10.6 Vermögensbildung .................................................................................... 16 
+10.7 Umgangskosten ........................................................................................ 16 
+Kindesunterhalt ......................................................................................................... 17 
+3 
+ 
+11. Bemessungsgrundlage (Tabellenunterhalt) .................................................... 17 
+11.1 Kranken- und Pflegeversicherungsbeiträge .............................................. 17 
+11.2 Eingruppierung .......................................................................................... 17 
+12. Minderjährige Kinder ....................................................................................... 18 
+12.1 Betreuungs-/Barunterhalt .......................................................................... 18 
+12.2 Einkommen des Kindes ............................................................................ 19 
+12.3 Beiderseitige Barunterhaltspflicht/Haftungsanteil ...................................... 19 
+12.4 Zusatzbedarf ............................................................................................. 20 
+12.5 Aufwendungen bei erweitertem Umgang .................................................. 20 
+13. Volljährige Kinder ............................................................................................ 21 
+13.1 Bedarf ....................................................................................................... 21 
+13.2 Einkommen des Kindes ............................................................................ 21 
+13.3 Beiderseitige Barunterhaltspflicht/Haftungsanteil ...................................... 21 
+14. Verrechnung des Kindergeldes ....................................................................... 22 
+Ehegattenunterhalt ................................................................................................... 23 
+15. Unterhaltsbedarf ............................................................................................. 23 
+15.1 Bedarf nach ehelichen Lebensverhältnissen ............................................. 23 
+15.2 Halbteilung und Erwerbstätigenbonus ....................................................... 24 
+15.3 Konkrete Bedarfsbemessung .................................................................... 25 
+15.4 Vorsorgebedarf ......................................................................................... 25 
+15.5 Bedarf bei mehreren Ehegatten und Berechtigten nach § 1615l BGB ..... 26 
+15.6 Trennungsbedingter Mehrbedarf ............................................................... 27 
+15.7 Begrenzung nach § 1578b BGB .............................................................. 27 
+16. Bedürftigkeit .................................................................................................... 28 
+17. Erwerbsobliegenheit ................................................................................. 28 
+17.1 bei Kinderbetreuung .................................................................................. 28 
+17.2 bei Trennungsunterhalt ............................................................................. 29 
+Weitere Unterhaltsansprüche ................................................................................... 29 
+18. Ansprüche aus § 1615l BGB ......................................................................... 29 
+19. Elternunterhalt ................................................................................................ 30 
+20. Lebenspartnerschaft ....................................................................................... 30 
+Leistungsfähigkeit und Mangelfall ............................................................................. 30 
+21. Selbstbehalt .................................................................................................... 30 
+21.1 Grundsatz ................................................................................................. 30 
+21.2 Notwendiger Selbstbehalt ......................................................................... 31 
+21.3 Angemessener Selbstbehalt ..................................................................... 31 
+21.3.1 gegenüber volljährigem Kind ..................................................................... 31 
+21.3.2 bei Ansprüchen aus § 1615l BGB ............................................................ 31 
+21.3.3   beim Elternunterhalt .................................................................................. 31 
+21.3.4   von Großeltern gegenüber Enkeln ............................................................ 32 
+21.4 Mindestselbstbehalt gegenüber Ehegatten ............................................... 32 
+21.5  Anpassung des Selbstbehalts ................................................................... 32 
+22. Bedarf des mit dem Pflichtigen zusammenlebenden Ehegatten .............. 33 
+4 
+ 
+22.1  Mindestbedarf bei Ansprüchen des nachrangigen geschiedenen Ehegatten
+ 33 
+22.2 Mindestbedarf bei Ansprüchen volljähriger Kinder .................................... 33 
+22.3 Mindestbedarf bei Ansprüchen von Eltern oder Enkeln des anderen 
+Ehegatten und von gemeinsamen Enkeln ............................................................. 33 
+23.      Bedarf des vom Pflichtigen getrenntlebenden oder geschiedenen Ehegatten34 
+23.1 Bedarf bei Ansprüchen des nachrangigen geschiedenen Ehegatten ........ 34 
+23.2 Bedarf bei Ansprüchen volljähriger Kinder ................................................ 34 
+23.3 Bedarf bei Ansprüchen von Eltern oder Enkeln des anderen Ehegatten und 
+von gemeinsamen Enkeln ...................................................................................... 34 
+24. Mangelfall ....................................................................................................... 34 
+24.1 Grundsatz ................................................................................................. 34 
+24.2  Einsatzbeträge .......................................................................................... 35 
+24.3  Berechnung ............................................................................................... 35 
+24.4 Angemessenheitskontrolle ........................................................................ 36 
+Sonstiges .................................................................................................................. 36 
+25. Rundung ......................................................................................................... 36 
+Anhang ..................................................................................................................... 37 
+I. Düsseldorfer Tabelle (Stand: 01.01.2026) ............................................................. 37 
+II. Tabelle Zahlbeträge .............................................................................................. 37 
+ 
+ 
+  
+5 
+ 
+ 
+Vorbemerkung 
+ 
+Die Familiensenate der Oberlandesgerichte Düsseldorf, Hamm und Köln haben diese 
+Leitlinien erarbeitet, um eine möglichst einheitliche Rechtsprechung in Unterhaltssa-
+chen zu erreichen. Die Leitlinien haben keine bindende Wirkung. Sie sollen dazu bei-
+tragen, eine angemessene Lösung des Einzelfalls zu finden. Die Leitlinien folgen der 
+auf Koordinierungsgesprächen unter Beteiligung der Oberlandesgerichte und der Un-
+terhaltskommission des Deutschen Familiengerichtstages e.V. beruhenden Düssel-
+dorfer Tabelle. 
+ 
+Unterhaltsrechtlich maßgebendes Einkommen 
+ 
+Bei der Ermittlung und Zurechnung von Einkommen ist stets zu unterscheiden, ob es 
+um Verwandten- oder Ehegattenunterhalt sowie ob es um Bedarfsbemessung einer-
+seits oder Feststellung der Bedürftigkeit/Leistungsfähigkeit andererseits geht. Das un-
+terhaltsrechtliche Einkommen ist nicht immer identisch mit dem steuerrechtlichen Ein-
+kommen. 
+ 
+1. Geldeinnahmen 
+ 
+1.1 Regelmäßiges Bruttoeinkommen einschließlich Renten und Pensionen 
+ 
+Auszugehen ist von einem durchschnittlichen Jahresbruttoeinkommen ein-
+schließlich Urlaubs- und Weihnachtsgeld sowie sonstigen Zuwendungen, auch 
+Sachbezügen und Gewinnbeteiligungen. 
+ 
+1.2 Unregelmäßiges Einkommen 
+ 
+(1) Einmalige höhere Zahlungen, wie z.B. Abfindungen oder Jubiläumszuwen-
+dungen, sind auf einen angemessenen Zeitraum zu verteilen (in der Regel meh-
+rere Jahre).  
+ 
+(2) Abfindungen aus Anlass der Beendigung eines Arbeitsverhältnisses sind bei 
+anschließender Arbeitslosigkeit und auch bei Aufnahme einer neuen Arbeits-
+stelle mit dauerhaft geringerem Einkommen grundsätzlich bis zur Höchstgrenze 
+6 
+ 
+des Bedarfs des Berechtigten nach dem früheren Einkommen zu verwenden; 
+ob eine Aufstockung bis zum bisherigen Einkommen zur vollständigen Aufrecht-
+erhaltung des bisherigen Lebensstandards geboten ist, b eurteilt sich nach den 
+Umständen des Einzelfalls, insbesondere der zu erwartenden weiteren Einkom-
+mensentwicklung. 
+ 
+(3) Beim Ehegattenunterhalt bleibt eine Abfindung unberücksichtigt, soweit sie 
+bereits güterrechtlich Berücksichtigung gefunden hat. 
+ 
+1.3 Überstunden 
+ 
+(1) Überstundenvergütungen werden in der Regel dem Einkommen voll zuge-
+rechnet, soweit sie berufsüblich sind oder nur in geringem Umfang anfallen oder 
+wenn der Mindestunterhalt minderjähriger Kinder oder der entsprechende Un-
+terhalt ihnen nach §  1603 Abs. 2 S. 2 BGB gleichgestellter Volljähriger nicht 
+gedeckt ist. Sonst ist die Anrechnung unter Berücksichtigung des Einzelfalls 
+nach Treu und Glauben zu beurteilen.  
+ 
+(2) Die gleichen Erwägungen gelten für Einkünfte aus einer Nebentätigkeit, die 
+neben einer vollschichtigen Erwerbstätigkeit ausgeübt wird. In Fällen gesteiger-
+ter Unterhaltsverpflichtung (§ 1603 Abs. 2 BGB) kann es dem Pflichtigen oblie-
+gen, zur Deckung des Mindestunterhalts Überstunden zu leisten und / oder eine 
+Nebentätigkeit auszuüben, soweit dies möglich und zumutbar ist, jedoch nicht 
+über die Grenzen der §§ 3 und 6 ArbZG hinaus. 
+ 
+1.4 Spesen und Auslösungen 
+ 
+Über die Anrechenbarkeit von Auslösungen und Spesen ist nach Maßgabe des 
+Einzelfalls zu entscheiden. Im Zweifel kann davon ausgegangen werden, dass 
+eine Ersparnis eintritt, die mit einem Drittel der Nettobeträge zu bewerten und 
+insoweit dem anrechenbaren Einkommen zuzurechnen ist. 
+ 
+7 
+ 
+1.5 Einkommen aus selbständiger Tätigkeit 
+ 
+(1) Einkommen aus selbständiger Tätigkeit ist anhand der Gewinn- und Verlust-
+rechnungen bzw. der Einnahmen-Überschussrechnungen zu ermitteln. Zur Er-
+mittlung der laufenden und zukünftigen Einkünfte ist auf einen mehrjährigen 
+Zeitraum abzustellen; in der Regel sind hierzu drei Jahre ausreichend, während 
+insbesondere bei erheblichem Einkommensrückgang oder Anhaltspunkten für 
+Manipulationen zur Überprüfung weitere Jahrgänge einbezogen werden kön-
+nen. In diesem Zusammenhang kann den Entnahmen eine Indizwirkung zukom-
+men. 
+ 
+(2) Für die Vergangenheit sind die in dem jeweiligen Kalenderjahr erzielten Ein-
+künfte maßgebend. Durchschnittsberechnungen für einen längeren Zeitraum 
+sind möglich.  
+ 
+(3) Lineare Abschreibungen (AfA) von Wirtschaftsgütern sind regelmäßig als 
+gewinnmindernd anzuerkennen. Dies gilt in der Regel jedoch nicht für Gebäude. 
+Hinsichtlich des Umfangs der Abschreibungen haben die von der Finanzverwal-
+tung herausgegebenen AfA-Tabellen die Vermutung der Richtigkeit für sich.  
+ 
+(4) Zinsen für Kredite, mit denen die absetzbaren Wirtschaftsgüter finanziert 
+werden, mindern den Gewinn. Tilgungsleistungen können nur berücksichtigt 
+werden, wenn und soweit die Abschreibungen unterhaltsrechtlich nicht aner-
+kannt werden. 
+ 
+1.6 Einkommen aus Vermietung und Verpachtung sowie Kapitalvermögen 
+ 
+(1) Einnahmen aus Vermietung und Verpachtung sind – vermindert um die Auf-
+wendungen zur Finanzierung und Erhaltung des Objektes – Einkommen. Til-
+gungsleistungen sind in der Regel bis zur Höhe der erzielten Miete abzuziehen. 
+Im Übrigen richtet sich die Berücksich tigungsfähigkeit von Tilgungsleistungen 
+nach den Umständen des Einzelfalls. AfA-Beträge sind für Gebäude regelmäßig 
+nicht abzusetzen.  
+ 
+8 
+ 
+(2) Einnahmen aus Kapitalvermögen sind nach Abzug der Werbungskosten als 
+Einkommen zu berücksichtigen. 
+ 
+(3) Bei stärkeren Schwankungen kann zur Ermittlung der laufenden und zukünf-
+tigen Einkünfte auf einen Mehrjahresdurchschnitt abgestellt werden. 
+ 
+1.7 Steuererstattungen 
+ 
+(1) Steuererstattungen und Steuernachzahlungen sind in der Regel in dem Jahr, 
+in dem sie anfallen, zu berücksichtigen (In-Prinzip). Insbesondere bei Selbstän-
+digen kann  stattdessen zur Ermittlung eines realitätsnahen  Einkommens auf 
+den Zeitraum der Veranlagung abgestellt werden (Für-Prinzip).  
+ 
+(2) Steuervorteile, die auf unterhaltsrechtlich nicht zu berücksichtigenden Auf-
+wendungen beruhen, bleiben außer Betracht. Steuervorteile sind wahrzuneh-
+men (vgl. Nr. 10.1.1). 
+ 
+1.8 Sonstige Einnahmen 
+ 
+Sonstige Einnahmen wie z. B. berufstypische Trinkgelder, Krankentagegeld 
+sind Einkommen. 
+ 
+2. Sozialleistungen 
+ 
+2.1 Arbeitslosengeld und Krankengeld 
+ 
+Arbeitslosengeld (§ 136 SGB III) und sonstige Lohnersatzleistungen nach dem 
+SGB III (Übergangs -, Ausbildungs -, Kurzarbeiter- und Insolvenzgeld) sowie 
+Krankengeld sind Einkommen. 
+ 
+9 
+ 
+2.2 Leistungen nach dem SGB II 
+ 
+(1) Leistungen nach dem SGB II (Bürgergeld, §§ 19 - 23 SGB II) sind Einkom-
+men beim Verpflichteten. Beim Berechtigten sind Leistungen nach dem SGB II 
+kein Einkommen. Nicht subsidiäre Leistungen nach dem SGB II sind Einkom-
+men, etwa Einstiegsgeld nach § 16b SGB II und Entschädigung für Mehrauf-
+wendungen nach § 16d SGB II. 
+ 
+(2) Soweit ein Übergang des Anspruchs auf d en Träger der Leistungen nach 
+§ 33 Abs. 2 SGB II ausgeschlossen ist (auch bei fiktivem Einkommen), können 
+Unterhaltsforderungen eines Leistungsempfängers für die Vergangenheit treu-
+widrig sein. 
+ 
+2.3 Wohngeld 
+ 
+Wohngeld ist Einkommen, soweit es nicht erhöhte Wohnkosten abdeckt. 
+ 
+2.4 BAföG-Leistungen 
+ 
+BAföG-Leistungen sind mit Ausnahme von Vorausleistungen nach §§ 36, 37 
+BAföG Einkommen. Das gilt in der Regel auch dann, wenn sie als Darlehen 
+gewährt werden. 
+ 
+2.5 Elterngeld 
+ 
+Elterngeld nach § 1 BEEG ist als Einkommen zu behandeln; für den Mindest-
+betrag von monatlich 300 € bzw. 150 € bei verlängertem Bezug gilt dies nur 
+ausnahmsweise (§ 11 S. 4 BEEG). 
+ 
+2.6 Unfall- und Versorgungsrenten 
+ 
+Unfall- und Versorgungsrenten sowie Übergangsgelder aus der Unfall - bzw. 
+Rentenversicherung sind Einkommen; §§ 1610a, 1578a BGB sind zu beachten. 
+ 
+10 
+ 
+2.7 Leistungen aus der Pflegeversicherung u.Ä. 
+ 
+Leistungen aus der Pflegeversicherung, Blindengeld, Schwerbeschädigten- und 
+Pflegezulagen, jeweils nach Abzug des Betrags für tatsächliche Mehraufwen-
+dungen, sind Einkommen; §§ 1610a, 1578a BGB sind zu beachten. 
+ 
+2.8 Pflegegeld 
+ 
+(1) Der Anteil des an die Pflegeperson weitergeleiteten Pflegegeldes (§§ 37 ff. 
+SGB XI), durch den ihre Bemühungen abgegolten werden, ist Einkommen. Bei 
+Pflegegeld aus der Pflegeversicherung gilt dies nur nach Maßgabe des § 13 
+Abs. 6 SGB XI.  
+ 
+(2) Pflegegeld nach § 64a SGB XII für eigene pflegebedürftige Kinder und nach 
+§ 39 SGB VIII für die Aufnahme fremder Kinder ist mit seinem im Einzelfall zu 
+bemessenden Vergütungsanteil Einkommen der Pflegeperson. 
+ 
+2.9 Grundsicherung beim Verwandtenunterhalt 
+ 
+In der Regel sind Leistungen nach §§ 41 - 43 SGB XII (Grundsicherung) beim 
+Verwandtenunterhalt Einkommen, nicht aber beim Ehegattenunterhalt. 
+ 
+2.10 Sozialhilfe 
+ 
+Sonstige Sozialhilfe (SGB XII) ist in der Regel kein Einkommen. Für den Aus-
+schluss des Anspruchsübergangs nach § 94 Abs. 3 SGB XII gilt Nr. 2.2  Abs. 2 
+entsprechend. 
+ 
+2.11 Unterhaltsvorschuss 
+ 
+Leistungen nach dem Unterhaltsvorschussgesetz sind kein Einkommen. Für 
+den Ausschluss des Anspruchsübergangs nach § 7 UVG gilt Nr. 2.2 Abs. 2 ent-
+sprechend. 
+ 
+11 
+ 
+3. Kindergeld 
+ 
+Kindergeld wird nicht zum Einkommen der Eltern gerechnet.  
+ 
+4. Geldwerte Zuwendungen des Arbeitgebers 
+ 
+Geldwerte Zuwendungen des Arbeitgebers aller Art, z.B. Firmenwagen, freie 
+Kost und Logis, mietgünstige Wohnung, sind dem Einkommen hinzuzurechnen, 
+soweit sie entsprechende Eigenaufwendungen ersparen. Die hierfür steuerlich 
+in Ansatz gebrachten Beträge bieten einen Anhaltspunkt für die Bewertung des 
+geldwerten Vorteils. 
+ 
+5. Wohnwert 
+ 
+(1) Der Wohnvorteil durch mietfreies Wohnen im eigenen Haus oder in der Ei-
+gentumswohnung ist als wirtschaftliche Nutzung des Vermögens wie Einkom-
+men zu behandeln. 
+ 
+(2) Auszugehen ist von der erzielbaren Miete (objektiver oder voller Wohnwert). 
+Wenn es nicht möglich oder zumutbar ist, die Wohnung aufzugeben und das 
+Objekt zu vermieten oder zu veräußern, kann stattdessen die ersparte Miete 
+angesetzt werden, die angesichts der persönlichen und wirtschaftlichen Verhält-
+nisse angemessen wäre (subjektiver oder angemessener Wohnwert). Beim 
+Ehegattenunterhalt kommt dies insbesondere für die Zeit bis zur endgültigen 
+Vermögensauseinandersetzung oder bis zum endgültigen Scheitern  der Ehe, 
+etwa bei Zustellung des Scheidungsantrags, in Betracht, wenn ein Ehegatte das 
+Eigenheim allein bewohnt. Bei der Inanspruchnahme auf Elternunterhalt ist 
+stets auf den subjektiven (angemessenen) Wohnwert abzustellen.  
+ 
+(3) Ein Wohnvorteil liegt nur vor, soweit der Wohnwert den berücksichtigungs-
+fähigen Schuldendienst, erforderliche Instandhaltungskosten sowie nicht umla-
+gefähige Kosten i.S.v. §§ 556 Abs. 1 BGB, 1 Abs. 2 BetrKV übersteigt. 
+ 
+12 
+ 
+(4) Finanzierungslasten mindern den Wohnwert, soweit sie tatsächlich durch 
+Ratenzahlungen bedient werden. Neben Zinszahlungen sind Tilgungsleistun-
+gen in der Regel bis zur Höhe des Wohnwerts abzuziehen. Der Abzug darüber-
+hinausgehender Tilgungsleistungen kommt nach den Umständen des Einzel-
+falls in Betracht. Es ist zu berücksichtigen, ob eine Streckung oder Aussetzung 
+der Tilgung möglich und zumutbar ist und ob eine Obliegenheit zur 
+Vermögensumschichtung durch Veräußerung der Immobilie besteht. 
+ 
+(5) Beim Ehegattenunterhalt richtet sich die Abzugsfähigkeit den Wohnwert 
+übersteigender Tilgungsleistungen insbesondere danach, ob Miteigentum an 
+der Immobilie besteht oder ob einseitige Vermögensbildung betrieben wird.  
+ 
+(6) Beim Kindesunterhalt gilt für die Berücksichtigung der Finanzierungslasten 
+im Rahmen des § 1603 Abs. 1 BGB ein großzügigerer, im Anwendungsbereich 
+des § 1603 Abs. 2 BGB hingegen ein strengerer Maßstab.  
+ 
+(7) Ein den Wohnvorteil übersteigender Tilgungsanteil kann im Rahmen der se-
+kundären Altersvorsorge (vgl. Nr. 10.1.2 Abs. 3) zu berücksichtigen sein. 
+ 
+6. Haushaltsführung 
+ 
+(1) Für die Führung des Haushalts eines leistungsfähigen Dritten ist ein Einkom-
+men anzusetzen. Bei der Haushaltsführung durch einen Nichterwerbstätigen 
+kann in der Regel ein Betrag von 200 € bis 550 € monatlich angesetzt werden. 
+ 
+(2) Hiervon zu unterscheiden ist das Zusammenleben in einer häuslichen Ge-
+meinschaft, das unter dem Gesichtspunkt ersparter Kosten durch eine Redu-
+zierung des Selbstbehalts/ Eigenbedarfs die Leistungsfähigkeit erhöhen kann 
+(vgl. Nr. 21.5 Abs. 5). 
+ 
+7. Einkommen aus unzumutbarer Erwerbstätigkeit 
+ 
+Einkommen aus überobligatorischer Erwerbstätigkeit kann nach Billigkeit ganz 
+oder teilweise unberücksichtigt bleiben. 
+ 
+13 
+ 
+8. Freiwillige Zuwendungen Dritter 
+ 
+Freiwillige Leistungen Dritter (z.B. Geldleistungen, mietfreies Wohnen) sind kein 
+Einkommen, es sei denn, dass die Anrechnung dem Willen des Dritten ent-
+spricht. Wenn der Mindestunterhalt minderjä hriger Kinder oder ihnen nach 
+§ 1603 Abs. 2 S. 2 BGB gleichgestellter volljähriger Kinder sowie das Existenz-
+minimum des Ehegatten nicht gedeckt sind, kommt eine Anrechnung ebenfalls 
+in Betracht. 
+ 
+9. Erwerbsobliegenheit und Einkommensfiktion 
+ 
+Einkommen sind auch aufgrund einer unterhaltsrechtlichen Obliegenheit unter 
+Beachtung einer realen Beschäftigungschance erzielbare Einkünfte. Diese kön-
+nen sich bei gesteigerter Unterhaltspflicht gemäß §  1603 Abs. 2 BGB im Rah-
+men der Zumutbarkeit auch aus ein er Nebentätigkeit ergeben (vgl. Nr. 1.3 
+Abs. 2). 
+ 
+10. Bereinigung des Einkommens 
+ 
+10.1 Steuern und Vorsorgeaufwendungen 
+ 
+Vom Bruttoeinkommen sind Steuern, Sozialabgaben und/oder angemessene 
+Vorsorgeaufwendungen abzuziehen (Nettoeinkommen). 
+ 
+10.1.1 Steuern/Splittingvorteil 
+ 
+Es besteht die Obliegenheit, Steuervorteile in Anspruch zu nehmen. Ob im lau-
+fenden Jahr von der Möglichkeit der Eintragung eines Freibetrages Gebrauch 
+zu machen ist, richtet sich nach den Umständen des Einzelfalls. 
+ 
+14 
+ 
+10.1.2 Vorsorgeaufwendungen 
+ 
+(1) Vom Einkommen sind ferner Aufwendungen für Kranken-, Pflege-, Renten- 
+und Arbeitslosenversicherung abzuziehen. Im Rahmen der Altersvorsorge kön-
+nen über die Aufwendungen zur Grundversorgung (primäre Altersvorsorge) hin-
+aus in angemessenem Umfang auch Zahlungen für eine zusätzliche private Al-
+tersvorsorge (sekundäre Altersvorsorge) angesetzt werden. Dies gilt nur für tat-
+sächlich geleistete Zahlungen. 
+ 
+(2) Für die primäre Altersvorsorge können Personen, die der gesetzlichen Ren-
+tenversicherung unterliegen, für das die Beitragsbemessungsgrenze der ge-
+setzlichen Rentenversicherung übersteigende Einkommen zusätzliche Aufwen-
+dungen zur Altersvorsorge in  Höhe des Beitragssatzes zur gesetzlichen Ren-
+tenversicherung tätigen. Personen, die nicht der gesetzlichen Versicherungs-
+pflicht unterliegen, können in der Regel etwa 20 % des Bruttoei nkommens an-
+setzen. 
+ 
+(3) Für die sekundäre Altersvorsorge ist in der Rege l beim Ehegattenunterhalt 
+und – wenn der Mindestbedarf minderjähriger Kinder oder ihnen nach § 1603 
+Abs. 2 S. 2 BGB gleichgestellter Volljähriger gedeckt ist – beim Kindesunterhalt 
+ein Betrag in Höhe von 4 %, bei Eltern- und Enkelunterhalt in Höhe von 5 % des 
+Bruttoeinkommens angemessen. 
+ 
+10.2 Berufsbedingte Aufwendungen 
+ 
+Notwendige berufsbedingte Aufwendungen, die sich von den privaten Lebens-
+haltungskosten nach objektiven Merkmalen eindeutig abgrenzen lassen, sind 
+im Rahmen des Angemessenen vom Nettoeinkommen abzuziehen. 
+ 
+10.2.1 Pauschale/konkrete Aufwendungen 
+ 
+Eine Pauschale von 5 % des Nettoeinkommens wird in der Regel nur bei fikti-
+ven Erwerbseinkünften gewährt; ansonsten sind die berufsbedingten Aufwen-
+dungen grundsätzlich konkret darzulegen. 
+ 
+15 
+ 
+10.2.2 Fahrtkosten 
+ 
+(1) Für Fahrten von der Wohnung zum Arbeitsplatz sind – jedenfalls bei engen 
+wirtschaftlichen Verhältnissen – in der Regel nur die Kosten öffentlicher Ver-
+kehrsmittel absetzbar. 
+ 
+(2) Ist die Benutzung öffen tlicher Verkehrsmittel unzumutbar , können  für die 
+Nutzung eines Kfz 0,42 € pro gefahrenem Kilometer (§ 5 Abs. 2 S. 1 Nr. 2 JVEG) 
+angesetzt werden. Ab dem 31. Entfernungskilometer kommt in der Regel eine 
+Kürzung der Kilometerpauschale für die Mehrkilometer auf 0,28  € in Betracht. 
+Neben den Fahrtkosten sind regelmäßig keine weiteren Kosten (etwa für Kre-
+dite, Reparaturen, Kfz-Steuern oder Versicherungen) abzugsfähig. 
+ 
+10.2.3 Ausbildungsaufwand 
+ 
+Bei einem Auszubildenden , der im Haushalt der Eltern oder eines Elternteils 
+lebt, sind von der Ausbildungsvergütung in der Regel 100 € als pauschaler Aus-
+bildungsaufwand abzuziehen. Ein höherer Aufwand (auch Fahrtkosten) ist kon-
+kret nachzuweisen. 
+ 
+10.3 Kinderbetreuung  
+ 
+(1) Das Einkommen aus einer neben der Kinderbetreuung ausgeübten Erwerbs-
+tätigkeit kann um den notwendigen, konkret dargelegten Aufwand für die Be-
+treuung des Kindes vermindert werden. 
+ 
+(2) Zum Aufwand für die Betreuung des Kindes zählen nicht die Kosten des 
+Kindergartenbesuchs; diese sind Mehrbedarf des Kindes (vgl. Nr. 12.4 Abs. 2). 
+ 
+10.4 Schulden  
+ 
+(1) Schulden können nach den Umständen des Einzelfalls (Art, Grund und Zeit-
+punkt des Entstehens) das anrechenbare Einkommen vermindern. Dabei sind 
+die Belange von Unterhaltsgläubiger, Unterhaltsschuldner und Drittgläubiger 
+16 
+ 
+gegeneinander abzuwägen. Die Abzahlung soll im Rahmen eines Tilgungs-
+plans in angemessenen Raten erfolgen. 
+ 
+(2) Beim Ehegattenunterhalt sind Verbindlichkeiten in der Regel zu berücksich-
+tigen, wenn sie schon vor oder während des ehelichen Zusammenlebens ein-
+gegangen wurden. Nach der Trennung entstandene Schulden können das an-
+rechenbare Einkommen mindern, wenn sie auch bei fortbestehender Ehe ein-
+getreten wären oder in anderer Weise in der Ehe angelegt oder mit hoher Wahr-
+scheinlichkeit zu erwarten waren. 
+ 
+(3) Beim Unterhalt für minderjährige und privilegierte volljährige Kinder sind 
+Schulden regelmäßig nur dann voll berücksichtigungsfähig, wenn der Min-
+destunterhalt sichergestellt wird. Unter Umständen besteht im Rahmen gestei-
+gerter Unterhaltspflicht nach § 1603 Abs. 2 BGB die Obliegenheit zur Einleitung 
+eines Insolvenzverfahrens und Geltendmachung der gesetzlichen Pfändungs-
+freigrenzen. Jedenfalls ist ein Anwachsen der Verbindlichkeiten zu vermeiden 
+(nur Abzug von Kreditzinsen).  
+ 
+10.5 Unterhaltsleistungen 
+  
+Unterhaltsleistungen für vorrangig Berechtigte sind beim Verpflichteten zur 
+Ermittlung der Leistungsfähigkeit vorweg mit dem Zahlbetrag abzuziehen. 
+ 
+10.6 Vermögensbildung 
+  
+Vermögenswirksame Leistungen, die nicht unter Nr. 10.1.2  Abs. 3 fallen, ver-
+mindern das Einkommen nicht. Zusatzleistungen des Arbeitgebers für die ver-
+mögenswirksame Anlage in Höhe ihrer Nettoquote und die Arbeitnehmerspar-
+zulage sind dem Bezieher zu belassen.   
+ 
+10.7 Umgangskosten 
+ 
+Umgangskosten, die deutlich über den verbleibenden Anteil am Kindergeld hin-
+ausgehen, können durch einen – teilweisen – Abzug vom Einkommen oder eine 
+Erhöhung des Selbstbehalts berücksichtigt werden.  
+17 
+ 
+ 
+Kindesunterhalt 
+ 
+11. Bemessungsgrundlage (Tabellenunterhalt) 
+ 
+(1) Der Unterhaltsbedarf minderjähriger Kinder und im Haushalt der Eltern oder 
+eines Elternteils lebe nder volljähriger Kinder  ohne eigene Lebensstellung  be-
+stimmt sich nach den Sätzen der Düsseldorfer Tabelle (Anhang I).  
+ 
+(2) Bei minderjährigen Kindern kann der Bar unterhalt als Festbetrag oder als 
+Prozentsatz des Mindestunterhalts  gemäß § 1612 a Abs. 1 BGB geltend ge-
+macht werden.  
+ 
+11.1 Kranken- und Pflegeversicherungsbeiträge 
+ 
+(1) Die Tabellensätze der Düsseldorfer Tabelle enthalten keine Kranken - und 
+Pflegeversicherungsbeiträge für das Kind. Wenn das Kind nicht in der gesetzli-
+chen Familienversicherung mitversichert ist, gehören die Kosten der Kranken-
+versicherung des Kindes zu seinem Grundbedarf und sind zusätzlich vom bar-
+unterhaltspflichtigen Elternteil zu tragen. Dessen Nettoeinkommen ist um sol-
+che Versicherungskosten zu bereinigen.  
+ 
+(2) In den Tabellensätzen sind Semesterbeiträge enthalten, nicht aber Studien-
+gebühren. 
+ 
+11.2 Eingruppierung 
+ 
+(1) Der Bedarf eines Kindes ist grundsätzlich nach den zusammengerechneten 
+Einkünften beider Elternteile zu ermitteln.  
+ 
+(2) Die Unterhaltspflicht des barunterhaltspflichtigen Elternteils ist jedoc h auf 
+den Betrag begrenzt, den er auf Grundlage allein seines Einkommens zu zahlen 
+hätte.  
+ 
+(3) Die Tabellensätze sind auf den Fall zugeschnitten, dass der Pflichtige zwei 
+18 
+ 
+Berechtigten Unterhalt zu gewähren hat, ohne Rücksicht auf deren Rang. Bei 
+einer größeren Anzahl von Berechtigten können Abschläge, bei einer geringe-
+ren Anzahl Zuschläge durch Einstufung in niedrigere/höhere Gruppen erfolgen. 
+ 
+(4) Im Rahmen der Angemessenheitsprüfung können die Bedarfskontrollbe-
+träge herangezogen werden. 
+ 
+12. Minderjährige Kinder  
+ 
+12.1 Betreuungs-/Barunterhalt 
+ 
+(1) Der betreuende Elternteil braucht in der Regel keinen Barunterhalt für das 
+minderjährige Kind zu leisten.  
+ 
+(2) Die Barunterhaltspflicht des allein barunterhaltspflichtigen nicht betreuenden 
+Elternteils kann entfallen oder sich ermäßigen, wenn er zu Unterhaltszahlungen 
+nur unter Beeinträchtigung seines angemessenen Unterhalts in der Lage wäre, 
+während der andere Elternteil neben der Betreuung des Kindes auch den Bar-
+unterhalt leisten könnte, ohne dass dadurch sein eigener angemessener Unter-
+halt (derzeit 1.750 €) gefährdet würde.  Weitere Voraussetzung für ein Entfal-
+len/eine Reduktion des Barunterhalts ist, dass ohne die Beteiligung des betreu-
+enden Elternteils am Barunterhalt ein erhebliches finanzielles Ungleichgewicht 
+zwischen den Eltern entstehen würde. In solchen Fällen entfällt die gesteigerte 
+Unterhaltspflicht nach § 1603 Abs. 2 S. 1 und 2 BGB, mithin die Beschränkung 
+des Pflichtigen auf  den notwendigen Selbstbehalt. Die Unterhaltspflicht des 
+nicht betreuenden Elternteils entfällt jedoch nicht hinsichtlich des Einkommens, 
+das den angemessenen Selbstbehalt übersteigt.  
+ 
+(3) Wenn der betreuende Elternteil etwa über das Dreifache der unterhaltsrele-
+vanten Nettoeinkünfte des an sich barunterhaltspflichtigen Elternteils verfügt, 
+kann es der Billigkeit entsprechen, den betreuenden Elternteil den Barunterhalt 
+gemäß § 1606 Abs. 3 BGB in voller Höhe aufbringen zu lassen. Unterhalb die-
+ser Schwelle kann bei einer erheblichen Einkommensdifferenz eine beidersei-
+tige Barunterh altspflicht der Eltern nach Nr. 13.3 in Betracht kommen, wobei 
+19 
+ 
+zugunsten des betreuenden Elternteils eine wertende Veränderung des Vertei-
+lungsmaßstabs vorzunehmen ist. 
+ 
+12.2 Einkommen des Kindes 
+ 
+(1) Das bereinigte Einkommen des Kindes, das von einem Elternteil betreut 
+wird, wird in der Regel zur Hälfte auf den Barunterhaltsanspruch des Kindes 
+angerechnet. 
+ 
+(2) Die Ausbildungsvergütung ist nach Kürzung um den ausbildungsbedingten 
+Mehrbedarf (Nr. 10.2.3) als Einkommen zu behandeln.  
+ 
+(3) Einkünfte aus Erwerbstätigkeit in geringem Umfang (z. B. aus Ferienjobs) 
+oder aus unterhaltsrechtlich nicht gebotener Tätigkeit bleiben  in der Regel un-
+berücksichtigt. 
+ 
+12.3 Beiderseitige Barunterhaltspflicht/Haftungsanteil 
+ 
+(1) B ei beiderseitiger Barunterhaltspflicht  (paritätisches Wechselmodell oder 
+auswärtige Unterbringung des Kindes ) haften die Eltern anteilig  nach § 1606 
+Abs. 3 S. 1 BGB für den Gesamtbedarf des Kindes. D ieser bemisst sich nach 
+dem zusammengerechneten Einkommen beider Eltern ohne Höhergruppie-
+rung. Für die Berechnung siehe Nr. 13.3.  
+ 
+(2) Bei einem paritätischen Wechselmodell umfasst der Bedarf des Kindes auch 
+die durch das Wechselmodell bedingten Mehrkosten. Der dem Kind von einem 
+Elternteil während dessen Betreuungszeiten im Wechselmodell geleistete Na-
+turalunterhalt ist als (teilweise) Erfüllung des Unterhal tsanspruchs zu berück-
+sichtigen. Der Zahlungsanspruch des Kindes richtet sich nur gegen den besser-
+verdienenden Elternteil. Er entspricht der Hälfte der nach Abzug der von den 
+Eltern erbrachten Leistungen verbleibenden Unterhaltsspitze. 
+ 
+(3) Bei auswärtiger Unterbringung kann der Verteilungsschlüssel unter Berück-
+sichtigung des Betreuungsaufwands wertend verändert werden. 
+ 
+20 
+ 
+(4) Besteht zwischen den bereinigten Einkommen der Elternteile eine erhebli-
+che Diskrepanz, ist nach Nr. 12.1 Abs. 2 und 3 zu verfahren. 
+ 
+12.4 Zusatzbedarf 
+ 
+(1) Für Zusatzbedarf (Prozess-/Verfahrenskostenvorschuss, Mehrbedarf, Son-
+derbedarf) haften beide Eltern gemäß § 1606 Abs. 3 S. 1 BGB anteilig nach 
+ihren Erwerbs - und Vermögensverhältnissen unter Wahrung ihre s Selbstbe-
+halts (vgl. Nr. 13.3 Abs. 3). Die Berechnung erfolgt nach Nr. 13.3. 
+ 
+(2) Beiträge für Kindereinrichtungen stellen mit Ausnahme der Verpflegungs-
+kosten Mehrbedarf des Kindes dar.  
+ 
+(3) Sonstige Betreuungskosten sind nur dann Mehrbedarf des Kindes, wenn der 
+Betreuungsaufwand über den Umfang der von dem betreuenden Elternteil oh-
+nehin geschuldeten Betreuung hinausgeht und eine besondere Förderung des 
+Kindes wie in staatlichen Kindergärten, Kindertagesstätten oder Horten oder in 
+vergleichbaren privaten Einrichtungen stattfindet.  
+ 
+(4) Wird die Betreuung eines Kindes durch Dritte hingegen allein infolge der 
+Berufstätigkeit des betreuenden Elternteils erforderlich, so stellen die Betreu-
+ungskosten keinen Mehrbedarf des Kindes dar, sondern gehören zur allgemei-
+nen Betreuung, die vom betreuenden Elternteil im Gegenzug zur Barunterhalts-
+pflicht des anderen allein zu leisten ist. Dafür entstehende Betreuungskosten 
+können lediglich als berufsbedingte Aufwendungen des betreuenden Elternteils 
+Berücksichtigung finden. 
+ 
+12.5 Aufwendungen bei erweitertem Umgang 
+ 
+Aufwendungen im Rahmen eines erheblich erweiterten Umgangs können durch 
+angemessene Abschläge (Herabgruppierung) beim Barunterhalt berücksichtigt 
+werden, soweit der Mindestunterhalt gewährleistet ist. 
+21 
+ 
+ 
+13. Volljährige Kinder 
+ 
+13.1 Bedarf 
+ 
+(1) Der Bedarf volljähriger Kinder, die noch im Haushalt der Eltern oder eines 
+Elternteils wohnen, richtet sich nach der 4. Altersstufe der Düsseldorfer Tabelle. 
+Er ist nach dem zusammengerechneten Einkommen (ohne Höher- oder Herab-
+gruppierung) zu bemessen. Ein Elternteil hat jedoch höchstens den Unterhalt 
+zu leisten, der sich allein nach seinem Einkommen aus der Düsseldorfer Tabelle 
+ergibt. 
+ 
+(2) Der angemessene Bedarf eines volljährigen Kindes mit eigenem Hausstand 
+beträgt in der Regel monatlich 990 €. Darin enthalten sind Kosten für Unterkunft 
+und Heizung bis zu 440 € sowie ausbildungs- und berufsbedingte Aufwendun-
+gen bis zu einem Betrag von 100 €, nicht dagegen Beiträge zur Kranken- und 
+Pflegeversicherung sowie Studiengebühren. Von diesem Betrag kann bei er-
+höhtem Bedarf oder mit Rücksicht auf die Lebensstellung der Eltern nach oben 
+abgewichen werden. 
+ 
+13.2 Einkommen des Kindes 
+ 
+Einkommen des Kindes einschließlich BAföG-Darlehen und Ausbildungsbeihil-
+fen wird in voller Höhe auf den Bedarf angerechnet. Bei Einkünften aus unzu-
+mutbarer Erwerbstätigkeit gilt § 1577 Abs. 2 BGB entsprechend. 
+ 
+13.3 Beiderseitige Barunterhaltspflicht/Haftungsanteil 
+ 
+(1) Bei anteiliger Barunterhaltspflicht beider Elternteile ist vor Berechnung des 
+Haftungsanteils nach § 1606 Abs. 3 S. 1 BGB das bereinigte Nettoe inkommen 
+jedes Elternteils gemäß Nr. 10 zu ermitteln.  
+ 
+(2) Die anrechenbaren Einkommen der Eltern sind um Unterhaltsleistungen an 
+vorrangig Berechtigte zu kürzen. Bei Unterhaltspflichten gegenüber privilegier-
+ten Volljährigen können die Barunterhaltspflichten gegenüber gleichrangigen 
+22 
+ 
+minderjährigen Kindern vorab abgezogen werden, soweit dies nicht im Einzelfall 
+zu unbilligen Ergebnissen führt.   
+ 
+(3) Von dem so ermittelten Einkommen ist bei Unterhaltsansprüchen nicht pri-
+vilegierter volljähriger Kinder ein Sockelbetrag in Höhe des angemessenen 
+Selbstbehalts (1.750 €) abzuziehen. Bei volljährigen Kindern, die gemäß § 1603 
+Abs. 2 S. 2 BGB minderjährigen Kindern gleichgestellt sind, wird der Sockelbe-
+trag bis zum notwendigen Selbstbehalt (1.200 €/1.450 €) herabgesetzt, wenn 
+der Bedarf der Kinder nach der ersten Einkommensgruppe andernfalls nicht ge-
+deckt werden kann. 
+ 
+(4) Der Haftungsanteil ist auf seine Angemessenheit zu überprüfen und kann 
+bei Vorliegen besonderer Umstände (z.B. Kind  mit Behinderung) wertend ver-
+ändert werden. 
+ 
+14. Verrechnung des Kindergeldes  
+ 
+(1) Kindergeld wird nach § 1612b BGB zur Deckung des Barbedarfs verwandt, 
+und zwar bei minderjährigen Kindern, die von einem Elternteil (vgl. dazu  An-
+hang II Tabelle Zahlbeträge) oder im Rahmen des Wechselmodells von beiden 
+Eltern betreut werden, zur Hälfte, ansonsten in voller Höhe.  
+ 
+(2) Beim paritätischen Wechselmodell kommt die auf den Barunterhalt entfal-
+lende Hälfte des Kindergeldes den Eltern entsprechend ihrer sich aus den bei-
+derseitigen Einkommen ergebenden Beteiligungsquote zugute; der auf den Be-
+treuungsunterhalt entfallende Kindergeldanteil ist zwis chen den Eltern hälftig 
+aufzuteilen. 
+ 
+23 
+ 
+Ehegattenunterhalt 
+ 
+15. Unterhaltsbedarf 
+ 
+15.1 Bedarf nach ehelichen Lebensverhältnissen  
+ 
+(1) Der Unterhaltsbedarf eines Ehegatten richtet sich nach den ehelichen Le-
+bensverhältnissen (§ 1578 Abs. 1 S. 1 BGB). Diese werden grundsätzlich durch 
+die Umstände bis zur Rechtskraft der Ehescheidung bestimmt. Nacheheliche 
+Entwicklungen wirken sich auf die Bedar fsbemessung aus, wenn sie auch bei 
+fortbestehender Ehe eingetreten wären oder in anderer Weise in der Ehe ange-
+legt und mit hoher Wahrscheinlichkeit zu erwarten waren. Dies gilt für übliche 
+Lohn- und Gehaltserhöhungen, aber auch für einen nicht vorw erfbaren nach-
+ehelichen Einkommensrückgang, etwa durch Arbeitslosigkeit, Eintritt in das ge-
+setzliche Rentenalter oder Krankheit. Einkünfte aus einer nachehelich aufge-
+nommenen Erwerbstätigkeit des Unterhaltsberechtigten sind als Surrogat für 
+Haushaltstätigkeit und Kindererziehung bei der Bedarfsbemessung zu berück-
+sichtigen.  
+ 
+(2) Unterhaltsleistungen für Kinder während der Ehe prägen die ehelichen Le-
+bensverhältnisse und sind bei der Bedarfsberechnung in Höhe ihres Zahlbetra-
+ges in Abzug zu bringen. Das Hinzutreten weiterer Unterhaltsberechtigter bis 
+zur rechtskräftigen Ehescheidung ist grundsätzlich zu berücksichtigen. Dies gilt 
+auch für den Unterhaltsanspruch des betreuenden Elternteils eines vor Rechts-
+kraft der Ehescheidung geborenen Kindes nach § 1615l BGB. Nachrangige Un-
+terhaltsansprüche volljähriger Kinder sind zu berücksichtigen, wenn es sich um 
+eine eheprägende Verbindlichkeit handelt.  
+ 
+(3) Nacheheliche Entwicklungen ohne Anknüpfungspunkt in der Ehe wirken sich 
+auf die ehelichen Lebensverhältnisse nicht aus. Hierunter fallen etwa die Unter-
+haltspflicht gegenüber einem neuen Ehegatten, der Splittingvorteil und sonstige 
+Einkommenszuschläge im Zusammenhang mit einer neuen Ehe, der Vorteil des 
+24 
+ 
+Zusammenlebens in einer neuen Ehe sowie die Unterhaltspflichten für ein nach-
+ehelich geborenes Kind und gegenüber einem insoweit betreuenden Elternteil 
+nach § 1615l BGB.  
+ 
+(4) Der Mindestbedarf eines unterhaltsberechtigten Ehegatten im Sinne eines 
+Existenzminimums liegt in der Regel bei 1.200 €.  
+ 
+(5) Übersteigt der Bedarf des Unterhaltsberechtigten den Betrag, der dem Un-
+terhaltspflichtigen für den eigenen Unterhalt verbleibt (relativer Mangelfall), führt 
+dies zur Kürzung des Unterhalts des Berechtigten und des individuellen Selbst-
+behalts des Unterhaltspflichtigen. Erst wenn für den Unterhaltspflichtigen die 
+Untergrenze seines eigenen angemessenen Selbstbehalts erreicht ist (absolu-
+ter Mangelfall), wirkt sich dies allein auf den Unterhalt des Berechtigten aus.  
+ 
+15.2 Halbteilung und Erwerbstätigenbonus 
+ 
+(1) Der Bedarf eines jeden Ehegatten ist grundsätzlich im Wege einer quotalen 
+Berechnungsweise mit der Hälfte des unterhaltsrechtlich relevanten Einkom-
+mens beider Ehegatten anzusetzen (Halbteilungsgrundsatz).  
+ 
+(2) Einem erwerbstätigen Ehegatten steht vorab ein Erwerbsanreiz in Höhe von 
+1/10 seines Erwerbseinkommens zu, welches zuvor gemäß Nr . 10 zu bereini-
+gen und vollständig – bei Mischeinkünften anteilig – um den Zahlbetrag für un-
+terhaltsbedürftige Kinder zu vermindern ist. Hiernach bemisst sich der Unter-
+haltsbedarf sowohl des berechtigten als auch des verpflichteten Ehegatten auf 
+jeweils 55 % seiner eigenen Erwerbseinkünfte, 45 % der Erwerbseinkünfte des 
+jeweils anderen Ehegatten sowie 50 % der sonstigen Einkünfte beider Ehegat-
+ten.  
+ 
+25 
+ 
+15.3 Konkrete Bedarfsbemessung 
+ 
+(1) Beläuft sich das Familieneinkommen beider Ehegatten nach Bereinigung um 
+vorrangigen Kindesunterhalt, sonstige eheprägende Unterhaltsverpflichtungen, 
+berufsbedingte Aufwendungen und etwaige weitere berücksichtigungsfähige 
+Positionen, nicht jedoch um den Erw erbsanreiz, auf bis zu 11.200  €, besteht 
+eine tatsächliche Vermutung für seinen vollständigen Verbrauch zu Konsum-
+zwecken. Der Unterhaltsbedarf bemisst sich in diesem Fall nach der Quoten-
+methode.  
+ 
+(2) Bei darüberhinausgehenden, besonders günstigen Einkommensverhältnis-
+sen ist regelmäßig die teilweise Verwendung des Familieneinkommens zur Ver-
+mögensbildung zu vermuten. Entweder trägt der Unterhaltsberechtigte dann 
+seinen Bedarf nach den ehelichen Lebensverhältnissen konkret vor, w obei ei-
+gene Einkünfte ohne Berücksichtigung eines Erwerbsanreizes anzurechnen 
+sind (konkrete Bedarfsbemessung). Oder er ermittelt seinen Bedarf auch in die-
+sen Fällen nach der Quotenmethode, wobei er für den Umfang des Verbrauchs 
+des Familieneinkommens zu Konsumzwecken (eheliche Lebensverhältnisse) 
+darlegungs- und beweisbelastet ist.  
+ 
+(3) Der konkret ermittelte Unterhaltsbedarf wird seiner Höhe nach durch den 
+quotal errechneten Unterhaltsbedarf begrenzt.  
+ 
+ 15.4 Vorsorgebedarf 
+ 
+(1) Die Kosten einer angemessenen Versicherung  des Unterhaltsberechtigten 
+für Krankheit, Pflegebedürftigkeit und/oder Alter (Krankheits-, Pflege- und/oder 
+Altersvorsorgeunterhalt) sind vom Einkommen des Unterhaltspflichtigen vorab 
+in Abzug zu bringen. Wegen des Vorrangs des Elementarunterhalts besteht ein 
+Anspruch auf Altersvor sorgeunterhalt nur, soweit das Existenzminimum des 
+Unterhaltsberechtigten gesichert ist.  
+ 
+(2) Die Höhe des Altersvorsorgeunterhalts (§ 1578 Abs. 3 BGB) errechnet sich 
+regelmäßig zweistufig. Ein vorläufiger Elementarunterhalt lässt Einkünfte des 
+Unterhaltsberechtigten, die zu keiner Altersvorsorge führen, unberücksichtigt . 
+26 
+ 
+Nach Erhöhung des vorläufigen Elementarunterhalts um einen Zuschlag nach 
+der Bremer Tabelle (Bruttobemessungsgrundlage) errechnet sich der Altersvor-
+sorgeunterhalt anteilig in Höhe des Beitragssatzes zur gesetzlichen Rentenver-
+sicherung (Stufe 1). Nach seinem Abzug vom bereinigten Nettoeinkommen des 
+Unterhaltspflichtigen bestimmt sich anhand der maßgebenden Quote ein neuer 
+(endgültiger) Elementarunterhalt (Stufe 2).  
+ 
+(3) Eine einstufige Berechnung kommt in Betracht, wenn bei besonders günsti-
+gen wirtschaftlichen Verhältnissen der Elementarunterhaltsbedarf konkret er-
+mittelt wird bzw. der Altersvorsorgeunterhalt aus früher zur Vermögensbildung 
+verwendeten Einkünften aufgebracht werden kann oder wenn nicht prägendes 
+Einkommen des Unterhaltsberechtigen im Wege der Anrechnungsmethode von 
+der Unterhaltsquote abgezogen wird. Bei sehr guten Einkommensverhältnissen 
+ist die Höhe des geschuldeten Altersvorsorgeunterhalts nicht auf den sich aus 
+der Beitragsbemessungsgrenze der gesetzlichen Rentenversicherung ergeben-
+den Betrag begrenzt.  
+ 
+(4) Jedenfalls dann, wenn der Unterhaltspflichtige eine unterhaltsrechtlich an-
+zuerkennende zusätzliche Altersvorsorge betreibt, ist es geboten, dies auch 
+dem Unterhaltsberechtigten durch eine entsprechende prozentuale Erhöhung 
+des Altersvorsorgeunterhalts um bis zu 4 % zu ermöglichen.  
+ 
+15.5 Bedarf bei mehreren Ehegatten und Berechtigten nach § 1615l BGB 
+ 
+Treffen Unterhaltsansprüche des geschiedenen Ehegatten und des mit dem Un-
+terhaltspflichtigen zusammenlebenden (neuen) Ehegatten zusammen, bemisst 
+sich der Unterhaltsbedarf des geschiedenen Ehegatten nach den ehelichen Le-
+bensverhältnissen ohne Berücksichtigung nachehelicher Entwicklungen.  Der 
+Unterhaltsbedarf des neuen Ehegatten wird durch die Unterhaltslast des Unter-
+haltspflichtigen aus seiner früh eren Ehe geprägt und gemindert. Die unter-
+schiedliche Rangfolge der Unterhaltsansprüche (§ 1609 Nr. 2 und 3 BGB) ist 
+erst im Rahmen der Leistungsfähigkeit zu berücksichtigen. Entsprechendes gilt 
+für Unterhaltsberechtigte nach § 1615l BGB. Die Dreiteilungsmethode kommt 
+allenfalls auf der Ebene der Leistungsfähigkeit zur Anwendung.  
+ 
+27 
+ 
+15.6 Trennungsbedingter Mehrbedarf  
+ 
+Trennungsbedingter Mehrbedarf ist nicht in den ehelichen Lebensverhältnissen 
+angelegt. Er kann ausnahmsweise neben dem Quotenunterhalt berücksichtigt 
+werden, wenn er konkret dargelegt wird und aus zusätzlichen nicht prägenden 
+Einkünften befriedigt werden kann.  
+ 
+15.7 Begrenzung nach § 1578b BGB 
+ 
+(1) Die Herabsetzung und die Befristung (zeitliche Begrenzung) nachehelichen 
+Unterhalts nach § 1578b BGB stellen nicht die Regel, sondern eine Ausnahme 
+dar. Sie sind auf entsprechenden Vortrag des Unterhaltspflichtigen von Amts 
+wegen zu prüfen.  
+ 
+(2) Soweit der Unterhaltsanspruch auf § 1570 BGB beruht, scheidet eine Be-
+fristung nach § 1578b Abs. 2 BGB wegen der Sonderregelung in § 1570 BGB 
+aus. Soweit der Unterhaltsanspruch auf anderen Normen beruht,  kommt eine 
+Befristung nach § 1578b Abs. 2 BGB in Betracht. Eine Herabsetzung nach  
+§ 1578b Abs. 1 BGB kann auch beim Betreuungsunterhalt in Betracht gezogen 
+werden. 
+ 
+(3) Bei der Billigkeitsprüfung nach § 1578b A bs. 1 S. 2 BGB sind ehebedingte 
+Nachteile zu berücksichtigen. In ihrem Umfang stehen sie einer Herabsetzung 
+oder Befristung regelmäßig entgegen. Soweit ehebedingte Nachteile fehlen, ist 
+über eine Herabsetzung des Unterhaltsbedarfs im Wege einer umfassenden 
+Billigkeitsabwägung zu entscheiden, bei der auch eine über die Kompensation 
+ehebedingter Nachteile hinausgehende nacheheliche Solidarität zu berücksich-
+tigen ist. In diesem Ra hmen wirken sich etwa die beiderseit igen Einkommens- 
+und Vermögensverhältnisse, der Vermögenserwerb während der Ehe, Beiträge 
+zur beruflichen Entwicklung des anderen Ehegatten sowie Dauer und Umfang 
+des gezahlten Trennungsunterhalts aus. Der Ehedauer, d.h. dem Zeitraum zwi-
+schen der Eheschlie ßung und der Zustellung des Ehescheidungsantrags, 
+kommt besondere Bedeutung zu. Sie beeinflusst vor allem die Dauer einer 
+Übergangszeit, welche dem Unterhaltsberechtigten zur Umstellung von den 
+28 
+ 
+ehelichen Lebensverhältnissen auf den Lebensbedarf nach seinen eigenen Ein-
+künften regelmäßig zu gewähren ist. Die maßgeblichen Kriterien betreffen aus-
+nahmslos objektive Umstände. Eine Aufarbeitung ehelichen Fehlverhaltens fin-
+det nicht statt.  
+ 
+(4) Die Darlegungs - und Beweislast für Tatsachen, die für eine Herabsetzung 
+und/oder Befristung sprechen, obliegt dem Unterhaltspflichtigen. Den Unter-
+haltsberechtigten trifft allerdings eine sogenannte sekundäre Darlegungslast für 
+das Bestehen (konkreter) ehebedingter Nachteile. Die Anforderungen sind nicht 
+zu überspannen. Der Vortrag, in seinem erlernten Beruf seien Gehaltssteige-
+rungen in einer bestimmten Höhe mit zunehmender Berufserfahrung oder Be-
+triebszugehörigkeit üblich, kann im Einzelfall genügen.  
+ 
+(5) Der angemessene Lebensbedarf nach § 1578b Abs. 1 S. 1 BGB kann sich 
+am angemessenen Selbstbehalt in Höhe von 1.750 € orientieren  und darf das 
+Existenzminimum in Höhe von 1.200 € nicht unterschreiten.  
+ 
+16. Bedürftigkeit 
+ 
+Eigene (erzielte oder zurechenbare) Einkünfte des Berechtigten sind auf den 
+Bedarf anzurechnen, wobei bei einer Berechnung nach Quoten das bereinigte 
+Nettoerwerbseinkommen um den Erwerbstätigenbonus (1/10) zu vermindern 
+ist.  
+ 
+17. Erwerbsobliegenheit 
+ 
+17.1 bei Kinderbetreuung 
+ 
+(1) Bei Kindesbetreuung besteht bis zur Vollendung des dritten Lebensjahres 
+eines gemeinschaftlichen Kindes keine Erwerbsobliegenheit. Ob und in wel-
+chem Umfang anschließend die Aufnahme oder Ausweitung einer Erwerbstä-
+tigkeit neben der Betreuung minderjähriger Kinder zumutbar ist, ist unter Be-
+rücksichtigung aller Umstände des Einzelfalls zu beurteilen. Bei besonderer Be-
+treuungsbedürftigkeit des Kindes und bei  fehlender oder nur unzureichender 
+Fremdbetreuung (kindbezogene Gründe, § 1570 Abs.  1 S. 2 BGB) kommt ein 
+29 
+ 
+Unterhaltsanspruch auch nach Vollendung des dritten Lebensjahres des Kindes 
+in Betracht. Eine Erwerbstätigkeit des betreuenden Ehegatten kann auch aus 
+Gründen der nachehelichen Solidarität ganz oder teilweise unbillig erscheinen. 
+Hierbei sind das in der Ehe gewachsene Vertrauen in die vereinbarte und prak-
+tizierte Rollenverteilung und die gemeinsame Ausgestaltung der Kinderbetreu-
+ung sowie die Dauer der Eh e zu berücksich tigen (elternbezogene Gründe, 
+§ 1570 Abs. 2 BGB). Die Erwerbsobliegenheit b eurteilt sich a uch danach, ob 
+eine Erwerbstätigkeit neben der Betreuung des Kindes zu einer überobligati-
+onsmäßigen Belastung führen würde (Gesichtspunkt der gerechten Lastenver-
+teilung).  
+ 
+(2) Die Darlegungs- und Beweislast für die Umstände, die einer vollen oder teil-
+weisen Erwerbsobliegenheit ab Vollendung des dritten Lebensjahres des Kin-
+des entgegenstehen, trifft den betreuenden Ehegatten. Dies gilt auch, wenn ein 
+Titel über den – grundsätzlich nicht zu befristenden – Betreuungsunterhalt nach 
+§ 1570 Abs. 1 S. 1 BGB abgeändert werden soll.  
+ 
+17.2 bei Trennungsunterhalt  
+ 
+Für den Berechtigten besteht im ersten Jahr nach der Trennung in der Regel 
+keine Obliegenheit zur Aufnahme oder Ausweitung einer Erwerbstätigkeit. 
+ 
+Weitere Unterhaltsansprüche 
+ 
+18. Ansprüche aus § 1615l BGB 
+ 
+(1) Der Bedarf nach § 1615l BGB bemisst sich nach der bisherigen Lebensstel-
+lung des betreuenden Elternteils. Maßgeblich ist , welche Einkünfte der Be-
+rechtigte ohne die Geburt und die Betreuung des gemeinsamen Kindes 
+hätte; absehbare Gehaltssteigerungen sind ebenso zu berücksichtigen wie 
+alle anderen absehbaren Veränderungen. Der Bedarf kann sich auch aus ei-
+nem Unterhaltsanspruch gegen einen früheren Ehegatten ergeben. 
+ 
+(2) Der Bedarf beträgt mindestens 1.200 €.  
+ 
+30 
+ 
+(3) Der Anspruch nach § 1615l BGB ist begrenzt auf den Betrag, der einem 
+Ehegatten in gleicher Lage zustünde. Zur Frage der Berücksichtigung eigener 
+Einkünfte, zu Abzügen hiervon und zur Erwerbsobliegenheit gelten die Ausfüh-
+rungen für den Ehegatten entsprechend.  
+ 
+19. Elternunterhalt 
+ 
+Der Bedarf ist konkret darzulegen. Leistungen nach §§ 41 – 43 SGB XII (Grund-
+sicherung) sind vorrangig in Anspruch zu nehmen. Beziehen unterhaltsberech-
+tigte Eltern Leistungen nach dem SGB XII, geht ihr Anspruch auf Elternunterhalt 
+nur dann auf den Träger der Sozialhilfe über, wenn das unterhaltspflichtige Kind 
+ein Jahreseinkommen von mehr als 100.000 € brutto im Sinne von § 94 Abs. 1a 
+SGB XII i.V.m. § 2 EStG (steuerliches Gesamtbruttoeinkommen) erzielt. 
+ 
+20. Lebenspartnerschaft 
+ 
+Bei Getrenntleben oder Aufhebung der Lebenspartnerschaft gelten §§ 5, 12, 16 
+LPartG. 
+ 
+Leistungsfähigkeit und Mangelfall 
+ 
+21. Selbstbehalt  
+ 
+21.1 Grundsatz 
+ 
+Dem Unterhaltspflichtigen muss nach Abzug der Unterhaltsansprüche der 
+Selbstbehalt (Eigenbedarf) verbleiben. Es ist zu unterschei den zwischen dem 
+notwendigen (§ 1603 Abs. 2 BGB), dem angemessenen (§  1603 Abs. 1 BGB) 
+sowie dem eheangemessenen Selbstbehalt (§§ 1361 Abs. 1, 1578 Abs. 1 BGB). 
+ 
+31 
+ 
+21.2 Notwendiger Selbstbehalt 
+ 
+Der notwendige Selbstbehalt gegenüber minderjährigen Kindern und ihnen 
+gleichgestellten volljährigen unverheirateten Kindern (§ 1603 Abs. 2 S. 2 BGB) 
+beträgt  
+ 
+- beim nicht erwerbstätigen Unterhaltspflichtigen monatlich 1.200 €,  
+ 
+- beim erwerbstätigen Unterhaltspflichtigen monatlich 1.450 €.  
+ 
+Hierin sind 520 € für Unterkunft einschließlich umlagefähiger Nebenkosten und 
+Heizung (Warmmiete) enthalten. 
+ 
+21.3 Angemessener Selbstbehalt 
+ 
+21.3.1 gegenüber volljährigem Kind  
+ 
+Der angemessene Selbstbehalt gegenüber nicht privilegierten volljährigen Kin-
+dern (§ 1603 Abs. 1 BGB) beträgt 1.750 €. Hierin sind Kosten für Unterkunft 
+einschließlich umlagefähiger Nebenkosten und Heizung (Warmmiete) in Höhe 
+von 650 € enthalten. 
+ 
+21.3.2 bei Ansprüchen aus § 1615l BGB 
+ 
+Der angemessene Selbstbehalt gegenüber der Mutter/dem Vater eines nicht-
+ehelichen Kindes (§ 1615l BGB) beträgt  
+ 
+- beim nicht erwerbstätigen Unterhaltspflichtigen monatlich 1.475 €,  
+ 
+- beim erwerbstätigen Unterhaltspflichtigen monatlich 1.600 €.  
+ 
+Hierin sind Kosten für Unterkunft einschließlich umlagefähiger Nebenkosten 
+und Heizung (Warmmiete) in Höhe von 580 € enthalten. 
+ 
+21.3.3 beim Elternunterhalt 
+ 
+Der angemessene Selbstbehalt gegenüber Eltern beträgt mindestens monatlich 
+2.650 €. 70 % des darüber hinausgehenden Einkommens bleiben zusätzlich 
+anrechnungsfrei. In dem Mindestbetrag von 2.650 € sind Kosten für Unterkunft 
+und Heizung in Höhe von 1.000 € enthalten.  
+32 
+ 
+ 
+21.3.4 von Großeltern gegenüber Enkeln 
+ 
+Der angemessene Selbstbehalt von Großeltern gegenüber Enkeln beträgt min-
+destens monatlich 2.650 €. Die Hälfte des darüber hinausgehenden Einkom-
+mens bleibt zusätzlich anrechnungsfrei. In dem Mindestbetrag von 2.650 € sind 
+Kosten für Unterkunft und Heizung in Höhe von 1.000 € enthalten.  
+ 
+21.4 Mindestselbstbehalt gegenüber Ehegatten 
+ 
+Der angemessene Selbstbehalt gegenüber dem Anspruch des Ehegatten (ehe-
+angemessener Selbstbehalt) beträgt 
+ 
+- 1.475 € beim nicht erwerbstätigen Unterhaltspflichtigen, 
+ 
+- 1.600 € beim erwerbstätigen Unterhaltspflichtigen. 
+ 
+Hierin sind Kosten für Unterkunft einschließlich umlagefähiger Nebenkosten 
+und Heizung (Warmmiete) in Höhe von 580 € enthalten. 
+ 
+21.5  Anpassung des Selbstbehalts 
+ 
+(1) Der Selbstbehalt soll erhöht werden, wenn die Wohnkosten (Warmmiete) 
+den ausgewiesenen Betrag überschreiten und nicht unangemessen sind.  Eine 
+Herabsetzung des Selbstbehalts allein wegen geringerer als der im Selbstbe-
+halt berücksichtigten Wohnkosten kommt – auch im Rahmen der gesteigerten 
+Unterhaltsverpflichtung gegenüber minderjährigen Kindern – nicht in Betracht. 
+ 
+(2) Wird die Wohnung von mehreren Personen genutzt, ist der Wohnkostenan-
+teil des Pflichtigen festzustellen. Bei Erwachsenen geschieht die Aufteilung in 
+der Regel nach Köpfen. Kinder sind vorab mit einem Anteil von 20 % ihres Ta-
+bellenbedarfs zu berücksichtigen.  
+ 
+(3) Eine angemessene Erhöhung kommt auch in Betracht, wenn das nach Ab-
+zug eines zugerechneten geldwerten Vorteils (z.B. für die private Nutzung eines 
+Firmenfahrzeugs oder einer Wohnung) verbleibende Einkommen nicht aus-
+reicht, um den restlichen Lebensbedarf sicherzustellen. 
+ 
+33 
+ 
+(4) Beim Verwandtenunterhalt ist vorrangig zu prüfen, ob der Selbstbehalt des 
+Unterhaltspflichtigen bereits ganz oder teilweise durch einen Anspruch auf 
+Familienunterhalt gegen seinen Ehegatten gedeckt wird. 
+ 
+(5) Beim Zusammenleben in häuslicher Gemeinschaft mit einem leistungsfähi-
+gen Partner kann der Selbstbehalt wegen der durch Synergieeffekte eintreten-
+den Haushaltsersparnis reduziert werden, höchstens jedoch bis auf das Exis-
+tenzminimum nach sozialhilferechtlic hen Grundsätzen. Die Ersparnis des Un-
+terhaltspflichtigen kann im Regelfall mit 10% des Selbstbehalts angesetzt wer-
+den. 
+ 
+22. Bedarf des mit dem Pflichtigen zusammenlebenden Ehegatten 
+ 
+22.1  Mindestbedarf bei Ansprüchen des nachrangigen geschiedenen 
+Ehegatten 
+ 
+Der Mindestbedarf des mit dem Unterhaltspflichtigen zusammenlebenden 
+neuen Ehegatten wird mit 1.280 € (erwerbstätig) bzw. 1.180 € (nicht erwerbstä-
+tig) angesetzt. 
+ 
+22.2 Mindestbedarf bei Ansprüchen volljähriger Kinder  
+ 
+Ist bei Unterhaltsansprüchen nicht privilegierter volljähriger Kinder der Pflichtige 
+verheiratet, werden für den mit ihm zusammenlebenden Ehegatten 1.400 € an-
+gesetzt. 
+ 
+22.3 Mindestbedarf bei Ansprüchen von Eltern oder Enkeln des anderen 
+Ehegatten und von gemeinsamen Enkeln 
+ 
+Ist bei Unterhaltsansprüchen von Eltern oder Enkeln der Unterhaltspflichtige 
+verheiratet, werden für den mit ihm zusammenlebenden Ehegatten mindestens 
+2.120 € angesetzt. In diesem Mindestbetrag sind Kosten für Unterkunft und Hei-
+zung in Höhe von 800 € enthalten. Der Familienmindestbedarf beträgt 4.770 € 
+(2.120 € + 2.650 €, vgl. Nr. 21.3.3 und 21.3.4). Darin sind Kosten für Unterkunft 
+und Heizung in Höhe von 1.800 € (1.000 € + 800 €) enthalten.   
+ 
+34 
+ 
+23.      Bedarf des vom Pflichtigen getrenntlebenden oder geschiedenen 
+Ehegatten 
+ 
+23.1 Bedarf bei Ansprüchen des nachrangigen geschiedenen Ehegatten 
+ 
+Der Mindestbedarf des vom Pflichtigen  getrenntlebenden oder geschiedenen  
+Ehegatten beträgt bei Ansprüchen eines nachrangigen Ehegatten 1.600 € (er-
+werbstätig) bzw. 1.475 € (nicht erwerbstätig). 
+ 
+23.2 Bedarf bei Ansprüchen volljähriger Kinder 
+ 
+Der Mindestbedarf des vom Pflichtigen getrenntlebenden oder geschiedenen 
+Ehegatten beträgt bei Ansprüchen volljähriger Kinder 1.750 €. 
+ 
+23.3 Bedarf bei Ansprüchen von Eltern oder Enkeln des anderen Ehegatten 
+und von gemeinsamen Enkeln 
+ 
+Der Mindestbedarf des vom Pflichtigen  getrenntlebenden oder geschiedenen  
+Ehegatten beträgt bei Ansprüchen von Eltern oder Enkeln des anderen Ehegat-
+ten und von gemeinsamen Enkeln 2.650 €. In diesem Mindestbetrag sind Kos-
+ten für Unterkunft und Heizung in Höhe von 1.000 € enthalten.    
+ 
+24. Mangelfall 
+ 
+24.1 Grundsatz 
+ 
+Ist der Unterhaltspflichtige unter Berücksichtigung des ihm jeweils zustehenden 
+Selbstbehalts außerstande, allen Unterhaltsberechtigten Unterhalt zu gewäh-
+ren, so gilt für die Befriedigung der Ansprüche die Rangfolge des § 1609 BGB. 
+Ein absoluter Mangelfall liegt vor, wenn das Einkommen des Verpflichteten zur 
+Deckung seines notwendigen Selbstbehalts und der gleichrangigen Unterhalts-
+ansprüche der Kinder nicht ausreicht. 
+ 
+35 
+ 
+24.2  Einsatzbeträge  
+ 
+Als Einsatzbeträge im Mangelfall sind im Verhältnis von gleichrangigen Berech-
+tigten zueinander anzusetzen:  
+ 
+- bei minderjährigen und diesen nach § 1603 Abs. 2 S. 2 BGB gleichgestellten 
+Kindern der Mindestunterhalt der jeweiligen Altersstufe der Düsseldorfer Ta-
+belle (Zahlbetrag nach Anrechnung des Kindergeldes und von Einkünften), 
+ 
+- bei allen anderen Berechtigten der nach den allgemeinen Regeln bestimmte 
+offene Bedarf. 
+ 
+24.3  Berechnung 
+ 
+(1) Die nach Abzug des Selbstbehalts des Unterhaltspflichtigen verbleibende 
+Verteilungsmasse ist anteilig auf alle gleichrangigen Unterhaltsberechtigten im 
+Verhältnis ihrer Einsatzbeträge zu verteilen. 
+ 
+(2) Stehen mehrere nach § 160 9 Nr. 2 oder  3 BGB Berechtigte im gleichen 
+Rang, schränkt die Unterhaltspflicht gegenüber dem jeweils anderen Berechtig-
+ten die Leistungsfähigkeit des Pflichtigen nach § 1581 S. 1 BGB ein. Dem kann 
+dadurch Rechnung getragen werden, dass die Unterhaltsansprüche nach den  
+Grundsätzen d er sogenannten Drei teilung bemessen werden. Dies schließt 
+eine abweichende Verteilung aufgrund der Berücksichtigung weiterer individu-
+eller Billigkeitsabwägungen nicht aus. 
+ 
+(3) Steht ein Berechtigter im Rang des § 1609 Nr. 2  BGB und ein anderer im 
+Rang des § 1609 Nr. 3 BGB, gilt Folgendes: 
+ 
+Ist der Unterhaltsanspruch des neuen, also späteren Ehegatten – oder des nach 
+§ 1615l BGB Berechtigten – gegenüber dem Unterhaltsanspruch eines geschie-
+denen Ehegatten vorrangig, bleibt die Bedarfsberechnung des geschiedenen, 
+zeitlich früheren Ehegatten von der neuen Unterhaltsverpflichtung unberührt. 
+Jedoch ist im Rahmen der Leistungsfähigkeit der vorrangige Unterhaltsan-
+spruch gegenüber dem nachrangigen geschiedenen Ehegatten zu berücksich-
+tigen. 
+36 
+ 
+ 
+Ist der neue Ehegatte nachrangig, berührt eine ihm gegenüber bestehende Un-
+terhaltsverpflichtung den Unterhaltsanspruch des vorrangigen Ehegatten nicht. 
+ 
+24.4 Angemessenheitskontrolle  
+ 
+Das im Rahmen der Mangelfallberechnung gewonnene Ergebnis ist auf seine 
+Angemessenheit zu überprüfen. 
+ 
+Sonstiges 
+ 
+25. Rundung 
+ 
+Der Unterhaltsbetrag ist auf volle Euro zu runden. 
+ 
+ 
+37 
+ 
+Anhang 
+I. Düsseldorfer Tabelle 
+II. Tabelle Zahlbeträge  
+ 
+I. Düsseldorfer Tabelle (Stand: 01.01.2026) 
+ Nettoeinkommen  
+des/der  
+Barunterhaltspflichtigen  
+Altersstufen in Jahren 
+(§ 1612a Abs. 1 BGB) Prozent-
+satz 
+Bedarfs- 
+kontrollbetrag  
+(Anm. A. III) 0 - 5  6 - 11 12 - 17  ab 18 
+        Alle Beträge in Euro 
+1.                 bis  2.100 486 558 653 698 100 1.200 / 1.450 
+2. 2.101    -           2.500 511 586 686 733 105 1.750 
+3. 2.501    -           2.900 535 614 719 768 110 1.850 
+4. 2.901    -           3.300 559 642 751 803 115 1.950 
+5. 3.301    -           3.700 584 670 784 838 120 2.050 
+6. 3.701    -           4.100 623 715 836 894 128 2.150 
+7. 4.101    -           4.500 661 759 889 950 136 2.250 
+8. 4.501    -           4.900 700 804 941 1.006 144 2.350 
+9. 4.901    -           5.300 739 849 993 1.061 152 2.450 
+10. 5.301    -           5.700 778 893 1.045 1.117 160 2.550 
+11. 5.701    -           6.400 817 938 1.098 1.173 168 2.850 
+12. 6.401    -           7.200 856 983 1.150 1.229 176 3.250 
+13. 7.201    -           8.200 895 1.027 1.202 1.285 184 3.750 
+14. 8.201    -           9.700 934 1.072 1.254 1.341 192 4.350 
+15. 9.701    -         11.200 972 1.116 1.306 1.396 200 5.050 
+ 
+II. Tabelle Zahlbeträge 
+Die folgende Tabelle enthält die sich nach Abzug des jeweiligen Kindergeldanteils (hälftiges 
+Kindergeld bei Minderjährigen, volles Kindergeld bei Volljährigen) ergebenden Zahlbeträge. 
+Im Jahr 2026 beträgt das Kindergeld einheitlich je Kind 259,00 €. 
+ 
+Kindergeld: 259 € 0 - 5 6 - 11 12 - 17 ab 18       % 
+1.  bis 2.100 356,50 428,50 523,50 439,00 100 
+2. 2.101- 2.500 381,50 456,50 556,50 474,00 105 
+3. 2.501- 2.900 405,50 484,50 589,50 509,00 110 
+4. 2.901- 3.300 429,50 512,50 621,50 544,00 115 
+5. 3.301- 3.700 454,50 540,50 654,50 579,00 120 
+6. 3.701- 4.100 493,50 585,50 706,50 635,00 128 
+7. 4.101- 4.500 531,50 629,50 759,50 691,00 136 
+8. 4.501- 4.900 570,50 674,50 811,50 747,00 144 
+9. 4.901- 5.300 609,50 719,50 863,50 802,00 152 
+10. 5.301- 5.700 648,50 763,50 915,50 858,00 160 
+11. 5.701- 6.400 687,50 808,50 968,50 914,00 168 
+12. 6.401- 7.200 726,50 853,50 1.020,50 970,00 176 
+13. 7.201- 8.200 765,50 897,50 1.072,50 1.026,00 184 
+14. 8.201- 9.700 804,50 942,50 1.124,50 1.082,00 192 
+15. 9.701- 11.200 842,50 986,50 1.176,50 1.137,00 200 
+ 

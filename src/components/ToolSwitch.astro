@@ -1,0 +1,27 @@
+---
+/** Ein Ort, an dem jede Rechnerart ihrem Komponenten zugeordnet wird (Rechnerseiten, Startseite, Einbettung). */
+import KindesunterhaltRechner from './calc/KindesunterhaltRechner';
+import GesamtRechner from './calc/GesamtRechner';
+import EhegattenRechner from './calc/EhegattenRechner';
+import { VolljaehrigRechner, WechselRechner, ElternRechner, UvgRechner } from './calc/FamilieRechner';
+import { PfaendungRechner, ScheidungRechner, PkhRechner, ZugewinnRechner, VaRechner } from './calc/GeldRechner';
+import { ErbfolgeRechner, ErbStRechner } from './calc/ErbeRechner';
+import type { Tool } from '../lib/guide-types';
+import type { Locale } from '../i18n/routes';
+interface Props { tool?: Tool; lang: Locale; methodHref?: string; preset?: Record<string, never> }
+const { tool, lang, methodHref, preset = {} } = Astro.props;
+---
+{tool === 'gesamt' && <GesamtRechner client:load lang={lang} methodHref={methodHref} />}
+{tool === 'kindesunterhalt' && <KindesunterhaltRechner client:load lang={lang} methodHref={methodHref} preset={preset} />}
+{tool === 'ehegatte' && <EhegattenRechner client:load lang={lang} methodHref={methodHref} preset={preset} />}
+{tool === 'volljaehrig' && <VolljaehrigRechner client:load lang={lang} methodHref={methodHref} />}
+{tool === 'wechsel' && <WechselRechner client:load lang={lang} methodHref={methodHref} />}
+{tool === 'eltern' && <ElternRechner client:load lang={lang} methodHref={methodHref} />}
+{tool === 'uvg' && <UvgRechner client:load lang={lang} methodHref={methodHref} />}
+{tool === 'pfaendung' && <PfaendungRechner client:load lang={lang} methodHref={methodHref} preset={preset} />}
+{tool === 'scheidung' && <ScheidungRechner client:load lang={lang} methodHref={methodHref} />}
+{tool === 'pkh' && <PkhRechner client:load lang={lang} methodHref={methodHref} />}
+{tool === 'zugewinn' && <ZugewinnRechner client:load lang={lang} methodHref={methodHref} />}
+{tool === 'va' && <VaRechner client:load lang={lang} methodHref={methodHref} />}
+{tool === 'erbfolge' && <ErbfolgeRechner client:load lang={lang} methodHref={methodHref} preset={preset} />}
+{tool === 'erbst' && <ErbStRechner client:load lang={lang} methodHref={methodHref} />}

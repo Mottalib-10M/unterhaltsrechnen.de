@@ -1,0 +1,98 @@
+---
+/** Berechnungsmethode (Vertrauensseite, RECETTE §8.2): Rechenregeln, Prüfungen gegen die amtlichen Tabellen, Grenzen, Quellen. */
+import PageLayout from '../layouts/PageLayout.astro';
+import { route, type Locale } from '../i18n/routes';
+import { P } from '../lib/engine/params';
+import { formatMoney, formatPercent, displayDate } from '../lib/format';
+import { breadcrumbSchema, webPageSchema } from '../lib/seo';
+import { LAST_UPDATED, CONTACT_EMAIL, REVIEW_CYCLE_MONTHS, LANG_TAGS } from '../data/site-config';
+import { PRUEFUNG } from '../lib/pruefung';
+interface Props { lang: Locale }
+const { lang } = Astro.props;
+const de = lang === 'de';
+const $ = (n: number, d = 0) => formatMoney(n, d, lang);
+const pc = (x: number, d = 0) => formatPercent(x, d, lang);
+const dt = (iso: string) => displayDate(iso, LANG_TAGS[lang]);
+const title = de ? 'Berechnungsmethode 2026: Tabellen, Regeln und Grenzen' : 'Calculation Method 2026: Tables, Rules and Limits';
+const description = de ? 'Berechnungsmethode 2026: wie Unterhalt, Scheidungskosten, Pfändung und Erbteile gerechnet werden, welche amtlichen Tabellen Zeile für Zeile geprüft sind.' : 'Calculation method 2026: how maintenance, divorce costs, garnishment and inheritance shares are computed, and which official tables are tested line by line.';
+const h1 = de ? 'Berechnungsmethode und Prüfung' : 'Calculation method and testing';
+const path = route('method', lang);
+const sources = Object.values(P.sources);
+const S = P.selbstbehalt, F = P.famgkg, R = P.rvg, Z = P.pfaendung.monat, E = P.erbst;
+---
+<PageLayout title={title} description={description} lang={lang} jsonLd={[webPageSchema({ name: h1, description, path, lang }), breadcrumbSchema([{ name: de ? 'Start' : 'Home', path: route('home', lang) }, { name: h1, path }])]} breadcrumbs={[{ label: h1 }]}>
+  <header class="mb-6"><h1 class="text-3xl font-bold text-navy-900 md:text-4xl">{h1}</h1></header>
+  {de ? (
+  <div class="prose prose-slate max-w-none">
+    <p>Jeder Betrag dieser Seite stammt aus einer einzigen Parameterdatei, die am <time datetime={P.retrieved_at}>{dt(P.retrieved_at)}</time> an den amtlichen Texten gelesen wurde: Düsseldorfer Tabelle und Leitlinien der Oberlandesgerichte in NRW auf der Seite des OLG Düsseldorf, Gesetze auf gesetze-im-internet.de, die Pfändungsfreigrenzen im Bundesgesetzblatt. Rechner und Texte lesen nur aus dieser Datei. Ändert sich ein Wert, ändert er sich überall zugleich, und kein Satz behauptet etwas anderes als der Rechner daneben.</p>
+    <h2>Die Prüfungen, die jede Veröffentlichung blockieren</h2>
+    <ul>
+      <li><strong>Zahlbetragstabelle der Düsseldorfer Tabelle 2026</strong>: alle {PRUEFUNG.dtZellen} Beträge des Anhangs (15 Gruppen, 4 Altersstufen) werden aus Tabellenbedarf und Kindergeld nachgerechnet, auf den Cent.</li>
+      <li><strong>Mangelfallbeispiel der Anmerkung C</strong>: {$(P.dt.mangelfall_beispiel.netto)} Netto, drei Kinder, Ergebnis {P.dt.mangelfall_beispiel.ergebnis.map((x) => $(x, 2)).join(', ')}: der Rechner trifft jeden Cent.</li>
+      <li><strong>Pfändungstabelle ab 1. Juli 2026</strong>: alle {PRUEFUNG.pfZeilen} Zeilen der Monatstabelle der Pfändungsfreigrenzenbekanntmachung, jeweils für 0 bis 5 Unterhaltspflichten, am Anfang und am Ende jeder Zeile: {PRUEFUNG.pfWerte} Vergleiche, keine Abweichung.</li>
+      <li><strong>Gebührentabellen</strong>: die {PRUEFUNG.famgkgZeilen} Werte der Anlage 2 zum FamGKG und die {PRUEFUNG.rvgZeilen} Werte der Anlage 2 zum RVG, beide in der Fassung seit Juni 2025 (BGBl. 2025 I Nr. 109), aus der Stufenformel der §§ 28 FamGKG und 13 RVG nachgerechnet.</li>
+      <li>Grenzfälle einzeln: Gruppengrenzen bei {$(P.dt.gruppen_bis[0])} und {$(P.dt.gruppen_bis[14])}, Altersstufen am Geburtstag, Mindestwerte des Verfahrenswerts, Härteausgleich der Erbschaftsteuer, Abschmelzung der Pflichtteilsergänzung, Unterhaltsvorschuss ab 12 Jahren.</li>
+    </ul>
+    <h2>Kindesunterhalt</h2>
+    <p>Einkommensgruppe nach dem bereinigten Netto, Altersstufe nach § 1612a BGB, Bedarf aus der Tabelle, minus Kindergeld von {$(P.kindergeld.monat)} nach § 1612b BGB (halb bei Minderjährigen, voll bei Volljährigen). Dann die Prüfung des Bedarfskontrollbetrags (Anm. A III): Bleibt nach allen Zahlbeträgen weniger als der Betrag der Gruppe, wird herabgestuft. Zuletzt der notwendige Selbstbehalt von {$(S.notwendig_erwerbstaetig)} (nicht erwerbstätig {$(S.notwendig_nicht_erwerbstaetig)}); reicht das Einkommen nicht, wird die Verteilungsmasse im Verhältnis der Zahlbeträge geteilt (Anm. C). Nicht privilegierte Volljährige stehen im Rang 4 (§ 1609 BGB) und erhalten nur, was über {$(S.angemessen)} bleibt. Optional: Ab- und Zuschlag nach der Zahl der Berechtigten (Anm. A I) und die Kürzung bei erweitertem Umgang um bis zu {pc(0.15)} mit Herabstufung nach dem BGH-Beschluss vom 15. April 2026 (XII ZB 415/25).</p>
+    <h2>Volljährige, Wechselmodell, Ehegatten, Eltern</h2>
+    <p>Volljährige im Elternhaushalt: Bedarf aus der 4. Altersstufe nach dem zusammengerechneten Einkommen beider Eltern, mit eigener Wohnung {$(P.dt.student_bedarf)}; minus volles Kindergeld und eigenes Einkommen; Haftung nach dem Einkommen über {$(P.leitlinien.sockel_volljaehrig)} (Nr. 13 der Leitlinien NRW), höchstens der Betrag nach dem eigenen Einkommen allein. Paritätisches Wechselmodell: Bedarf nach beiden Einkommen plus Mehrkosten, halbes Kindergeld auf den Barbedarf, Ausgleich der halben Differenz der Haftungsanteile, Kindergeldausgleich nach Nr. 14 Abs. 2 der Leitlinien (BGH XII ZB 565/15). Ehegatten- und Trennungsunterhalt: {pc(P.ehegatte.quote_erwerb)} der Differenz der Erwerbseinkommen nach Abzug des Kindesunterhalts, sonstige Einkünfte hälftig, Selbstbehalt {$(S.ehegatte_erwerbstaetig)} (Anm. B DT). Elternunterhalt: Rückgriff des Sozialamts erst über {$(P.elternunterhalt.jahreseinkommensgrenze)} Jahreseinkommen (§ 94 Abs. 1a SGB XII), Selbstbehalt {$(S.eltern)} plus {pc(S.eltern_anrechnungsfrei_anteil)} des Mehreinkommens (Anm. D I).</p>
+    <h2>Scheidungskosten und Verfahrenskostenhilfe</h2>
+    <p>Verfahrenswert der Ehesache: drei Monatsnetto beider Ehegatten, mindestens {$(F.ehe_mindestwert)} (§ 43 FamGKG); Versorgungsausgleich {pc(F.va_prozent_je_anrecht)} je Anrecht, mindestens {$(F.va_mindestwert)} (§ 50); Kindschaftssache im Verbund {pc(F.kindschaft_zuschlag)}, höchstens {$(F.kindschaft_zuschlag_max)} (§ 44). Gerichtsgebühr 2,0 nach KV 1110, Anwalt 1,3 Verfahrens- und 1,2 Terminsgebühr, Einigung 1,0, Auslagen {pc(R.vv7002_anteil)} bis {$(R.vv7002_max)}, Umsatzsteuer {pc(R.ust)}. Abzüge für Kinder und Zuschläge für Vermögen sind Gerichtspraxis und je Bezirk verschieden; der Rechner nimmt sie nur als Ihre Eingabe. Verfahrenskostenhilfe: Freibeträge der PKHB 2026 ({$(P.pkh.partei)} für die Partei, {$(P.pkh.erwerbstaetige)} Erwerbstätigenfreibetrag), Rate nach § 115 Abs. 2 ZPO.</p>
+    <h2>Pfändung</h2>
+    <p>Ab 1. Juli 2026 sind {$(Z.grundfreibetrag, 2)} im Monat unpfändbar, plus {$(Z.erste_person, 2)} für die erste und {$(Z.weitere_person, 2)} für jede weitere unterhaltsberechtigte Person bis zur fünften. Das Einkommen bis {$(Z.obergrenze, 2)} wird auf volle 10 € abgerundet, vom Teil über dem Freibetrag sind {pc(1 - P.pfaendung.unpfaendbar_zehntel[0] / 10)} (ohne Unterhaltspflicht) bis {pc(1 - P.pfaendung.unpfaendbar_zehntel[5] / 10)} (fünf Personen) pfändbar, darüber alles (§ 850c ZPO). P-Konto: Grundfreibetrag aufgerundet auf volle 10 €, plus Erhöhungsbeträge und Kindergeld (§§ 899, 902 ZPO).</p>
+    <h2>Erbrecht und Erbschaftsteuer</h2>
+    <p>Gesetzliche Erbfolge nach Ordnungen (§§ 1924 ff. BGB), Erbteil des Ehegatten nach § 1931 BGB mit dem pauschalen Viertel bei Zugewinngemeinschaft (§ 1371) und der Sonderregel bei Gütertrennung; Pflichtteil die Hälfte (§ 2303), Ergänzung für Schenkungen mit einem Zehntel weniger je Jahr (§ 2325). Erbschaftsteuer: Steuerklasse und Freibetrag nach §§ 15 und 16 ErbStG ({$(E.freibetrag.ehegatte)} Ehegatte, {$(E.freibetrag.kind)} Kind), Versorgungsfreibetrag (§ 17), Erbfallkostenpauschale {$(E.erbfallkosten_pauschale)} (§ 10), Abrundung auf volle 100 €, Steuersatz mit Härteausgleich (§ 19 Abs. 3). Begünstigungen für Familienheim und Betriebsvermögen bildet der Rechner nicht ab.</p>
+    <h2>Was die Rechner nicht abbilden</h2>
+    <ul>
+      <li>Die Bereinigung des Einkommens im Einzelnen (Wohnvorteil, Altersvorsorge, Schulden): Sie geben das bereinigte Netto ein.</li>
+      <li>Mehr- und Sonderbedarf von Kindern, konkreter Bedarf über {$(P.ehegatte.konkreter_bedarf_ab_familieneinkommen)} Familieneinkommen, Befristung nach § 1578b BGB.</li>
+      <li>Abweichende Leitlinien anderer Oberlandesgerichte; die Tabelle selbst ist bundesweit abgestimmt.</li>
+      <li>Ausländisches Recht: Für Familien mit Bezug ins Ausland kann ein anderes Recht gelten.</li>
+    </ul>
+    <h2>Keine Rechtsberatung</h2>
+    <p>Die Seite bietet allgemeine Information und Berechnungen nach veröffentlichten Tabellen. Sie prüft keinen Einzelfall und erbringt keine Rechtsdienstleistung im Sinne des Rechtsdienstleistungsgesetzes. Für Ihren Fall sind eine Anwältin oder ein Anwalt für Familien- oder Erbrecht, das Jugendamt (Beistandschaft für Kindesunterhalt) oder eine Schuldnerberatung zuständig.</p>
+    <h2>Aktualisierung</h2>
+    <p>Vollständige Durchsicht mindestens alle {REVIEW_CYCLE_MONTHS} Monate und bei jeder neuen Fassung: Düsseldorfer Tabelle und Leitlinien (Veröffentlichung im Dezember, gültig ab 1. Januar), Pfändungsfreigrenzen (Bekanntmachung im Frühjahr, gültig ab 1. Juli), Kindergeld und Mindestunterhalt, Kostengesetze. Einen Fehler melden Sie an <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>; er wird an der Quelle geprüft, korrigiert und als Test aufgenommen. Siehe auch die <a href={route('editorial', lang)}>Redaktionsgrundsätze</a>.</p>
+    <h2>Alle Quellen</h2>
+    <ul>{sources.map((s) => <li><a href={s.url} rel="nofollow noopener" target="_blank">{s.label.de}</a></li>)}</ul>
+    <p class="text-sm text-navy-600">Zuletzt geprüft: <time datetime={LAST_UPDATED}>{dt(LAST_UPDATED)}</time>.</p>
+  </div>
+  ) : (
+  <div class="prose prose-slate max-w-none">
+    <p>Every amount on this site comes from a single parameter file, read against the official texts on <time datetime={P.retrieved_at}>{dt(P.retrieved_at)}</time>: the Düsseldorf Table and the NRW court guidelines on the Düsseldorf Higher Regional Court’s website, statutes on gesetze-im-internet.de, the garnishment limits in the Federal Law Gazette. Calculators and texts read only from that file. When a value changes, it changes everywhere at once, and no sentence contradicts the calculator next to it.</p>
+    <h2>Tests that block every release</h2>
+    <ul>
+      <li><strong>Payment table of the 2026 Düsseldorf Table</strong>: all {PRUEFUNG.dtZellen} amounts in the annex (15 groups, 4 age bands) are recomputed from the table need and child benefit, to the cent.</li>
+      <li><strong>The worked shortfall example in note C</strong>: {$(P.dt.mangelfall_beispiel.netto)} net, three children, results {P.dt.mangelfall_beispiel.ergebnis.map((x) => $(x, 2)).join(', ')}: the calculator matches every cent.</li>
+      <li><strong>Garnishment table from 1 July 2026</strong>: all {PRUEFUNG.pfZeilen} lines of the monthly table in the official notice, each for 0 to 5 dependants, at the start and end of each line: {PRUEFUNG.pfWerte} comparisons, no deviation.</li>
+      <li><strong>Fee tables</strong>: the {PRUEFUNG.famgkgZeilen} values of Annex 2 to the Family Court Costs Act and the {PRUEFUNG.rvgZeilen} values of Annex 2 to the Lawyers’ Fees Act, both as amended in June 2025, recomputed from the step formulas.</li>
+      <li>Edge cases one by one: group limits at {$(P.dt.gruppen_bis[0])} and {$(P.dt.gruppen_bis[14])}, age bands on birthdays, minimum procedural values, inheritance-tax hardship relief, the tapering of gift top-ups, maintenance advance from age 12.</li>
+    </ul>
+    <h2>Child support</h2>
+    <p>Income group from adjusted net income, age band under section 1612a BGB, need from the table, minus the {$(P.kindergeld.monat)} child benefit under section 1612b (half for minors, all of it for adults). Then the needs-control check (note A III): if less than the group’s amount remains after all payments, a lower group applies. Last, the minimum self-retention of {$(S.notwendig_erwerbstaetig)} ({$(S.notwendig_nicht_erwerbstaetig)} if not working); if income falls short, what is available is shared in proportion to the amounts (note C). Non-privileged adult children rank fourth (section 1609 BGB) and only receive what remains above {$(S.angemessen)}. Optional: adjustment for the number of dependants (note A I) and the reduction of up to {pc(0.15)} with a lower group for extended contact under the Federal Court of Justice decision of 15 April 2026 (XII ZB 415/25).</p>
+    <h2>Adult children, shared care, spouses, parents</h2>
+    <p>Adult children living at home: need from the 4th age band on both parents’ combined income, {$(P.dt.student_bedarf)} with their own home; minus full child benefit and own income; liability on income above {$(P.leitlinien.sockel_volljaehrig)} (no. 13 of the NRW guidelines), at most what one’s own income alone would require. Equal shared care: need on both incomes plus extra costs, half the child benefit against the cash need, settlement of half the difference between the shares, child-benefit balancing under no. 14(2) of the guidelines (XII ZB 565/15). Spousal and separation maintenance: {pc(P.ehegatte.quote_erwerb)} of the difference between earned incomes after child support, other income halved, self-retention {$(S.ehegatte_erwerbstaetig)} (note B). Parental maintenance: no claim by the welfare office below {$(P.elternunterhalt.jahreseinkommensgrenze)} annual income (section 94(1a) SGB XII), self-retention {$(S.eltern)} plus {pc(S.eltern_anrechnungsfrei_anteil)} of the excess (note D I).</p>
+    <h2>Divorce costs and legal aid</h2>
+    <p>Value of the divorce: three months’ net income of both spouses, at least {$(F.ehe_mindestwert)} (section 43 FamGKG); pension splitting {pc(F.va_prozent_je_anrecht)} per entitlement, at least {$(F.va_mindestwert)} (section 50); custody in the same proceedings {pc(F.kindschaft_zuschlag)}, at most {$(F.kindschaft_zuschlag_max)} (section 44). Court fee 2.0 under schedule no. 1110, lawyer 1.3 procedure fee and 1.2 hearing fee, settlement 1.0, expenses {pc(R.vv7002_anteil)} up to {$(R.vv7002_max)}, VAT {pc(R.ust)}. Deductions for children and surcharges for assets are court practice and vary by district; the tool only uses them as your input. Legal aid: allowances of the 2026 notice ({$(P.pkh.partei)} for the party, {$(P.pkh.erwerbstaetige)} earner allowance), instalment under section 115(2) ZPO.</p>
+    <h2>Garnishment</h2>
+    <p>From 1 July 2026, {$(Z.grundfreibetrag, 2)} a month is exempt, plus {$(Z.erste_person, 2)} for the first and {$(Z.weitere_person, 2)} for each further dependant up to the fifth. Income up to {$(Z.obergrenze, 2)} is rounded down to the nearest €10; of the part above the exemption, {pc(1 - P.pfaendung.unpfaendbar_zehntel[0] / 10)} (no dependants) down to {pc(1 - P.pfaendung.unpfaendbar_zehntel[5] / 10)} (five) can be garnished, everything above the ceiling (section 850c ZPO). P-Konto: basic amount rounded up to the next €10, plus increases and child benefit (sections 899 and 902 ZPO).</p>
+    <h2>Inheritance and inheritance tax</h2>
+    <p>Statutory succession by orders of heirs (sections 1924 ff. BGB), spouse’s share under section 1931 BGB with the flat extra quarter under the community of accrued gains (section 1371) and the special rule for separation of property; compulsory share one half (section 2303), top-up for gifts reduced by one tenth per year (section 2325). Inheritance tax: class and allowance under sections 15 and 16 ErbStG ({$(E.freibetrag.ehegatte)} spouse, {$(E.freibetrag.kind)} child), pension allowance (section 17), flat estate-cost allowance {$(E.erbfallkosten_pauschale)} (section 10), rounding down to €100, rate with hardship relief (section 19(3)). Reliefs for the family home and business assets are not modelled.</p>
+    <h2>What the calculators leave out</h2>
+    <ul>
+      <li>The detailed adjustment of income (rent-free housing, pension savings, debts): you enter the adjusted net figure.</li>
+      <li>Children’s extra or special needs, detailed need above {$(P.ehegatte.konkreter_bedarf_ab_familieneinkommen)} family income, time limits under section 1578b BGB.</li>
+      <li>Differing guidelines of other higher regional courts; the table itself is agreed nationwide.</li>
+      <li>Foreign law: for families with links abroad, another country’s law may apply.</li>
+    </ul>
+    <h2>Not legal advice</h2>
+    <p>This site provides general information and calculations based on published tables. It does not review individual cases and does not provide legal services within the meaning of the German Legal Services Act (Rechtsdienstleistungsgesetz). For your case, ask a family or inheritance lawyer, the youth welfare office (free support for child support claims) or a debt counselling service.</p>
+    <h2>Updates</h2>
+    <p>A full review at least every {REVIEW_CYCLE_MONTHS} months and with every new edition: Düsseldorf Table and guidelines (published in December, valid from 1 January), garnishment limits (notice in spring, valid from 1 July), child benefit and minimum maintenance, cost statutes. Report an error to <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>; it is checked at the source, corrected and added as a test. See also the <a href={route('editorial', lang)}>editorial policy</a>.</p>
+    <h2>All sources</h2>
+    <ul>{sources.map((s) => <li><a href={s.url} rel="nofollow noopener" target="_blank">{s.label.en}</a></li>)}</ul>
+    <p class="text-sm text-navy-600">Last checked: <time datetime={LAST_UPDATED}>{dt(LAST_UPDATED)}</time>.</p>
+  </div>
+  )}
+</PageLayout>

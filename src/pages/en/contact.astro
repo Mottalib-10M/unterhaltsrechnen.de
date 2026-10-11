@@ -1,0 +1,20 @@
+---
+import PageLayout from '../../layouts/PageLayout.astro';
+import { CONTACT_EMAIL, SITE_NAMES } from '../../data/site-config';
+import { route } from '../../i18n/routes';
+import { contactPageSchema } from '../../lib/seo';
+const lang = 'en';
+const description = 'Write to us: an outdated value, a calculation that differs from a court order, a missing case, or a request to embed one of the calculators on your own site.';
+---
+<PageLayout title={`Contact – ${SITE_NAMES[lang]}`} description={description} lang={lang} noindex={true} jsonLd={[contactPageSchema({ name: 'Contact', description, path: route('contact', lang), lang })]} breadcrumbs={[{ label: 'Contact' }]} showAuthor={false}>
+  <div class="prose prose-slate max-w-none">
+    <h1>Contact</h1>
+    <p>Email: <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>. We usually reply within a week, in English or German.</p>
+    <h2>A result differs from a court order or bill</h2>
+    <p>Send the <strong>share link</strong> from the calculator (it only holds what you typed) and the line of the order, maintenance title or cost bill in question, without names or case numbers. The gap usually lies in how income was adjusted or in a discretionary decision of the court; if it lies with us, we fix the calculator and add the case as a test.</p>
+    <h2>Embedding a calculator</h2>
+    <p>Advice centres, associations and newsrooms can embed the calculators for free: the code is on the <a href={route('widget', lang)}>embed page</a>.</p>
+    <h2>What we cannot answer</h2>
+    <p>No legal advice on individual cases, no review of court orders, wills or garnishment orders, no lawyer referrals. For your own case, ask a family or inheritance lawyer, the youth welfare office (Jugendamt) or a debt advice centre.</p>
+  </div>
+</PageLayout>

@@ -1,0 +1,20 @@
+---
+import PageLayout from '../../layouts/PageLayout.astro';
+import { CONTACT_EMAIL, SITE_NAMES } from '../../data/site-config';
+import { route } from '../../i18n/routes';
+import { contactPageSchema } from '../../lib/seo';
+const lang = 'de';
+const description = 'Schreiben Sie uns: ein veralteter Wert, ein Rechenweg, der von einem Beschluss abweicht, ein fehlender Fall oder der Wunsch, einen Rechner auf Ihrer Seite einzubinden.';
+---
+<PageLayout title={`Kontakt – ${SITE_NAMES[lang]}`} description={description} lang={lang} noindex={true} jsonLd={[contactPageSchema({ name: 'Kontakt', description, path: route('contact', lang), lang })]} breadcrumbs={[{ label: 'Kontakt' }]} showAuthor={false}>
+  <div class="prose prose-slate max-w-none">
+    <h1>Kontakt</h1>
+    <p>E-Mail: <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>. Wir antworten in der Regel innerhalb einer Woche.</p>
+    <h2>Ein Ergebnis weicht von einem Beschluss oder einer Berechnung ab</h2>
+    <p>Schicken Sie den <strong>Link zum Teilen</strong> aus dem Rechner (er enthält nur Ihre Eingaben) und die Zeile des Beschlusses, des Unterhaltstitels oder der Kostenrechnung, um die es geht, ohne Namen und Aktenzeichen. Meist liegt der Unterschied in der Bereinigung des Einkommens oder in einer Ermessensentscheidung des Gerichts; liegt er bei uns, korrigieren wir den Rechner und nehmen den Fall als Test auf.</p>
+    <h2>Rechner einbinden</h2>
+    <p>Beratungsstellen, Vereine und Redaktionen können die Rechner kostenlos einbinden: Code auf der Seite <a href={route('widget', lang)}>Rechner einbinden</a>.</p>
+    <h2>Was wir nicht beantworten</h2>
+    <p>Keine Rechtsberatung im Einzelfall, keine Prüfung von Beschlüssen, Testamenten oder Pfändungsbeschlüssen, keine Vermittlung von Anwälten. Für Ihren Fall sind eine Fachanwältin oder ein Fachanwalt für Familien- oder Erbrecht, das Jugendamt oder eine Schuldnerberatung zuständig.</p>
+  </div>
+</PageLayout>

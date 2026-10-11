@@ -1,0 +1,29 @@
+---
+import PageLayout from '../../layouts/PageLayout.astro';
+import { YEAR, LAST_UPDATED, AUTHOR_NAME, CONTACT_EMAIL, AUTHOR_ROLE, SITE_NAMES, LANG_TAGS } from '../../data/site-config';
+import { route } from '../../i18n/routes';
+import { personSchema, organizationSchema, breadcrumbSchema, profilePageSchema } from '../../lib/seo';
+import { displayDate } from '../../lib/format';
+import { PRUEFUNG } from '../../lib/pruefung';
+const lang = 'de';
+---
+<PageLayout title="Radif Partners: wer die Familienrecht-Rechner herausgibt" description="Wer hinter den Rechnern zu Düsseldorfer Tabelle, Scheidungskosten, Pfändung und Erbrecht steht, wie sie gegen die amtlichen Tabellen geprüft werden und was sie nicht leisten." lang={lang} jsonLd={[personSchema(lang), organizationSchema(lang), profilePageSchema({ path: route('about', lang), lang }), breadcrumbSchema([{ name: 'Start', path: route('home', lang) }, { name: 'Über uns', path: route('about', lang) }])]} breadcrumbs={[{ label: 'Über uns' }]}>
+  <header class="mb-6"><h1 class="text-3xl font-bold text-navy-900 md:text-4xl">Über {SITE_NAMES.de}</h1></header>
+  <div class="prose prose-slate max-w-none">
+    <div class="not-prose mb-6"><p class="text-lg font-semibold text-navy-900">{AUTHOR_NAME}</p><p class="text-navy-700">{AUTHOR_ROLE[lang]}</p></div>
+    <p>Familienrecht in Zahlen wird von Radif Partners herausgegeben, einem unabhängigen Herausgeber von Rechnern. Die Seite entstand aus einer Beobachtung: Wer nach der Trennung wissen will, wie viel Unterhalt fällig ist, findet beim Oberlandesgericht Düsseldorf eine PDF-Datei mit fünfzehn Zeilen und vier Seiten Anmerkungen, und daneben Rechner, die bei zwei Kindern, einem knappen Einkommen oder geteilter Betreuung stillschweigend aufgeben.</p>
+    <h2>Was diese Seite anders macht</h2>
+    <p>Die erste Fundstelle bei Google, die Seite des OLG Düsseldorf mit ihrem PDF, rechnet nichts. Wir machen aus den amtlichen Tabellen 2026 Rechner, die genau rechnen und ihren Weg zeigen: Düsseldorfer Tabelle mit Bedarfskontrollbetrag und Mangelfall, Pfändungstabelle ab 1. Juli 2026, Gebührentabellen von Familiengericht und Anwalt, Erbquoten und Freibeträge. Jeder Rechner nennt die Anmerkung oder den Paragrafen, der eine Zahl bestimmt, und erklärt die Fälle, die andere Rechner auslassen: mehrere Kinder, Herabstufung, Mangelfall, Wechselmodell und erweiterter Umgang nach dem BGH-Beschluss vom April 2026.</p>
+    <h2>Wie wir prüfen</h2>
+    <p>Vor jeder Veröffentlichung laufen automatische Tests gegen die amtlichen Tabellen selbst: die {PRUEFUNG.dtZellen} Zahlbeträge der Düsseldorfer Tabelle, das Mangelfallbeispiel ihrer Anmerkung C, die {PRUEFUNG.pfZeilen} Zeilen der Pfändungstabelle für null bis fünf Unterhaltspflichten und die Gebührentabellen von FamGKG und RVG. Weicht ein Cent ab, wird nichts veröffentlicht. Jeder Wert steht mit Quelle und Abrufdatum in der <a href={route('method', lang)}>Berechnungsmethode</a>.</p>
+    <h2>Was wir nicht sind</h2>
+    <p>Wir sind keine Kanzlei, kein Gericht, kein Jugendamt und keine Schuldnerberatung. Die Seite gibt allgemeine Information und Berechnungen; sie prüft keinen Einzelfall und erbringt keine Rechtsdienstleistung im Sinne des Rechtsdienstleistungsgesetzes. Wir vermitteln keine Anwälte und verdienen nichts an Ihrem Verfahren. Für Ihren Fall sind eine Fachanwältin oder ein Fachanwalt, das Jugendamt mit seiner kostenlosen Beistandschaft oder eine anerkannte Schuldnerberatung die richtige Adresse.</p>
+    <h2>Finanzierung und Daten</h2>
+    <p>Die Rechner sind kostenlos und ohne Anmeldung. Ihre Eingaben, ob Einkommen, Kinderzahl oder Nachlass, verlassen Ihren Browser nicht und werden nirgends gespeichert. Sollte die Seite eines Tages Werbung zeigen, steht sie nie über einem Rechner.</p>
+    <h2>Auch auf Englisch</h2>
+    <p>Jede Seite gibt es auch auf Englisch, geschrieben für Menschen, die in Deutschland leben und das deutsche Familienrecht verstehen müssen: Begriffe wie Selbstbehalt, Zahlbetrag oder Pflichtteil werden dort erklärt, die Beträge bleiben in Euro.</p>
+    <h2>Kontakt</h2>
+    <p>Ein Wert ist veraltet, ein Fall fehlt, ein Ergebnis weicht von einem Beschluss ab? Schreiben Sie an <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>. Siehe auch die <a href={route('editorial', lang)}>Redaktionsgrundsätze</a> und das <a href={route('terms', lang)}>Impressum</a>.</p>
+    <p class="text-sm text-navy-600">Werte {YEAR}, geprüft am <time datetime={LAST_UPDATED}>{displayDate(LAST_UPDATED, LANG_TAGS[lang])}</time>.</p>
+  </div>
+</PageLayout>

@@ -1,0 +1,114 @@
+---
+/**
+ * Startseite (Säule, RECETTE §5), eigene Trame: zuerst die Düsseldorfer Tabelle selbst, zum Anklicken;
+ * dann der zitierbare Absatz, der volle Kindesunterhaltsrechner, die Selbstbehalte 2026 als Übersicht,
+ * das Mangelfallbeispiel der Tabelle vom Motor nachgerechnet, die fünf Rechengebiete der Seite und der Text.
+ */
+import PageLayout from '../layouts/PageLayout.astro';
+import DtTabelle from './calc/DtTabelle';
+import KindesunterhaltRechner from './calc/KindesunterhaltRechner';
+import MiniSim from './calc/MiniSim';
+import Clamp from './Clamp.astro';
+import { HOME } from '../content/home';
+import { route, type Locale } from '../i18n/routes';
+import { label, groupLabel } from '../i18n/nav';
+import { helpers } from '../lib/helpers';
+import { P, type SourceKey } from '../lib/engine/params';
+import { kindesunterhalt } from '../lib/engine/dt';
+import { PAGES } from '../lib/guides';
+import { formatMoney, displayDate } from '../lib/format';
+import { faqSchema, organizationSchema, websiteSchema, webPageSchema, webApplicationSchema } from '../lib/seo';
+import { LAST_UPDATED, LANG_TAGS } from '../data/site-config';
+import type { Group } from '../lib/guide-types';
+interface Props { lang: Locale }
+const { lang } = Astro.props;
+const de = lang === 'de';
+const x = HOME[lang];
+const h = helpers(lang);
+const path = route('home', lang);
+const parts = x.body(h).split(/<!--mini:([A-Za-z0-9_]+)-->/);
+const faqs = x.faqs(h);
+const keys: SourceKey[] = ['olgDt', 'olgDtPdf', 'olgLeitlinien', 'bgb1603', 'bgb1609', 'bgb1612a', 'bgb1612b', 'estg66', 'bghUmgang2026', 'zpo850c', 'famgkg28', 'rvg13', 'bgb1931', 'erbstg16'];
+const sources = keys.map((k) => ({ name: P.sources[k].label[lang], url: P.sources[k].url }));
+const jsonLd = [websiteSchema(lang), organizationSchema(lang), webPageSchema({ name: x.h1, description: x.description, path, lang }), webApplicationSchema({ name: x.h1, description: x.description, path, lang }), faqSchema(faqs, lang)];
+const $ = (n: number, d = 0) => formatMoney(n, d, lang);
+const S = P.selbstbehalt;
+const selbst: Array<[string, number, string]> = de ? [
+  ['gegenüber minderjährigen Kindern, erwerbstätig', S.notwendig_erwerbstaetig, `davon bis ${$(S.notwendig_warmmiete)} Warmmiete`],
+  ['gegenüber minderjährigen Kindern, nicht erwerbstätig', S.notwendig_nicht_erwerbstaetig, 'notwendiger Selbstbehalt'],
+  ['gegenüber volljährigen Kindern', S.angemessen, `angemessener Selbstbehalt, Warmmiete ${$(S.angemessen_warmmiete)}`],
+  ['gegenüber dem Ehegatten, erwerbstätig', S.ehegatte_erwerbstaetig, `nicht erwerbstätig ${$(S.ehegatte_nicht_erwerbstaetig)}`],
+  ['gegenüber den eigenen Eltern', S.eltern, `plus ${Math.round(S.eltern_anrechnungsfrei_anteil * 100)} % des Mehreinkommens`],
+  ['Pfändung ab 1. Juli 2026, ohne Unterhaltspflicht', P.pfaendung.monat.grundfreibetrag, 'Grundfreibetrag nach § 850c ZPO'],
+] : [
+  ['towards minor children, working', S.notwendig_erwerbstaetig, `incl. up to ${$(S.notwendig_warmmiete)} warm rent`],
+  ['towards minor children, not working', S.notwendig_nicht_erwerbstaetig, 'minimum self-retention'],
+  ['towards adult children', S.angemessen, `reasonable self-retention, warm rent ${$(S.angemessen_warmmiete)}`],
+  ['towards a spouse, working', S.ehegatte_erwerbstaetig, `not working ${$(S.ehegatte_nicht_erwerbstaetig)}`],
+  ['towards your own parents', S.eltern, `plus ${Math.round(S.eltern_anrechnungsfrei_anteil * 100)}% of the excess`],
+  ['garnishment from 1 July 2026, no dependants', P.pfaendung.monat.grundfreibetrag, 'basic exemption, section 850c ZPO'],
+];
+const bsp = kindesunterhalt(P.dt.mangelfall_beispiel.netto, [{ alter: 18, privilegiert: true }, { alter: 7 }, { alter: 5 }]);
+const gebiete: Array<{ g: Group; text: string }> = de ? [
+  { g: 'ehe', text: 'Trennungs-, Ehegatten-, Betreuungs- und Elternunterhalt, jeweils mit dem Selbstbehalt, der für diese Pflicht gilt.' },
+  { g: 'scheidung', text: 'Gerichts- und Anwaltskosten nach den Gebührentabellen seit Juni 2025, Zugewinn, Versorgungsausgleich, Verfahrenskostenhilfe.' },
+  { g: 'pfaendung', text: 'Die neue Pfändungstabelle ab 1. Juli 2026 und der Freibetrag des P-Kontos, auch für Unterhaltsschuldner.' },
+  { g: 'erbe', text: 'Wer ohne Testament erbt, wie hoch der Pflichtteil ist und was nach Freibetrag an Erbschaftsteuer bleibt.' },
+  { g: 'betrag', text: 'Fünf Einkommen, fünf Familien: was die Tabelle bei 1.800, 2.500, 3.500, 5.000 und über 11.200 € netto verlangt.' },
+] : [
+  { g: 'ehe', text: 'Separation, spousal, childcare and parental maintenance, each with the self-retention that applies to it.' },
+  { g: 'scheidung', text: 'Court and lawyer fees under the fee tables in force since June 2025, accrued gains, pension splitting, legal aid.' },
+  { g: 'pfaendung', text: 'The new garnishment table from 1 July 2026 and the protected amount on a P-Konto, also for maintenance debts.' },
+  { g: 'erbe', text: 'Who inherits without a will, the size of the compulsory share and the inheritance tax left after allowances.' },
+  { g: 'betrag', text: 'Five incomes, five families: what the table asks at €1,800, €2,500, €3,500, €5,000 and above €11,200 net.' },
+];
+const ersteSeite = (g: Group) => PAGES.find((p) => p.group === g);
+---
+<PageLayout title={x.title} description={x.description} lang={lang} jsonLd={jsonLd} faqs={faqs} sources={sources}>
+  <header class="mb-6">
+    <p class="text-sm font-semibold uppercase tracking-wide text-accent-700">{de ? 'Stand 1. Januar 2026 · Oberlandesgericht Düsseldorf' : 'As of 1 January 2026 · Düsseldorf Higher Regional Court'}</p>
+    <h1 class="mt-1 text-3xl font-bold text-navy-900 md:text-[2.6rem] md:leading-tight">{x.h1}</h1>
+    <p class="mt-3 text-lg text-navy-700">{x.intro}</p>
+    <p class="mt-3 text-sm text-navy-700">
+      {de ? 'Werte geprüft am' : 'Figures checked on'} <time datetime={LAST_UPDATED}>{displayDate(LAST_UPDATED, LANG_TAGS[lang])}</time> · <a class="underline" href={route('method', lang)}>{label('method', lang)}</a> · <a class="underline" href={route('about', lang)}>{label('about', lang)}</a>
+    </p>
+  </header>
+  <section aria-labelledby="tabelle" data-outil>
+    <h2 id="tabelle" class="sr-only">{de ? 'Die Tabelle 2026' : 'The 2026 table'}</h2>
+    <DtTabelle client:load lang={lang} rechnerHref="#rechner" />
+  </section>
+  <section class="mt-8" aria-labelledby="kurz">
+    <h2 id="kurz" class="sr-only">{de ? 'Das Wichtigste in Kürze' : 'In short'}</h2>
+    <Clamp text={x.resume(h)} lang={lang} id="clamp-home" sentences={2} />
+  </section>
+  <section id="rechner" class="mt-10 border-t border-navy-200 pt-6" aria-labelledby="rechner-h">
+    <h2 id="rechner-h" class="mb-4 text-2xl font-bold text-navy-900">{de ? 'Kindesunterhalt für Ihre Familie rechnen' : 'Work out child support for your family'}</h2>
+    <KindesunterhaltRechner client:load lang={lang} methodHref={route('method', lang)} />
+  </section>
+  <section class="mt-10 border-t border-navy-200 pt-6" aria-labelledby="sb">
+    <h2 id="sb" class="text-2xl font-bold text-navy-900">{de ? 'Was dem Zahlenden 2026 mindestens bleibt' : 'What the payer keeps at least in 2026'}</h2>
+    <dl class="mt-4 grid gap-x-8 gap-y-4 sm:grid-cols-2 lg:grid-cols-3">
+      {selbst.map(([k, v, z]) => <div class="border-l-2 border-accent-600 pl-3"><dt class="text-sm text-navy-700">{k}</dt><dd class="tabular-nums font-serif text-2xl font-bold text-navy-900">{$(v, Number.isInteger(v) ? 0 : 2)}</dd><dd class="text-sm text-navy-600">{z}</dd></div>)}
+    </dl>
+  </section>
+  <section class="mt-10 border-t border-navy-200 pt-6" aria-labelledby="mangel">
+    <h2 id="mangel" class="text-2xl font-bold text-navy-900">{de ? 'Das Rechenbeispiel der Tabelle, vom Rechner nachgerechnet' : 'The table’s own worked example, recalculated'}</h2>
+    <p class="mt-2 text-navy-700">{de ? `Anmerkung C der Tabelle: ${$(bsp.netto)} bereinigtes Netto, drei Kinder (18 Jahre und Schülerin, 7 und 5 Jahre). Nach dem Selbstbehalt von ${$(bsp.selbstbehalt)} bleiben ${$(bsp.verteilungsmasse)} zu verteilen.` : `Note C of the table: ${$(bsp.netto)} adjusted net income, three children (18 and still at school, 7 and 5). After the ${$(bsp.selbstbehalt)} self-retention, ${$(bsp.verteilungsmasse)} is left to share.`}</p>
+    <div class="not-prose my-4 overflow-x-auto">
+      <table class="journal w-full text-sm">
+        <thead><tr><th scope="col" class="py-2 text-left">{de ? 'Kind' : 'Child'}</th><th scope="col" class="text-right">{de ? 'Einsatzbetrag' : 'Starting amount'}</th><th scope="col" class="text-right">{de ? 'Anteil' : 'Share'}</th><th scope="col" class="text-right">{de ? 'Unterhalt' : 'Support'}</th></tr></thead>
+        <tbody>{bsp.kinder.map((k, i) => <tr class="border-t border-navy-100"><th scope="row" class="py-1.5 text-left font-medium">{de ? `K${i + 1}, ${k.alter} Jahre` : `C${i + 1}, age ${k.alter}`}</th><td class="tabular-nums text-right">{$(k.tabellenZahlbetrag, 2)}</td><td class="tabular-nums text-right">{(k.zahlbetrag / bsp.verteilungsmasse * 100).toLocaleString(LANG_TAGS[lang], { maximumFractionDigits: 1 })} %</td><td class="tabular-nums text-right font-semibold">{$(k.zahlbetrag, 2)}</td></tr>)}</tbody>
+      </table>
+    </div>
+    <p class="text-sm text-navy-600">{de ? 'Die Tabelle nennt 107,60 €, 105,02 € und 87,38 €: der Rechner kommt auf denselben Cent. Ein automatischer Test prüft das vor jeder Veröffentlichung.' : 'The table states €107.60, €105.02 and €87.38: the calculator lands on the same cent. An automatic test checks this before every release.'}</p>
+  </section>
+  <div class="prose prose-slate mt-10 max-w-none border-t border-navy-200 pt-4">
+    {parts.map((p, i) => i % 2 === 0 ? <Fragment set:html={p} /> : <MiniSim client:load kind={p} lang={lang} href={route('home', lang)} />)}
+  </div>
+  <section class="mt-10 border-t border-navy-200 pt-6" aria-labelledby="gebiete" data-chrome>
+    <h2 id="gebiete" class="text-2xl font-bold text-navy-900">{de ? 'Die anderen Rechengebiete' : 'The other areas we calculate'}</h2>
+    <ul class="mt-4 divide-y divide-navy-200 border-y border-navy-200">
+      {gebiete.map(({ g, text }) => { const p = ersteSeite(g); return p && <li class="py-3 sm:flex sm:gap-6"><a class="font-semibold text-accent-700 underline sm:w-56 sm:shrink-0" href={route(p.id, lang)}>{groupLabel(g, lang)}</a><span class="text-navy-700">{text}</span></li>; })}
+    </ul>
+  </section>
+</PageLayout>

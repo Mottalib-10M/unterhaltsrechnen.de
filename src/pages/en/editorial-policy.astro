@@ -1,0 +1,29 @@
+---
+import PageLayout from '../../layouts/PageLayout.astro';
+import { AUTHOR_NAME, CONTACT_EMAIL, LAST_UPDATED, REVIEW_CYCLE_MONTHS, SITE_NAMES } from '../../data/site-config';
+import { route } from '../../i18n/routes';
+import { PRUEFUNG } from '../../lib/pruefung';
+const lang = 'en';
+---
+<PageLayout title={`Editorial policy – ${SITE_NAMES[lang]}`} description="Where the figures on German maintenance, divorce costs, garnishment and inheritance come from, who answers for them, how often they are checked and how errors are fixed." lang={lang} noindex={true} breadcrumbs={[{ label: 'Editorial policy' }]} showAuthor={false}>
+  <div class="prose prose-slate max-w-none">
+    <h1>Editorial policy and corrections</h1>
+    <p>Agreeing maintenance after a separation, fending off a wage garnishment or estimating an inheritance means deciding about money that you or your children need or are owed. So here is where each figure comes from and what happens if one is wrong.</p>
+    <h2>Responsibility</h2><p>Content and calculators are the responsibility of {AUTHOR_NAME}. Contact: <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>.</p>
+    <h2>Primary sources only</h2>
+    <p>No value comes from a law-firm blog, a forum or another calculator. We read:</p>
+    <ul>
+      <li><strong>the Düsseldorf Higher Regional Court</strong>: the 2026 Düsseldorf Table with its notes and payment table, the maintenance guidelines of the NRW courts;</li>
+      <li><strong>gesetze-im-internet.de</strong>: the Civil Code, Code of Civil Procedure, family procedure and court-cost statutes, the Lawyers’ Fees Act, the Inheritance Tax Act and the other statutes in force;</li>
+      <li><strong>the Federal Law Gazette</strong>: the 2026 garnishment limits notice, the 2026 legal aid notice, the social insurance reference values;</li>
+      <li><strong>the Federal Court of Justice</strong>: decisions that set a calculation method, such as shared care and extended contact.</li>
+    </ul>
+    <h2>Testing before every release</h2><p>The {PRUEFUNG.dtZellen} payment amounts of the Düsseldorf Table, its shortfall example, the {PRUEFUNG.pfZeilen} lines of the garnishment table and the court and lawyer fee tables run as automatic tests. If a result is a cent off, nothing is published.</p>
+    <h2>Review cycle</h2><p>A full review at least every {REVIEW_CYCLE_MONTHS} months, plus three fixed dates: early December (new Düsseldorf Table), spring (garnishment limits from 1 July) and whenever child benefit or the cost statutes change. The date on every page comes from the parameter file.</p>
+    <h2>Handling errors</h2>
+    <ol><li>Check against the primary source.</li><li>Fix the data or code and add a test that catches the error in future.</li><li>New date on the page; a significant correction is noted on the page concerned.</li></ol>
+    <h2>Independence</h2><p>We take no money from law firms, online divorce portals, debt collectors or banks and recommend no providers. If that changes, the text will say so.</p>
+    <h2>Not legal advice</h2><p>The site explains rules and calculates from published tables. It provides no legal services within the meaning of the German Legal Services Act and does not answer questions about individual cases.</p>
+    <p>See also the <a href={route('method', lang)}>calculation method</a>. Version: {LAST_UPDATED}.</p>
+  </div>
+</PageLayout>

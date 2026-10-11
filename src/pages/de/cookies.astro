@@ -1,0 +1,16 @@
+---
+import PageLayout from '../../layouts/PageLayout.astro';
+import { CONTACT_EMAIL, LAST_UPDATED, SITE_NAMES } from '../../data/site-config';
+import { route } from '../../i18n/routes';
+const lang = 'de';
+---
+<PageLayout title={`Cookies – ${SITE_NAMES[lang]}`} description="Der Brutto-Netto-Rechner setzt keine Cookies und speichert nichts über Sie. Die Stabilität der Seite wird anonym mit Microsoft Clarity im cookiefreien Modus geprüft." lang={lang} noindex={true} breadcrumbs={[{ label: 'Cookies' }]} showAuthor={false}>
+  <div class="prose prose-slate max-w-none">
+    <h1>Cookies</h1>
+    <p>Ergänzung zur <a href={route('privacy', lang)}>Datenschutzerklärung</a>.</p>
+    <h2>Keine Cookies</h2><p>Diese Website setzt auf keiner Seite ein Cookie, und die Rechner legen nichts auf Ihrem Gerät ab: Gehalt, Kinderzahl und Wegstrecke bleiben in der geöffneten Seite und sind weg, sobald Sie sie schließen. Deshalb gibt es auch kein Cookie-Banner, es gibt nichts zuzustimmen.</p>
+    <h2>Anonyme Prüfung der Stabilität</h2><p>Um defekte Seiten, Skriptfehler, langsame Ladezeiten und Schaltflächen ohne Wirkung zu erkennen, lädt die Seite Microsoft Clarity im cookiefreien Modus. Clarity setzt dann kein Cookie (weder <code>_clck</code> und <code>_clsk</code> noch <code>MUID</code> oder <code>CLID</code>), vergibt für jeden Seitenaufruf eine eigene, einmalige Kennung und verknüpft Ihre Besuche nicht miteinander. Seiteninhalte und Eingaben werden maskiert, bevor etwas übertragen wird.</p>
+    <h2>Trotzdem blockieren</h2><p>Wer auch diese Messung nicht möchte, blockiert die Domain clarity.ms oder nutzt einen Inhaltsblocker; die Rechner funktionieren unverändert.</p>
+    <p>Fragen: <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>. Stand: {LAST_UPDATED}.</p>
+  </div>
+</PageLayout>

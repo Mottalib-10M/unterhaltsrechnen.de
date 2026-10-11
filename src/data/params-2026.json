@@ -1,0 +1,1058 @@
+{
+  "_lisezmoi": "Alle Rechtswerte 2026 der Seite. Jeder Block nennt seine Quelle (Schlüssel in `sources`), jeder Wert wurde am retrieved_at an der amtlichen Quelle gelesen. Nie in Seiten oder Code abschreiben: immer von hier lesen.",
+  "year": 2026,
+  "retrieved_at": "2026-10-11",
+  "valid_from": "2026-01-01",
+  "valid_to": "2026-12-31",
+  "dt": {
+    "_quelle": "olgDtPdf",
+    "_hinweis": "Düsseldorfer Tabelle, Stand 01.01.2026. gruppen_bis: Obergrenze des bereinigten Nettoeinkommens je Einkommensgruppe; bedarf[g] = [0-5, 6-11, 12-17, ab 18]; prozent und bkb je Gruppe. Gruppe 1: BKB 1.200 (nicht erwerbstätig) / 1.450 (erwerbstätig).",
+    "stand": "2026-01-01",
+    "gruppen_bis": [
+      2100,
+      2500,
+      2900,
+      3300,
+      3700,
+      4100,
+      4500,
+      4900,
+      5300,
+      5700,
+      6400,
+      7200,
+      8200,
+      9700,
+      11200
+    ],
+    "bedarf": [
+      [
+        486,
+        558,
+        653,
+        698
+      ],
+      [
+        511,
+        586,
+        686,
+        733
+      ],
+      [
+        535,
+        614,
+        719,
+        768
+      ],
+      [
+        559,
+        642,
+        751,
+        803
+      ],
+      [
+        584,
+        670,
+        784,
+        838
+      ],
+      [
+        623,
+        715,
+        836,
+        894
+      ],
+      [
+        661,
+        759,
+        889,
+        950
+      ],
+      [
+        700,
+        804,
+        941,
+        1006
+      ],
+      [
+        739,
+        849,
+        993,
+        1061
+      ],
+      [
+        778,
+        893,
+        1045,
+        1117
+      ],
+      [
+        817,
+        938,
+        1098,
+        1173
+      ],
+      [
+        856,
+        983,
+        1150,
+        1229
+      ],
+      [
+        895,
+        1027,
+        1202,
+        1285
+      ],
+      [
+        934,
+        1072,
+        1254,
+        1341
+      ],
+      [
+        972,
+        1116,
+        1306,
+        1396
+      ]
+    ],
+    "prozent": [
+      100,
+      105,
+      110,
+      115,
+      120,
+      128,
+      136,
+      144,
+      152,
+      160,
+      168,
+      176,
+      184,
+      192,
+      200
+    ],
+    "bkb": [
+      1450,
+      1750,
+      1850,
+      1950,
+      2050,
+      2150,
+      2250,
+      2350,
+      2450,
+      2550,
+      2850,
+      3250,
+      3750,
+      4350,
+      5050
+    ],
+    "bkb_gruppe1_nicht_erwerbstaetig": 1200,
+    "altersstufen": [
+      [
+        0,
+        5
+      ],
+      [
+        6,
+        11
+      ],
+      [
+        12,
+        17
+      ],
+      [
+        18,
+        99
+      ]
+    ],
+    "student_bedarf": 990,
+    "student_warmmiete": 440,
+    "berechtigte_tabellenbasis": 2,
+    "mangelfall_beispiel": {
+      "netto": 1750,
+      "selbstbehalt": 1450,
+      "einsatz": [
+        439,
+        428.5,
+        356.5
+      ],
+      "ergebnis": [
+        107.6,
+        105.02,
+        87.38
+      ]
+    }
+  },
+  "selbstbehalt": {
+    "_quelle": "olgDtPdf",
+    "notwendig_erwerbstaetig": 1450,
+    "notwendig_nicht_erwerbstaetig": 1200,
+    "notwendig_warmmiete": 520,
+    "angemessen": 1750,
+    "angemessen_warmmiete": 650,
+    "ehegatte_erwerbstaetig": 1600,
+    "ehegatte_nicht_erwerbstaetig": 1475,
+    "ehegatte_warmmiete": 580,
+    "eltern": 2650,
+    "eltern_warmmiete": 1000,
+    "eltern_anrechnungsfrei_anteil": 0.7,
+    "eltern_ehegatte_mindest": 2120,
+    "enkel": 2650,
+    "enkel_anrechnungsfrei_anteil": 0.5,
+    "existenzminimum_ehegatte_erwerbstaetig": 1450,
+    "existenzminimum_ehegatte_nicht_erwerbstaetig": 1200,
+    "bedarf_1615l_mindest": 1200
+  },
+  "ehegatte": {
+    "_quelle": "olgDtPdf",
+    "quote_erwerb": 0.45,
+    "quote_sonstige": 0.5,
+    "quote_nicht_erwerbstaetig": 0.5,
+    "erwerbsanreiz": 0.1,
+    "konkreter_bedarf_ab_familieneinkommen": 11200
+  },
+  "leitlinien": {
+    "_quelle": "olgLeitlinien",
+    "sockel_volljaehrig": 1750,
+    "pauschale_berufsbedingt_fiktiv": 0.05,
+    "kfz_km": 0.42,
+    "kfz_km_ab_31": 0.28,
+    "ausbildungsaufwand": 100,
+    "altersvorsorge_sekundaer_kind_ehegatte": 0.04,
+    "altersvorsorge_sekundaer_eltern": 0.05,
+    "betreuender_dreifaches": 3
+  },
+  "kindergeld": {
+    "_quelle": "estg66",
+    "monat": 259
+  },
+  "mindestunterhalt": {
+    "_quelle": "olgDtPdf",
+    "_hinweis": "Mindestbedarf = 1. Einkommensgruppe der DT 2026, Siebte Verordnung zur Änderung der Mindestunterhaltsverordnung vom 15.11.2024; Prozentsätze des sächlichen Existenzminimums nach § 1612a Abs. 1 BGB.",
+    "stufen": [
+      486,
+      558,
+      653
+    ],
+    "prozent_existenzminimum": [
+      0.87,
+      1.0,
+      1.17
+    ]
+  },
+  "uvg": {
+    "_quelle": "uvg2",
+    "_hinweis": "Unterhaltsvorschuss = Mindestunterhalt (§ 2 Abs. 1 UVG) minus Kindergeld für ein erstes Kind (§ 2 Abs. 2 UVG). Ab 12 Jahren nur unter den Voraussetzungen des § 1 Abs. 1a UVG.",
+    "alter_grenze_ohne_bedingung": 12,
+    "alter_grenze": 18,
+    "mindesteinkommen_elternteil_ab12": 600
+  },
+  "elternunterhalt": {
+    "_quelle": "sgb12_94",
+    "jahreseinkommensgrenze": 100000
+  },
+  "pfaendung": {
+    "_quelle": "pfaendBek2026",
+    "gueltig_ab": "2026-07-01",
+    "monat": {
+      "grundfreibetrag": 1587.4,
+      "erste_person": 597.42,
+      "weitere_person": 332.83,
+      "obergrenze": 4866.3,
+      "rundung": 10
+    },
+    "woche": {
+      "grundfreibetrag": 365.33,
+      "erste_person": 137.5,
+      "weitere_person": 76.6,
+      "obergrenze": 1119.9,
+      "rundung": 2.5
+    },
+    "tag": {
+      "grundfreibetrag": 73.06,
+      "erste_person": 27.5,
+      "weitere_person": 15.32,
+      "obergrenze": 223.99,
+      "rundung": 0.5
+    },
+    "vorjahr_monat": {
+      "grundfreibetrag": 1555.0,
+      "erste_person": 585.23,
+      "weitere_person": 326.04,
+      "obergrenze": 4766.99
+    },
+    "unpfaendbar_zehntel": [
+      3,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "max_personen": 5
+  },
+  "pkonto": {
+    "_quelle": "zpo899",
+    "_hinweis": "Grundfreibetrag des P-Kontos = monatlicher Freibetrag nach § 850c Abs. 1, aufgerundet auf volle 10 Euro (§ 899 Abs. 1 ZPO); Erhöhungsbeträge nach § 902 ZPO; nicht verbrauchtes Guthaben bleibt drei Monate geschützt (§ 899 Abs. 2 ZPO).",
+    "rundung": 10,
+    "uebertrag_monate": 3
+  },
+  "famgkg": {
+    "_quelle": "famgkg28",
+    "basis_bis": 500,
+    "basis_gebuehr": 40,
+    "stufen": [
+      [
+        2000,
+        500,
+        21.0
+      ],
+      [
+        10000,
+        1000,
+        22.5
+      ],
+      [
+        25000,
+        3000,
+        30.5
+      ],
+      [
+        50000,
+        5000,
+        40.5
+      ],
+      [
+        200000,
+        15000,
+        140.0
+      ],
+      [
+        500000,
+        30000,
+        210.0
+      ],
+      [
+        null,
+        50000,
+        210.0
+      ]
+    ],
+    "mindestgebuehr": 15,
+    "kv1110_satz": 2.0,
+    "kv1111_satz": 0.5,
+    "ehe_mindestwert": 3000,
+    "ehe_hoechstwert": 1000000,
+    "ehe_monate_netto": 3,
+    "va_prozent_je_anrecht": 0.1,
+    "va_mindestwert": 1000,
+    "kindschaft_zuschlag": 0.2,
+    "kindschaft_zuschlag_max": 5000,
+    "kv1220_satz": 3.0
+  },
+  "rvg": {
+    "_quelle": "rvg13",
+    "basis_bis": 500,
+    "basis_gebuehr": 51.5,
+    "stufen": [
+      [
+        2000,
+        500,
+        41.5
+      ],
+      [
+        10000,
+        1000,
+        59.5
+      ],
+      [
+        25000,
+        3000,
+        55.0
+      ],
+      [
+        50000,
+        5000,
+        86.0
+      ],
+      [
+        200000,
+        15000,
+        99.5
+      ],
+      [
+        500000,
+        30000,
+        140.0
+      ],
+      [
+        null,
+        50000,
+        175.0
+      ]
+    ],
+    "mindestgebuehr": 15,
+    "vv3100": 1.3,
+    "vv3104": 1.2,
+    "vv1003": 1.0,
+    "vv1000": 1.5,
+    "vv7002_anteil": 0.2,
+    "vv7002_max": 20,
+    "ust": 0.19
+  },
+  "versorgungsausgleich": {
+    "_quelle": "versausglg18",
+    "bezugsgroesse_monat": 3955,
+    "bagatelle_rente_anteil": 0.01,
+    "bagatelle_kapital_anteil": 1.2
+  },
+  "erbrecht": {
+    "_quelle": "bgb1931",
+    "ehegatte_neben_ordnung1": 0.25,
+    "ehegatte_neben_ordnung2": 0.5,
+    "zugewinn_viertel": 0.25,
+    "guetertrennung_kinder_max_gleich": 2,
+    "pflichtteil_quote": 0.5,
+    "ergaenzung_abschmelzung_jahr": 0.1,
+    "ergaenzung_jahre": 10
+  },
+  "erbst": {
+    "_quelle": "erbstg16",
+    "freibetrag": {
+      "ehegatte": 500000,
+      "kind": 400000,
+      "enkel_kind_verstorben": 400000,
+      "enkel": 200000,
+      "eltern_erbfall": 100000,
+      "stk2": 20000,
+      "stk3": 20000
+    },
+    "versorgung_ehegatte": 256000,
+    "versorgung_kind": [
+      [
+        5,
+        52000
+      ],
+      [
+        10,
+        41000
+      ],
+      [
+        15,
+        30700
+      ],
+      [
+        20,
+        20500
+      ],
+      [
+        27,
+        10300
+      ]
+    ],
+    "hausrat_stk1": 41000,
+    "bewegliche_stk1": 12000,
+    "hausrat_stk23": 12000,
+    "erbfallkosten_pauschale": 15000,
+    "rundung": 100,
+    "stufen_bis": [
+      75000,
+      300000,
+      600000,
+      6000000,
+      13000000,
+      26000000
+    ],
+    "saetze": {
+      "I": [
+        0.07,
+        0.11,
+        0.15,
+        0.19,
+        0.23,
+        0.27,
+        0.3
+      ],
+      "II": [
+        0.15,
+        0.2,
+        0.25,
+        0.3,
+        0.35,
+        0.4,
+        0.43
+      ],
+      "III": [
+        0.3,
+        0.3,
+        0.3,
+        0.3,
+        0.5,
+        0.5,
+        0.5
+      ]
+    },
+    "haerte_bis_30": 0.5,
+    "haerte_ueber_30": 0.75,
+    "zusammenrechnung_jahre": 10
+  },
+  "pkh": {
+    "_quelle": "pkhb2026",
+    "erwerbstaetige": 282,
+    "partei": 619,
+    "ehegatte": 619,
+    "erwachsene": 496,
+    "jugendliche_15_17": 518,
+    "kinder_7_14": 429,
+    "kinder_bis_6": 393,
+    "rate_anteil": 0.5,
+    "rate_schwelle": 600,
+    "rate_sockel": 300,
+    "rate_mindest": 10,
+    "max_raten": 48
+  },
+  "scheidung": {
+    "_quelle": "bgb1566",
+    "trennungsjahr_monate": 12,
+    "trennung_ohne_zustimmung_jahre": 3,
+    "betreuungsunterhalt_jahre": 3
+  },
+  "sources": {
+    "olgDt": {
+      "url": "https://www.olg-duesseldorf.nrw.de/infos/Duesseldorfer_Tabelle/Tabelle-2026/index.php",
+      "label": {
+        "de": "OLG Düsseldorf: Düsseldorfer Tabelle 2026 (Stand 01.01.2026)",
+        "en": "Düsseldorf Higher Regional Court: Düsseldorf Table 2026 (as of 1 January 2026)"
+      }
+    },
+    "olgDtPdf": {
+      "url": "https://www.olg-duesseldorf.nrw.de/infos/Duesseldorfer_Tabelle/Tabelle-2026/DT_2026.pdf",
+      "label": {
+        "de": "Düsseldorfer Tabelle 2026, PDF mit Anmerkungen A bis D und Zahlbetragstabelle",
+        "en": "Düsseldorf Table 2026, PDF with notes A to D and the net payment table"
+      }
+    },
+    "olgLeitlinien": {
+      "url": "https://www.olg-duesseldorf.nrw.de/infos/Duesseldorfer_Tabelle/Tabelle-2026/Leitlinien-NRW-2026.pdf",
+      "label": {
+        "de": "Unterhaltsleitlinien der Oberlandesgerichte in NRW, Stand 01.01.2026",
+        "en": "Maintenance guidelines of the NRW higher regional courts, as of 1 January 2026"
+      }
+    },
+    "bgb1601": {
+      "url": "https://www.gesetze-im-internet.de/bgb/__1601.html",
+      "label": {
+        "de": "§ 1601 BGB: Unterhaltsverpflichtete (Verwandte in gerader Linie)",
+        "en": "Section 1601 BGB: relatives in direct line owe maintenance"
+      }
+    },
+    "bgb1603": {
+      "url": "https://www.gesetze-im-internet.de/bgb/__1603.html",
+      "label": {
+        "de": "§ 1603 BGB: Leistungsfähigkeit, gesteigerte Unterhaltspflicht",
+        "en": "Section 1603 BGB: ability to pay, heightened duty towards children"
+      }
+    },
+    "bgb1606": {
+      "url": "https://www.gesetze-im-internet.de/bgb/__1606.html",
+      "label": {
+        "de": "§ 1606 BGB: Rangverhältnisse mehrerer Pflichtiger, Betreuung als Unterhalt",
+        "en": "Section 1606 BGB: ranking of several liable persons, care as maintenance"
+      }
+    },
+    "bgb1609": {
+      "url": "https://www.gesetze-im-internet.de/bgb/__1609.html",
+      "label": {
+        "de": "§ 1609 BGB: Rangfolge mehrerer Unterhaltsberechtigter",
+        "en": "Section 1609 BGB: ranking of several persons entitled to maintenance"
+      }
+    },
+    "bgb1612a": {
+      "url": "https://www.gesetze-im-internet.de/bgb/__1612a.html",
+      "label": {
+        "de": "§ 1612a BGB: Mindestunterhalt minderjähriger Kinder, Altersstufen",
+        "en": "Section 1612a BGB: minimum maintenance of minor children, age bands"
+      }
+    },
+    "bgb1612b": {
+      "url": "https://www.gesetze-im-internet.de/bgb/__1612b.html",
+      "label": {
+        "de": "§ 1612b BGB: Deckung des Barbedarfs durch Kindergeld",
+        "en": "Section 1612b BGB: child benefit covering the cash need"
+      }
+    },
+    "bgb1361": {
+      "url": "https://www.gesetze-im-internet.de/bgb/__1361.html",
+      "label": {
+        "de": "§ 1361 BGB: Unterhalt bei Getrenntleben",
+        "en": "Section 1361 BGB: maintenance during separation"
+      }
+    },
+    "bgb1570": {
+      "url": "https://www.gesetze-im-internet.de/bgb/__1570.html",
+      "label": {
+        "de": "§ 1570 BGB: Unterhalt wegen Betreuung eines Kindes",
+        "en": "Section 1570 BGB: maintenance for caring for a child"
+      }
+    },
+    "bgb1578b": {
+      "url": "https://www.gesetze-im-internet.de/bgb/__1578b.html",
+      "label": {
+        "de": "§ 1578b BGB: Herabsetzung und zeitliche Begrenzung des Unterhalts",
+        "en": "Section 1578b BGB: reduction and time limit of maintenance"
+      }
+    },
+    "bgb1615l": {
+      "url": "https://www.gesetze-im-internet.de/bgb/__1615l.html",
+      "label": {
+        "de": "§ 1615l BGB: Unterhalt von Mutter und Vater aus Anlass der Geburt",
+        "en": "Section 1615l BGB: maintenance for an unmarried parent after the birth"
+      }
+    },
+    "bgb1565": {
+      "url": "https://www.gesetze-im-internet.de/bgb/__1565.html",
+      "label": {
+        "de": "§ 1565 BGB: Scheitern der Ehe, Trennungsjahr",
+        "en": "Section 1565 BGB: breakdown of the marriage, separation year"
+      }
+    },
+    "bgb1566": {
+      "url": "https://www.gesetze-im-internet.de/bgb/__1566.html",
+      "label": {
+        "de": "§ 1566 BGB: Vermutung für das Scheitern nach einem oder drei Jahren",
+        "en": "Section 1566 BGB: presumed breakdown after one or three years"
+      }
+    },
+    "bgb1373": {
+      "url": "https://www.gesetze-im-internet.de/bgb/__1373.html",
+      "label": {
+        "de": "§ 1373 BGB: Zugewinn",
+        "en": "Section 1373 BGB: accrued gain"
+      }
+    },
+    "bgb1374": {
+      "url": "https://www.gesetze-im-internet.de/bgb/__1374.html",
+      "label": {
+        "de": "§ 1374 BGB: Anfangsvermögen",
+        "en": "Section 1374 BGB: initial assets"
+      }
+    },
+    "bgb1375": {
+      "url": "https://www.gesetze-im-internet.de/bgb/__1375.html",
+      "label": {
+        "de": "§ 1375 BGB: Endvermögen",
+        "en": "Section 1375 BGB: final assets"
+      }
+    },
+    "bgb1378": {
+      "url": "https://www.gesetze-im-internet.de/bgb/__1378.html",
+      "label": {
+        "de": "§ 1378 BGB: Ausgleichsforderung",
+        "en": "Section 1378 BGB: equalisation claim"
+      }
+    },
+    "bgb1371": {
+      "url": "https://www.gesetze-im-internet.de/bgb/__1371.html",
+      "label": {
+        "de": "§ 1371 BGB: Zugewinnausgleich im Todesfall",
+        "en": "Section 1371 BGB: accrued-gain equalisation on death"
+      }
+    },
+    "bgb1924": {
+      "url": "https://www.gesetze-im-internet.de/bgb/__1924.html",
+      "label": {
+        "de": "§ 1924 BGB: Gesetzliche Erben erster Ordnung",
+        "en": "Section 1924 BGB: statutory heirs of the first order"
+      }
+    },
+    "bgb1925": {
+      "url": "https://www.gesetze-im-internet.de/bgb/__1925.html",
+      "label": {
+        "de": "§ 1925 BGB: Gesetzliche Erben zweiter Ordnung",
+        "en": "Section 1925 BGB: statutory heirs of the second order"
+      }
+    },
+    "bgb1931": {
+      "url": "https://www.gesetze-im-internet.de/bgb/__1931.html",
+      "label": {
+        "de": "§ 1931 BGB: Gesetzliches Erbrecht des Ehegatten",
+        "en": "Section 1931 BGB: statutory inheritance right of the spouse"
+      }
+    },
+    "bgb2303": {
+      "url": "https://www.gesetze-im-internet.de/bgb/__2303.html",
+      "label": {
+        "de": "§ 2303 BGB: Pflichtteilsberechtigte, Höhe des Pflichtteils",
+        "en": "Section 2303 BGB: who is entitled to a compulsory share, its amount"
+      }
+    },
+    "bgb2325": {
+      "url": "https://www.gesetze-im-internet.de/bgb/__2325.html",
+      "label": {
+        "de": "§ 2325 BGB: Pflichtteilsergänzungsanspruch bei Schenkungen",
+        "en": "Section 2325 BGB: top-up of the compulsory share for gifts"
+      }
+    },
+    "estg66": {
+      "url": "https://www.gesetze-im-internet.de/estg/__66.html",
+      "label": {
+        "de": "§ 66 EStG: Höhe des Kindergeldes (259 Euro je Kind)",
+        "en": "Section 66 Income Tax Act: amount of child benefit"
+      }
+    },
+    "uvg1": {
+      "url": "https://www.gesetze-im-internet.de/uhvorschg/__1.html",
+      "label": {
+        "de": "§ 1 Unterhaltsvorschussgesetz: Berechtigte",
+        "en": "Section 1 Maintenance Advance Act: who is entitled"
+      }
+    },
+    "uvg2": {
+      "url": "https://www.gesetze-im-internet.de/uhvorschg/__2.html",
+      "label": {
+        "de": "§ 2 Unterhaltsvorschussgesetz: Umfang der Unterhaltsleistung",
+        "en": "Section 2 Maintenance Advance Act: amount of the payment"
+      }
+    },
+    "sgb12_94": {
+      "url": "https://www.gesetze-im-internet.de/sgb_12/__94.html",
+      "label": {
+        "de": "§ 94 SGB XII: Übergang von Unterhaltsansprüchen, Jahreseinkommensgrenze 100.000 Euro",
+        "en": "Section 94 Social Code XII: transfer of maintenance claims, 100,000 euro income limit"
+      }
+    },
+    "zpo850c": {
+      "url": "https://www.gesetze-im-internet.de/zpo/__850c.html",
+      "label": {
+        "de": "§ 850c ZPO: Pfändungsgrenzen für Arbeitseinkommen",
+        "en": "Section 850c Code of Civil Procedure: garnishment limits for earned income"
+      }
+    },
+    "zpo850d": {
+      "url": "https://www.gesetze-im-internet.de/zpo/__850d.html",
+      "label": {
+        "de": "§ 850d ZPO: Pfändbarkeit bei Unterhaltsansprüchen",
+        "en": "Section 850d Code of Civil Procedure: garnishment for maintenance claims"
+      }
+    },
+    "zpo899": {
+      "url": "https://www.gesetze-im-internet.de/zpo/__899.html",
+      "label": {
+        "de": "§ 899 ZPO: Pfändungsfreier Betrag auf dem P-Konto",
+        "en": "Section 899 Code of Civil Procedure: protected amount on a garnishment-protection account"
+      }
+    },
+    "zpo902": {
+      "url": "https://www.gesetze-im-internet.de/zpo/__902.html",
+      "label": {
+        "de": "§ 902 ZPO: Erhöhungsbeträge auf dem P-Konto",
+        "en": "Section 902 Code of Civil Procedure: increased amounts on the P-Konto"
+      }
+    },
+    "pfaendBek2026": {
+      "url": "https://www.gesetze-im-internet.de/pf_ndfreigrbek_2026/Pf%C3%A4ndfreiGrBek_2026.pdf",
+      "label": {
+        "de": "Pfändungsfreigrenzenbekanntmachung 2026 vom 19. März 2026 mit Tabellen",
+        "en": "Garnishment Limits Notice 2026 of 19 March 2026, with tables"
+      }
+    },
+    "bgbl2026_80": {
+      "url": "https://www.recht.bund.de/bgbl/1/2026/80/VO.html",
+      "label": {
+        "de": "Bundesgesetzblatt 2026 I Nr. 80: Bekanntmachung zu den Pfändungsfreigrenzen 2026",
+        "en": "Federal Law Gazette 2026 I No. 80: garnishment limits notice 2026"
+      }
+    },
+    "famgkg28": {
+      "url": "https://www.gesetze-im-internet.de/famgkg/__28.html",
+      "label": {
+        "de": "§ 28 FamGKG: Wertgebühren der Familiengerichte",
+        "en": "Section 28 Family Court Costs Act: value-based court fees"
+      }
+    },
+    "famgkg43": {
+      "url": "https://www.gesetze-im-internet.de/famgkg/__43.html",
+      "label": {
+        "de": "§ 43 FamGKG: Verfahrenswert in Ehesachen",
+        "en": "Section 43 Family Court Costs Act: value of divorce proceedings"
+      }
+    },
+    "famgkg44": {
+      "url": "https://www.gesetze-im-internet.de/famgkg/__44.html",
+      "label": {
+        "de": "§ 44 FamGKG: Verbund von Scheidung und Folgesachen",
+        "en": "Section 44 Family Court Costs Act: divorce and ancillary matters combined"
+      }
+    },
+    "famgkg50": {
+      "url": "https://www.gesetze-im-internet.de/famgkg/__50.html",
+      "label": {
+        "de": "§ 50 FamGKG: Verfahrenswert im Versorgungsausgleich",
+        "en": "Section 50 Family Court Costs Act: value of pension-splitting proceedings"
+      }
+    },
+    "famgkg51": {
+      "url": "https://www.gesetze-im-internet.de/famgkg/__51.html",
+      "label": {
+        "de": "§ 51 FamGKG: Verfahrenswert in Unterhaltssachen",
+        "en": "Section 51 Family Court Costs Act: value of maintenance proceedings"
+      }
+    },
+    "famgkgKv": {
+      "url": "https://www.gesetze-im-internet.de/famgkg/anlage_1.html",
+      "label": {
+        "de": "FamGKG Anlage 1, Kostenverzeichnis (Nr. 1110, 1111)",
+        "en": "Family Court Costs Act, Annex 1, schedule of costs (no. 1110, 1111)"
+      }
+    },
+    "famgkgTabelle": {
+      "url": "https://www.gesetze-im-internet.de/famgkg/anlage_2.html",
+      "label": {
+        "de": "FamGKG Anlage 2: Gebührentabelle (BGBl. 2025 I Nr. 109)",
+        "en": "Family Court Costs Act, Annex 2: fee table (Federal Law Gazette 2025 I No. 109)"
+      }
+    },
+    "rvg13": {
+      "url": "https://www.gesetze-im-internet.de/rvg/__13.html",
+      "label": {
+        "de": "§ 13 RVG: Wertgebühren der Rechtsanwälte",
+        "en": "Section 13 Lawyers' Fees Act: value-based fees"
+      }
+    },
+    "rvgVv": {
+      "url": "https://www.gesetze-im-internet.de/rvg/anlage_1.html",
+      "label": {
+        "de": "RVG Anlage 1, Vergütungsverzeichnis (Nr. 1000, 1003, 3100, 3104, 7002, 7008)",
+        "en": "Lawyers' Fees Act, Annex 1, fee schedule (no. 1000, 1003, 3100, 3104, 7002, 7008)"
+      }
+    },
+    "rvgTabelle": {
+      "url": "https://www.gesetze-im-internet.de/rvg/anlage_2.html",
+      "label": {
+        "de": "RVG Anlage 2: Gebührentabelle (BGBl. 2025 I Nr. 109)",
+        "en": "Lawyers' Fees Act, Annex 2: fee table (Federal Law Gazette 2025 I No. 109)"
+      }
+    },
+    "famfg150": {
+      "url": "https://www.gesetze-im-internet.de/famfg/__150.html",
+      "label": {
+        "de": "§ 150 FamFG: Kosten in Scheidungssachen",
+        "en": "Section 150 Family Procedure Act: costs in divorce cases"
+      }
+    },
+    "famfg114": {
+      "url": "https://www.gesetze-im-internet.de/famfg/__114.html",
+      "label": {
+        "de": "§ 114 FamFG: Anwaltszwang in Ehesachen",
+        "en": "Section 114 Family Procedure Act: mandatory legal representation in divorce"
+      }
+    },
+    "versausglg1": {
+      "url": "https://www.gesetze-im-internet.de/versausglg/__1.html",
+      "label": {
+        "de": "§ 1 VersAusglG: Halbteilung der Anrechte",
+        "en": "Section 1 Pension Equalisation Act: halving of entitlements"
+      }
+    },
+    "versausglg18": {
+      "url": "https://www.gesetze-im-internet.de/versausglg/__18.html",
+      "label": {
+        "de": "§ 18 VersAusglG: Geringfügigkeit",
+        "en": "Section 18 Pension Equalisation Act: minor values"
+      }
+    },
+    "svbezgrv2026": {
+      "url": "https://www.gesetze-im-internet.de/svbezgrv_2026/__1.html",
+      "label": {
+        "de": "§ 1 Sozialversicherungsrechengrößen-Verordnung 2026: Bezugsgröße 3.955 Euro",
+        "en": "Section 1 Social Insurance Values Regulation 2026: reference value"
+      }
+    },
+    "erbstg10": {
+      "url": "https://www.gesetze-im-internet.de/erbstg_1974/__10.html",
+      "label": {
+        "de": "§ 10 ErbStG: Steuerpflichtiger Erwerb, Erbfallkostenpauschale",
+        "en": "Section 10 Inheritance Tax Act: taxable acquisition, flat allowance for estate costs"
+      }
+    },
+    "erbstg13": {
+      "url": "https://www.gesetze-im-internet.de/erbstg_1974/__13.html",
+      "label": {
+        "de": "§ 13 ErbStG: Steuerbefreiungen (Hausrat)",
+        "en": "Section 13 Inheritance Tax Act: exemptions (household goods)"
+      }
+    },
+    "erbstg14": {
+      "url": "https://www.gesetze-im-internet.de/erbstg_1974/__14.html",
+      "label": {
+        "de": "§ 14 ErbStG: Zusammenrechnung innerhalb von zehn Jahren",
+        "en": "Section 14 Inheritance Tax Act: adding up gifts within ten years"
+      }
+    },
+    "erbstg15": {
+      "url": "https://www.gesetze-im-internet.de/erbstg_1974/__15.html",
+      "label": {
+        "de": "§ 15 ErbStG: Steuerklassen",
+        "en": "Section 15 Inheritance Tax Act: tax classes"
+      }
+    },
+    "erbstg16": {
+      "url": "https://www.gesetze-im-internet.de/erbstg_1974/__16.html",
+      "label": {
+        "de": "§ 16 ErbStG: Freibeträge",
+        "en": "Section 16 Inheritance Tax Act: allowances"
+      }
+    },
+    "erbstg17": {
+      "url": "https://www.gesetze-im-internet.de/erbstg_1974/__17.html",
+      "label": {
+        "de": "§ 17 ErbStG: Besonderer Versorgungsfreibetrag",
+        "en": "Section 17 Inheritance Tax Act: special pension allowance"
+      }
+    },
+    "erbstg19": {
+      "url": "https://www.gesetze-im-internet.de/erbstg_1974/__19.html",
+      "label": {
+        "de": "§ 19 ErbStG: Steuersätze und Härteausgleich",
+        "en": "Section 19 Inheritance Tax Act: tax rates and hardship relief"
+      }
+    },
+    "zpo115": {
+      "url": "https://www.gesetze-im-internet.de/zpo/__115.html",
+      "label": {
+        "de": "§ 115 ZPO: Einsatz von Einkommen und Vermögen bei Prozesskostenhilfe",
+        "en": "Section 115 Code of Civil Procedure: income and assets for legal aid"
+      }
+    },
+    "pkhb2026": {
+      "url": "https://www.gesetze-im-internet.de/pkhb_2026/BJNR1680A0025.html",
+      "label": {
+        "de": "Prozesskostenhilfebekanntmachung 2026 (BGBl. 2025 I Nr. 360)",
+        "en": "Legal Aid Notice 2026 (Federal Law Gazette 2025 I No. 360)"
+      }
+    },
+    "bghWechsel2017": {
+      "url": "https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/XII_ZS/2015/XII_ZB_565-15.pdf?__blob=publicationFile&v=1",
+      "label": {
+        "de": "BGH, Beschluss vom 11. Januar 2017, XII ZB 565/15 (Barunterhalt im Wechselmodell)",
+        "en": "Federal Court of Justice, decision of 11 January 2017, XII ZB 565/15 (cash support in shared care)"
+      }
+    },
+    "bghUmgang2026": {
+      "url": "https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/XII_ZS/2025/XII_ZB_415-25.pdf?__blob=publicationFile&v=1",
+      "label": {
+        "de": "BGH, Beschluss vom 15. April 2026, XII ZB 415/25 (erweiterter Umgang, asymmetrisches Wechselmodell)",
+        "en": "Federal Court of Justice, decision of 15 April 2026, XII ZB 415/25 (extended contact, asymmetric shared care)"
+      }
+    },
+    "olgDt2025": {
+      "url": "https://www.olg-duesseldorf.nrw.de/infos/Duesseldorfer_Tabelle/Tabelle-2025/DT_2025_Neufassung-m-geaenderter-Fussnote.pdf",
+      "label": {
+        "de": "Düsseldorfer Tabelle 2025 (Stand 01.01.2025), zum Vergleich",
+        "en": "Düsseldorf Table 2025 (as of 1 January 2025), for comparison"
+      }
+    }
+  },
+  "dt2025": {
+    "_quelle": "olgDt2025",
+    "_hinweis": "Düsseldorfer Tabelle Stand 01.01.2025 (Neufassung mit geänderter Fußnote): nur zum Vergleich auf der Seite der Änderungen 2026. Gruppengrenzen, Prozentsätze, BKB und Selbstbehalte unverändert; Elternunterhalt ohne festen Selbstbehalt.",
+    "bedarf": [
+      [
+        482,
+        554,
+        649,
+        693
+      ],
+      [
+        507,
+        582,
+        682,
+        728
+      ],
+      [
+        531,
+        610,
+        714,
+        763
+      ],
+      [
+        555,
+        638,
+        747,
+        797
+      ],
+      [
+        579,
+        665,
+        779,
+        832
+      ],
+      [
+        617,
+        710,
+        831,
+        888
+      ],
+      [
+        656,
+        754,
+        883,
+        943
+      ],
+      [
+        695,
+        798,
+        935,
+        998
+      ],
+      [
+        733,
+        843,
+        987,
+        1054
+      ],
+      [
+        772,
+        887,
+        1039,
+        1109
+      ],
+      [
+        810,
+        931,
+        1091,
+        1165
+      ],
+      [
+        849,
+        976,
+        1143,
+        1220
+      ],
+      [
+        887,
+        1020,
+        1195,
+        1276
+      ],
+      [
+        926,
+        1064,
+        1247,
+        1331
+      ],
+      [
+        964,
+        1108,
+        1298,
+        1386
+      ]
+    ],
+    "kindergeld": 255
+  }
+}

@@ -1,0 +1,20 @@
+{
+ "accent": "#9E1B1E",
+ "symbol": "§",
+ "variants": [
+  {
+   "file": "og-de.png",
+   "title": "Familienrecht in Zahlen",
+   "subtitle": "",
+   "badge": "2026",
+   "brand": "Familienrecht in Zahlen"
+  },
+  {
+   "file": "og-en.png",
+   "title": "German Family Law in Figures",
+   "subtitle": "",
+   "badge": "2026",
+   "brand": "German Family Law in Figures"
+  }
+ ]
+}

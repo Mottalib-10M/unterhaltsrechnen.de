@@ -1,0 +1,29 @@
+---
+import PageLayout from '../../layouts/PageLayout.astro';
+import { AUTHOR_NAME, CONTACT_EMAIL, LAST_UPDATED, REVIEW_CYCLE_MONTHS, SITE_NAMES } from '../../data/site-config';
+import { route } from '../../i18n/routes';
+import { PRUEFUNG } from '../../lib/pruefung';
+const lang = 'de';
+---
+<PageLayout title={`Redaktionsgrundsätze – ${SITE_NAMES[lang]}`} description="Woher die Werte zu Unterhalt, Scheidungskosten, Pfändung und Erbrecht kommen, wer dafür einsteht, wie oft sie geprüft werden und was nach einer Fehlermeldung geschieht." lang={lang} noindex={true} breadcrumbs={[{ label: 'Redaktionsgrundsätze' }]} showAuthor={false}>
+  <div class="prose prose-slate max-w-none">
+    <h1>Redaktionsgrundsätze und Korrekturen</h1>
+    <p>Wer nach einer Trennung Unterhalt vereinbart, eine Pfändung abwehren muss oder einen Erbteil einschätzt, entscheidet über Geld, das ihm oder seinen Kindern fehlt oder zusteht. Deshalb steht hier, woher jede Zahl kommt und was geschieht, wenn eine falsch ist.</p>
+    <h2>Verantwortung</h2><p>Inhalte und Rechner verantwortet {AUTHOR_NAME}. Kontakt: <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>.</p>
+    <h2>Nur Primärquellen</h2>
+    <p>Kein Wert stammt aus einem Anwaltsblog, einem Forum oder einem anderen Rechner. Gelesen werden:</p>
+    <ul>
+      <li><strong>das Oberlandesgericht Düsseldorf</strong>: Düsseldorfer Tabelle 2026 mit Anmerkungen und Zahlbetragstabelle, Unterhaltsleitlinien der Oberlandesgerichte in NRW;</li>
+      <li><strong>gesetze-im-internet.de</strong>: BGB, ZPO, FamFG, FamGKG, RVG, ErbStG, Unterhaltsvorschussgesetz, SGB XII, VersAusglG in der geltenden Fassung;</li>
+      <li><strong>das Bundesgesetzblatt</strong>: Pfändungsfreigrenzenbekanntmachung 2026, Prozesskostenhilfebekanntmachung 2026, Sozialversicherungsrechengrößen;</li>
+      <li><strong>der Bundesgerichtshof</strong>: Beschlüsse, die einen Rechenweg festlegen, etwa zum Wechselmodell und zum erweiterten Umgang.</li>
+    </ul>
+    <h2>Prüfung vor jeder Veröffentlichung</h2><p>Die {PRUEFUNG.dtZellen} Zahlbeträge der Düsseldorfer Tabelle, ihr Mangelfallbeispiel, die {PRUEFUNG.pfZeilen} Zeilen der Pfändungstabelle und die Gebührentabellen von FamGKG und RVG laufen als automatische Tests. Weicht ein Ergebnis um einen Cent ab, wird nichts veröffentlicht.</p>
+    <h2>Rhythmus</h2><p>Vollständige Durchsicht mindestens alle {REVIEW_CYCLE_MONTHS} Monate, dazu an drei festen Terminen: Anfang Dezember (neue Düsseldorfer Tabelle), Frühjahr (Pfändungsfreigrenzen ab 1. Juli) und bei jeder Änderung von Kindergeld oder Kostengesetzen. Das Datum auf jeder Seite kommt aus der Parameterdatei.</p>
+    <h2>Umgang mit Fehlern</h2>
+    <ol><li>Prüfung an der Primärquelle.</li><li>Korrektur der Daten oder des Codes und ein neuer Test, der den Fehler künftig abfängt.</li><li>Neues Datum auf der Seite; eine größere Korrektur wird auf der betroffenen Seite vermerkt.</li></ol>
+    <h2>Unabhängigkeit</h2><p>Wir erhalten kein Geld von Kanzleien, Portalen für Online-Scheidungen, Inkassounternehmen oder Banken und empfehlen keine Anbieter. Sollte sich das ändern, stünde es im Text.</p>
+    <h2>Keine Rechtsberatung</h2><p>Die Seite erklärt Regeln und rechnet nach veröffentlichten Tabellen. Sie erbringt keine Rechtsdienstleistung im Sinne des Rechtsdienstleistungsgesetzes und beantwortet keine Anfragen zu Einzelfällen.</p>
+    <p>Siehe auch die <a href={route('method', lang)}>Berechnungsmethode</a>. Fassung: {LAST_UPDATED}.</p>
+  </div>
+</PageLayout>
