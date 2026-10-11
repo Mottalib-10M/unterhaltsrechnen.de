@@ -94,11 +94,12 @@ export function ScheidungRechner({ lang = 'de', methodHref }: Props) {
             <summary className="cursor-pointer text-sm font-semibold text-navy-900">{tx(lang, 'Folgesachen, Kinder, Vermögen', 'Ancillary matters, children, assets')}</summary>
             <div className="mt-4 grid grid-cols-2 gap-x-4 gap-y-4">
               <Toggle id="sk-k" label={tx(lang, 'Sorge/Umgang im Verbund?', 'Custody in the same case?')} value={kind} onChange={setKind} options={[{ value: '0', label: tx(lang, 'Nein', 'No') }, { value: '1', label: tx(lang, 'Ja', 'Yes') }]} />
-              <NumberField id="sk-x" label={tx(lang, 'Abzug je Monat (z. B. Kinder)', 'Monthly deduction (e.g. children)')} value={abzug} onChange={setAbzug} unit="€" max={10000} lang={lang} help={tx(lang, 'Gerichtspraxis, Ihre Annahme', 'court practice, your assumption')} />
-              <NumberField id="sk-m" label={tx(lang, 'Zuschlag für Vermögen', 'Surcharge for assets')} value={verm} onChange={setVerm} unit="€" max={1000000} lang={lang} help={tx(lang, 'Gerichtspraxis, Ihre Annahme', 'court practice, your assumption')} />
+              <NumberField id="sk-x" label={tx(lang, 'Abzug je Monat (z. B. Kinder)', 'Monthly deduction (e.g. children)')} value={abzug} onChange={setAbzug} unit="€" max={10000} lang={lang} />
+              <NumberField id="sk-m" label={tx(lang, 'Zuschlag für Vermögen', 'Surcharge for assets')} value={verm} onChange={setVerm} unit="€" max={1000000} lang={lang} />
               <NumberField id="sk-f" label={tx(lang, 'Wert weiterer Folgesachen', 'Value of other ancillary matters')} value={folge} onChange={setFolge} unit="€" max={1000000} lang={lang} />
               <NumberField id="sk-e" label={tx(lang, 'Davon durch Einigung erledigt', 'Of which settled by agreement')} value={einig} onChange={setEinig} unit="€" max={1000000} lang={lang} />
             </div>
+            <p className="mt-3 text-sm text-navy-600">{tx(lang, 'Abzug für Kinder und Zuschlag für Vermögen sind Gerichtspraxis und je Bezirk verschieden: Ihre Annahme.', 'The deduction for children and the surcharge for assets are court practice and vary by district: your assumption.')}</p>
           </details>
         </form>
         <div aria-live="polite" className={kasten}>

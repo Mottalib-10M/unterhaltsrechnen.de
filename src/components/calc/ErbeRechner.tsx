@@ -102,7 +102,7 @@ export function ErbStRechner({ lang = 'de', methodHref }: Props) {
             <SelectField id="es-b" label={tx(lang, 'Verhältnis zum Erblasser', 'Relationship to the deceased')} value={bz} onChange={(v) => setBz(v as Beziehung)} options={BEZIEHUNGEN.map((b) => ({ value: b, label: tx(lang, BL[b][0], BL[b][1]) }))} />
           </div>
           <div className="grid grid-cols-2 gap-x-4 gap-y-4">
-            <Toggle id="es-f" label={tx(lang, 'Anlass', 'Occasion')} value={fall} onChange={setFall} options={[{ value: '1', label: tx(lang, 'Erbe', 'Death') }, { value: '0', label: tx(lang, 'Schenkung', 'Gift') }]} />
+            <SelectField id="es-f" label={tx(lang, 'Anlass', 'Occasion')} value={fall} onChange={setFall} options={[{ value: '1', label: tx(lang, 'Erbe', 'Death') }, { value: '0', label: tx(lang, 'Schenkung', 'Gift') }]} />
             {bz === 'kind' && fall === '1' ? <NumberField id="es-a" label={tx(lang, 'Alter des Kindes', 'Child’s age')} value={alter} onChange={(v) => setAlter(Math.round(v))} unit={tx(lang, 'J.', 'yrs')} max={120} lang={lang} /> : <div className="grid grid-rows-subgrid row-span-3" aria-hidden="true" />}
           </div>
           <div className="grid grid-cols-2 gap-x-4 gap-y-4">
