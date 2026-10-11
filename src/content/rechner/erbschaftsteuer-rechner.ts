@@ -40,6 +40,7 @@ export default defineGuide({
 <li><strong>Alter des Kindes:</strong> erscheint nur bei einem Kind und einem Erbfall und steuert den Versorgungsfreibetrag von ${h.eur(h.P.erbst.versorgung_kind[0][1])} bis ${h.eur(h.P.erbst.versorgung_kind[h.P.erbst.versorgung_kind.length - 1][1])}.</li>
 <li><strong>Davon Hausrat:</strong> Möbel, Wäsche und Kleidung. Steuerfrei bis ${h.eur(h.P.erbst.hausrat_stk1)} in Klasse I und ${h.eur(h.P.erbst.hausrat_stk23)} sonst; mehr rechnet der Rechner nicht heraus.</li>
 <li><strong>Steuerfreie Vorschenkungen:</strong> Zuwendungen derselben Person aus den letzten ${h.num(h.P.erbst.zusammenrechnung_jahre)} Jahren.</li>
+<li><strong>Ihr Anteil am Nachlass:</strong> nur im Erbfall. Die Pauschale für Bestattung und Nachlasskosten gilt nach § 10 Abs. 5 ErbStG insgesamt einmal je Erbfall; Miterben teilen sie nach ihrer Quote.</li>
 </ul>
 <p>Das Ergebnis zeigt die Steuer, die Steuerklasse mit Satz, den Freibetrag, gegebenenfalls den Versorgungsfreibetrag, den steuerpflichtigen Betrag und die Belastung des Erwerbs. Darunter steht der Rechenweg mit den Paragrafen.</p>
 <h2>Fünf Varianten desselben Erbes</h2>
@@ -78,6 +79,7 @@ ${h.table(['Fall', 'Steuerpflichtig', 'Satz', 'Steuer'], [
 <li><strong>Child’s age:</strong> shown only for a child on a death; it sets the pension allowance between ${h.eur(h.P.erbst.versorgung_kind[h.P.erbst.versorgung_kind.length - 1][1])} and ${h.eur(h.P.erbst.versorgung_kind[0][1])}.</li>
 <li><strong>Of which household goods:</strong> furniture, linen and clothing, exempt up to ${h.eur(h.P.erbst.hausrat_stk1)} in class I and ${h.eur(h.P.erbst.hausrat_stk23)} otherwise.</li>
 <li><strong>Untaxed prior gifts:</strong> anything from the same person in the last ${h.num(h.P.erbst.zusammenrechnung_jahre)} years.</li>
+<li><strong>Your share of the estate:</strong> on death only. The flat allowance for funeral and estate costs applies once per estate under section 10(5) ErbStG, so co-heirs split it by their shares.</li>
 </ul>
 <p>The result shows the tax, the class and rate, the allowance and any pension allowance, the taxable amount and the effective burden on what you received, followed by each step with its section of the Act.</p>
 <h2>One inheritance, five outcomes</h2>

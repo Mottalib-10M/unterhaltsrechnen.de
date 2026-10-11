@@ -116,7 +116,9 @@ export function steuerNachTarif(stpfl: number, k: Klasse): { satz: number; steue
   }
   return { satz, steuer: Math.floor(steuer + 1e-6), haerteausgleich: haerte };
 }
-export interface ErbStIn { erwerb: number; beziehung: Beziehung; erbfall: boolean; alterKind?: number; hausrat?: number; nachlasskosten?: number; vorerwerbe?: number }
+export interface ErbStIn { erwerb: number; beziehung: Beziehung; erbfall: boolean; alterKind?: number; hausrat?: number; nachlasskosten?: number; vorerwerbe?: number;
+  /** Anteil am Nachlass (0 bis 1): Die Pauschale nach § 10 Abs. 5 Nr. 3 ErbStG gilt „insgesamt“ je Erbfall und wird unter Miterben geteilt. */
+  anteilNachlass?: number }
 export interface ErbStOut {
   klasse: Klasse; freibetrag: number; versorgung: number; hausratFrei: number; kosten: number;
   steuerpflichtig: number; satz: number; steuer: number; haerteausgleich: boolean; effektiv: number;
@@ -128,7 +130,8 @@ export function erbschaftsteuer(x: ErbStIn): ErbStOut {
   const vf = x.erbfall ? versorgungsfreibetrag(x.beziehung, x.alterKind) : 0;
   const hausratMax = k === 'I' ? S.hausrat_stk1 : S.hausrat_stk23;
   const hf = Math.min(Math.max(0, x.hausrat ?? 0), hausratMax);
-  const kosten = x.erbfall ? Math.max(S.erbfallkosten_pauschale, Math.max(0, x.nachlasskosten ?? 0)) : 0;
+  const anteil = Math.min(1, Math.max(0, x.anteilNachlass ?? 1));
+  const kosten = x.erbfall ? Math.max(r2(S.erbfallkosten_pauschale * anteil), Math.max(0, x.nachlasskosten ?? 0)) : 0;
   const gesamt = Math.max(0, x.erwerb) + Math.max(0, x.vorerwerbe ?? 0);
   const roh = Math.max(0, gesamt - hf - kosten - fb - vf);
   const stpfl = Math.floor(roh / S.rundung + 1e-9) * S.rundung;

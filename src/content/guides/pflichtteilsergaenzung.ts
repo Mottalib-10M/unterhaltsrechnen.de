@@ -53,7 +53,7 @@ ${h.table(['Volle Jahre seit der Schenkung', 'Angesetzt', 'Angerechneter Wert', 
   const e = pflichtteilsergaenzung(S, j, quote);
   return [String(j), h.pct(ergaenzungsfaktor(j), 0), h.eur(e.angerechnet), h.eur(e.ergaenzung)];
 }), 'Vom Pflichtteilsrechner ermittelt, Pflichtteilsquote je Kind ' + br(quote))}
-<p>Stirbt der Vater im ersten Jahr nach der Schenkung, erhält jedes Kind ${h.eur(nullJ.ergaenzung)} zusätzlich, ab dem zehnten vollen Jahr ${h.eur(zehnJ.ergaenzung)}. Den Betrag für Ihre Zahlen liefert der Mini-Rechner oben oder der ${h.a('pflichtteilsrechner', 'Pflichtteilsrechner')}.</p>
+<p>Stirbt der Vater im ersten Jahr nach der Schenkung, erhält jedes Kind ${h.eur(nullJ.ergaenzung)} zusätzlich, nach ${h.num(h.P.erbrecht.ergaenzung_jahre)} vollen Jahren ${h.eur(zehnJ.ergaenzung)}. Den Betrag für Ihre Zahlen liefert der Mini-Rechner oben oder der ${h.a('pflichtteilsrechner', 'Pflichtteilsrechner')}.</p>
 <h2>Ausnahme Ehegatte: die Frist läuft nicht</h2>
 <p>Bei Schenkungen an den Ehegatten beginnt die Frist nach dem letzten Satz des § 2325 Abs. 3 BGB nicht vor Auflösung der Ehe. Solange die Ehe bis zum Tod besteht, wird nichts abgeschmolzen: ${h.eur(S)} an die Ehefrau, zwölf Jahre vor dem Tod verschenkt, zählen voll, die Ergänzung je Kind beträgt im Beispiel ${h.eur(ehefrau.ergaenzung)}. Für Kinder aus einer früheren Beziehung ist das oft der entscheidende Punkt. Das Erbrecht des überlebenden Ehegatten selbst erklärt die Seite zum ${h.a('ehegattenerbrecht', 'Ehegattenerbrecht')}.</p>
 <h2>Nießbrauch und Wohnrecht</h2>
@@ -92,7 +92,7 @@ ${h.table(['Full years since the gift', 'Counted', 'Value counted', 'Top-up per 
   const e = pflichtteilsergaenzung(S, j, quote);
   return [String(j), h.pct(ergaenzungsfaktor(j), 0), h.eur(e.angerechnet), h.eur(e.ergaenzung)];
 }), 'Computed by the compulsory share calculator, compulsory fraction per child ' + br(quote))}
-<p>If the father dies within the first year after the gift, each child gets ${h.eur(nullJ.ergaenzung)} extra; from the tenth full year, ${h.eur(zehnJ.ergaenzung)}. Use the mini calculator above or the ${h.a('pflichtteilsrechner', 'compulsory share calculator')} for your own figures.</p>
+<p>If the father dies within the first year after the gift, each child gets ${h.eur(nullJ.ergaenzung)} extra; after ${h.num(h.P.erbrecht.ergaenzung_jahre)} full years, ${h.eur(zehnJ.ergaenzung)}. Use the mini calculator above or the ${h.a('pflichtteilsrechner', 'compulsory share calculator')} for your own figures.</p>
 <h2>The spouse exception</h2>
 <p>For gifts to a spouse, the last sentence of section 2325(3) BGB says the period does not begin before the marriage is dissolved. A marriage that lasts until death means no reduction at all: ${h.eur(S)} given to the wife twelve years before death counts in full, producing ${h.eur(ehefrau.ergaenzung)} per child in the example. For children from an earlier relationship this is often the decisive point. The survivor’s own position is covered under ${h.a('ehegattenerbrecht', 'spouse’s inheritance')}.</p>
 <h2>Usufruct and residence rights</h2>

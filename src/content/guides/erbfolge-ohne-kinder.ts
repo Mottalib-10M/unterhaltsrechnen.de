@@ -28,8 +28,8 @@ const elternLedig = teil(c.eltern, 'elternteil');
 const ehegEltern = teil(c.eheEltern, 'ehegatte');
 const elternNebenEhe = teil(c.eheEltern, 'elternteil');
 /** Steuer eines Bruders auf seinen Anteil und eines Elternteils, aus dem Erbschaftsteuer-Motor. */
-const stGeschw = erbschaftsteuer({ erwerb: geschwLedig.betragJe, beziehung: 'geschwister', erbfall: true });
-const stEltern = erbschaftsteuer({ erwerb: elternLedig.betragJe, beziehung: 'eltern', erbfall: true });
+const stGeschw = erbschaftsteuer({ erwerb: geschwLedig.betragJe, beziehung: 'geschwister', erbfall: true, anteilNachlass: geschwLedig.quoteJe });
+const stEltern = erbschaftsteuer({ erwerb: elternLedig.betragJe, beziehung: 'eltern', erbfall: true, anteilNachlass: elternLedig.quoteJe });
 
 const zeile = (r: ReturnType<typeof erbfolge>, lab: Record<string, string>, eur: (n: number) => string) =>
   r.anteile.map((a) => `${(a.anzahl === 1 && lab[a.wer + '1']) || lab[a.wer]} ${a.quoteJe === 1 ? lab.alles : br(a.quoteJe)} = ${eur(a.betragJe)}`).join('; ');

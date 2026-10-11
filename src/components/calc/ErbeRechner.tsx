@@ -79,10 +79,10 @@ export function ErbfolgeRechner({ lang = 'de', methodHref, preset = {} }: Props 
 
 export function ErbStRechner({ lang = 'de', methodHref }: Props) {
   const f = fm(lang);
-  const [erw, setErw] = useState(650000); const [bz, setBz] = useState<Beziehung>('kind'); const [fall, setFall] = useState('1'); const [alter, setAlter] = useState(35); const [haus, setHaus] = useState(0); const [vor, setVor] = useState(0);
-  useEffect(() => { const u = readParams(window.location.search); if (![...u.keys()].length) return; setErw(num(u, 'w', 650000)); const b = str(u, 'b', 'kind') as Beziehung; setBz(BEZIEHUNGEN.includes(b) ? b : 'kind'); setFall(str(u, 'f', '1')); setAlter(num(u, 'a', 35)); setHaus(num(u, 'h', 0)); setVor(num(u, 'v', 0)); }, []);
-  useEffect(() => { updateURL({ w: erw, b: bz, f: fall, a: alter, h: haus, v: vor }); }, [erw, bz, fall, alter, haus, vor]);
-  const r = useMemo(() => erbschaftsteuer({ erwerb: erw, beziehung: bz, erbfall: fall === '1', alterKind: alter, hausrat: haus, vorerwerbe: vor }), [erw, bz, fall, alter, haus, vor]);
+  const [erw, setErw] = useState(650000); const [bz, setBz] = useState<Beziehung>('kind'); const [fall, setFall] = useState('1'); const [alter, setAlter] = useState(35); const [haus, setHaus] = useState(0); const [vor, setVor] = useState(0); const [quote, setQuote] = useState(100);
+  useEffect(() => { const u = readParams(window.location.search); if (![...u.keys()].length) return; setErw(num(u, 'w', 650000)); const b = str(u, 'b', 'kind') as Beziehung; setBz(BEZIEHUNGEN.includes(b) ? b : 'kind'); setFall(str(u, 'f', '1')); setAlter(num(u, 'a', 35)); setHaus(num(u, 'h', 0)); setVor(num(u, 'v', 0)); setQuote(num(u, 'q', 100)); }, []);
+  useEffect(() => { updateURL({ w: erw, b: bz, f: fall, a: alter, h: haus, v: vor, q: quote }); }, [erw, bz, fall, alter, haus, vor, quote]);
+  const r = useMemo(() => erbschaftsteuer({ erwerb: erw, beziehung: bz, erbfall: fall === '1', alterKind: alter, hausrat: haus, vorerwerbe: vor, anteilNachlass: quote / 100 }), [erw, bz, fall, alter, haus, vor, quote]);
   const BL: Record<Beziehung, [string, string]> = {
     ehegatte: ['Ehegatte / eingetragener Lebenspartner', 'Spouse / registered partner'], kind: ['Kind, Stiefkind', 'Child, stepchild'], enkel_kind_verstorben: ['Enkel (Elternteil verstorben)', 'Grandchild (parent deceased)'], enkel: ['Enkel', 'Grandchild'], eltern: ['Eltern, Großeltern', 'Parents, grandparents'],
     geschwister: ['Geschwister', 'Siblings'], nichte_neffe: ['Nichte, Neffe', 'Niece, nephew'], stiefeltern: ['Stiefeltern', 'Step-parents'], schwiegerkind: ['Schwiegerkind', 'Child-in-law'], schwiegereltern: ['Schwiegereltern', 'Parents-in-law'], geschieden: ['Geschiedener Ehegatte', 'Divorced spouse'], sonstige: ['Andere (z. B. Lebensgefährte)', 'Others (e.g. unmarried partner)'],
@@ -109,6 +109,9 @@ export function ErbStRechner({ lang = 'de', methodHref }: Props) {
             <NumberField id="es-h" label={tx(lang, 'Davon Hausrat', 'Of which household goods')} value={haus} onChange={setHaus} unit="€" max={10000000} lang={lang} />
             <NumberField id="es-v" label={tx(lang, 'Steuerfreie Vorschenkungen (10 Jahre)', 'Untaxed prior gifts (10 years)')} value={vor} onChange={setVor} unit="€" max={500000000} lang={lang} />
           </div>
+          {fall === '1' && <div className="grid grid-cols-2 gap-x-4 gap-y-4">
+            <NumberField id="es-q" label={tx(lang, 'Ihr Anteil am Nachlass', 'Your share of the estate')} value={quote} onChange={(v) => setQuote(Math.min(100, Math.max(0, v)))} unit="%" max={100} lang={lang} help={tx(lang, 'Alleinerbe 100 %; teilt die Kostenpauschale', 'sole heir 100%; splits the flat cost allowance')} />
+          </div>}
         </form>
         <div aria-live="polite" className={kasten}>
           <Kopf label={tx(lang, fall === '1' ? 'Erbschaftsteuer' : 'Schenkungsteuer', fall === '1' ? 'Inheritance tax' : 'Gift tax')} wert={f.eur(r.steuer)} unter={tx(lang, `Steuerklasse ${r.klasse} · Satz ${f.pct(r.satz, 0)}`, `Tax class ${r.klasse} · rate ${f.pct(r.satz, 0)}`)} />
