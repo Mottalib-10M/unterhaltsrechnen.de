@@ -17,7 +17,8 @@ export function navCategories(lang: Locale): NavCategory[] {
   return GROUPS.filter((g) => g !== 'betrag').map((g) => ({ label: GROUP_LABEL[lang][g], links: g === 'kind' ? [link('home', lang), ...inGroup(g, lang)] : inGroup(g, lang) })).filter((c) => c.links.length);
 }
 export const groupLabel = (g: Group, lang: Locale) => GROUP_LABEL[lang][g];
-export const navDirect = (lang: Locale): NavLink[] => [link('method', lang)];
+// Methode : liee en bas de page, hors du menu du haut pour qu'il tienne sur une ligne.
+export const navDirect = (_lang: Locale): NavLink[] => [];
 export const footerColumns = (lang: Locale): NavCategory[] => [
   ...GROUPS.map((g) => ({ label: GROUP_LABEL[lang][g], links: inGroup(g, lang) })).filter((c) => c.links.length),
   { label: lang === 'de' ? 'Die Seite' : 'This site', links: ['home', 'method', 'about', 'contact', 'editorial', 'widget', 'terms', 'privacy', 'cookies'].map((i) => link(i, lang)) },
